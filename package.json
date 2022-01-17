@@ -1,0 +1,22 @@
+{
+  "name": "ef-main",
+  "version": "1.0.0",
+  "description": "web effilms",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "browser-sync": "^2.26.14",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-connect": "^5.7.0",
+    "gulp-sass": "^4.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "video"
+  ],
+  "author": "Ezequiel Estigarribia",
+  "license": "ISC"
+}
