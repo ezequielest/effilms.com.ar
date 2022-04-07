@@ -88,22 +88,45 @@
         items: 4,
         dots: false,
         nav: true,
-        navText: ["<span class='arrow_carrot-left'><span/>", "<span class='arrow_carrot-right'><span/>"],
+        navText: ["<span class='fa fa-arrow-left'><span/>", "<span class='fa fa-arrow-right'><span/>"],
         smartSpeed: 1200,
         autoHeight: false,
         autoplay: false,
         responsive: {
-            320: {
+            0: {
                 items: 1
             },
-            768: {
+            600: {
                 items: 2
             },
-            992: {
+            900: {
                 items: 3
             },
             1200: {
                 items: 4
+            }
+        }
+    });
+
+    $(".project__slider--ef-home").owlCarousel({
+        loop: true,
+        margin: 0,
+        items: 4,
+        dots: false,
+        nav: true,
+        navText: ["<span class='fa fa-arrow-left'><span/>", "<span class='fa fa-arrow-right'><span/>"],
+        smartSpeed: 1200,
+        autoHeight: false,
+        autoplay: false,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 2
+            },
+            1300: {
+                items: 3
             }
         }
     });

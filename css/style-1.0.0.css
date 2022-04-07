@@ -1829,27 +1829,23 @@ ul li i {
       color: #200909; }
   .services.ef-home .services__details .services__item h1 {
     color: white !important; }
-  .services.ef-home .project__slider--ef-home {
-    margin-top: 10px; }
-    .services.ef-home .project__slider--ef-home .owl-prev, .services.ef-home .project__slider--ef-home .owl-nav .owl-next {
-      color: white !important; }
-    .services.ef-home .project__slider--ef-home.ef-home {
-      position: relative; }
-      .services.ef-home .project__slider--ef-home.ef-home .item:hover .primary-style {
-        font-size: 6rem;
-        transition: font-size 0.5s; }
-        @media screen and (max-width: 380px) {
-          .services.ef-home .project__slider--ef-home.ef-home .item:hover .primary-style {
-            font-size: 3rem; } }
-      .services.ef-home .project__slider--ef-home.ef-home .primary-style {
-        position: absolute;
-        top: 450px;
-        left: 20px;
-        font-size: 5rem;
-        transition: font-size 0.3s; }
-        @media screen and (max-width: 380px) {
-          .services.ef-home .project__slider--ef-home.ef-home .primary-style {
-            font-size: 2rem; } }
+  .services.ef-home .project__slider--ef-home.ef-home {
+    position: relative; }
+    .services.ef-home .project__slider--ef-home.ef-home .item:hover .primary-style {
+      font-size: 5rem;
+      transition: font-size 0.5s; }
+      @media screen and (max-width: 380px) {
+        .services.ef-home .project__slider--ef-home.ef-home .item:hover .primary-style {
+          font-size: 3rem; } }
+    .services.ef-home .project__slider--ef-home.ef-home .primary-style {
+      position: absolute;
+      top: 215px;
+      left: 20px;
+      font-size: 3rem;
+      transition: font-size 0.3s; }
+      @media screen and (max-width: 380px) {
+        .services.ef-home .project__slider--ef-home.ef-home .primary-style {
+          font-size: 2rem; } }
 
 .services.ef-films {
   position: relative; }

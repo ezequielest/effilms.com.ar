@@ -5,6 +5,15 @@
   padding-top: 120px;
   padding-bottom: 90px;
   background-color: $background-2;
+  overflow: hidden;
+
+  &.ef-films {
+    padding-bottom: 30px;
+
+    .justify {
+      margin-bottom: 20px;
+    }
+  }
 
   @media only screen and (max-width: 420px) { 
     h4 {
@@ -16,9 +25,7 @@
     padding-bottom: 80px;
 
     .services__item {
-
-    
-
+      margin-bottom: 30px;
       p {
         margin-bottom: 12px;
       }
@@ -39,17 +46,17 @@
 .services__item {
   margin-bottom: 30px;
 
-  span {
-    font-size: 2rem;
-    font-weight: 700;
-    color: $primary-color;
-    margin-right: 5px;
-  }
-
   i {
     color: white;
     font-size: 35px;
     color: $secondary-color;
+  }
+
+  ul {
+    i {
+      font-size: 15px;
+      color: white;
+    }
   }
 
   h4 {
@@ -57,6 +64,8 @@
     text-transform: uppercase;
     margin-top: 35px;
     margin-bottom: 22px;
+    font-size: 2rem;
+    font-weight: 700;
   }
 
   p {
@@ -70,7 +79,8 @@
 .counter {
   padding-bottom: 70px;
   padding-top: 70px;
-  background-color: $background-2;
+  //background-color: $background-2;
+  background-color: $black-color;
 
 
   .counter__content {
@@ -123,6 +133,15 @@
   }
 }
 
+.ef-points {
+  list-style: none;
+
+  li {
+    color: white;
+    font-weight: 600;
+  }
+}
+
 /*---------------------
   Clients
 -----------------------*/
@@ -136,33 +155,132 @@
 }
 
 
+//EF HOME
+.services.ef-home {
+  position: relative;
+  overflow: initial;
+
+  .vertical {
+    position: absolute;
+    color: #0c0c0c;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-size: 22rem;
+    font-weight: 500;
+    left: -105px;
+    top: 380px;
+
+    @media screen and (max-width: 430px) {
+      display: none;
+    }
+
+    .dot-background {
+      color: #200909;
+    }
+  }
+
+  .services__details {
+
+    .services__item {
+      h1 {
+        color: white !important;
+      }
+    }
+  }
+
+  .project__slider--ef-home {
+    margin-top: 10px;
+
+    .owl-prev, .owl-nav .owl-next  {
+      color: white !important; 
+    }
+  
+    &.ef-home {
+      position: relative;
+      .item:hover {
+        .primary-style {
+          font-size: 6rem;
+          transition: font-size 0.5s;
+    
+          @media screen and (max-width: 380px){
+            font-size: 3rem;
+          }
+        }
+      }
+
+      .primary-style {
+        position: absolute; 
+        top: 450px;
+        left: 20px;
+        font-size: 5rem;
+        transition: font-size 0.3s;
+
+        @media screen and (max-width: 380px){
+          font-size: 2rem;
+        }
+      }
+    } 
+  }
+}
+
 
 //SERVICES EF FILMS
+.services.ef-films {
 
-.services {
-  &__details {
-    .vertical {
+  .services__item {
+    h1 {
       color: white;
-      //writing-mode: tb-rl;
-      writing-mode: vertical-rl;
-      font-size: 5rem;
-      font-weight: 100;
-      position: relative;
-      left: -36px;
+    }
+  }
+
+  position: relative;
+    .vertical {
+      /*NO VERTICAL*/
+      position: absolute;
+      color: #0c0c0c;
+      font-size: 38rem;
+      font-weight: 600;
+      left: 1173px;
+      top: -23px;
+
+      .dot-background {
+        color: #200909;
+      }
+    }
+
+    @media only screen and (max-width: 2000px) { 
+      .vertical {
+        left: 952px;
+      }
+    }
+
+
+    @media only screen and (max-width: 1600px) { 
+      .vertical {
+        left: 752px;
+      }
+    }
+
+    @media only screen and (max-width: 1200px) { 
+      .vertical {
+        left: 452px;
+      }
     }
 
     @media only screen and (max-width: 767px) { 
       .vertical {
-        font-size: 3rem;
-        letter-spacing: 15px;
+        left: 252px;
+        font-size: 25rem;
+        top: 600px;
       }
     }
 
     @media only screen and (max-width: 320px) { 
       .vertical {
         left: -20px;
+        top: -85px;
+        font-size: 16rem;
       }
     }
-
-  }
 }
+

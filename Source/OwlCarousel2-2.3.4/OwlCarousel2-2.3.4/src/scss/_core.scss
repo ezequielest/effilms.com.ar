@@ -63,6 +63,7 @@
 	.owl-nav .owl-prev,
 	.owl-nav .owl-next,
 	.owl-dot {
+		color: white;
 		cursor: pointer;
 		-webkit-user-select: none;
 		-khtml-user-select: none;
@@ -74,8 +75,9 @@
 	.owl-nav button.owl-prev,
 	.owl-nav button.owl-next,
 	button.owl-dot {
+		color: white;
 		background: none;
-		color: inherit;
+		//color: inherit;
 		border: none;
 		padding:0!important;
 		font: inherit;

@@ -16,7 +16,6 @@
   }
 
   .project__slider {
-
     .overlay {
       height: 100%;
       width: 100%;
@@ -37,19 +36,20 @@
   }
 
   &.bg-1 {
-    background-image: url('/img/services/real-state.jpg');
+    background-image: url('/img/services/publicity.jpg');
   }
 
   &.bg-2 {
-    background-image: url('/img/services/car-sale.jpg');
+    background-image: url('/img/services/videoclip-2.jpg');
+    background-position-x: center;
   }
 
   &.bg-3 {
-    background-image: url('/img/services/product-2.jpg');
+    background-image: url('/img/services/agency.jpg');
   }
-
+  
   &.bg-4 {
-    background-image: url('/img/services/office.jpg');
+    background-image: url('/img/services/product-2.jpg');
   }
 
   &::after {
@@ -58,6 +58,10 @@
     height: 100%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.842);
+
+    @media only screen and (max-width: 500px)  {
+      background-color: rgba(0, 0, 0, 0.742);
+    }
   }
 
   &:hover {
@@ -75,6 +79,35 @@
       h5 {
         right: 0;
       }
+
+      .btn-center {
+        margin-bottom: 85px;
+      }
+
+      @media only screen and (max-width: 500px)  {
+        bottom: 130px;
+        overflow: initial;
+
+        .btn-center {
+          margin-bottom: 0px;
+        }
+
+        a {
+          margin-bottom:  0;
+        }
+
+        span {
+          top: 100px;
+          left: 0px !important;
+        }
+        
+        h5 {
+          top: 100px;
+          left: 0;
+        }
+      }
+
+      
     }
   }
 }
@@ -88,7 +121,7 @@
     }
 
     .owl-nav {
-
+     
       button {
         height: 50px;
         width: 50px;
@@ -134,11 +167,28 @@
   @include transition(all, 0.5s);
   overflow: hidden;
 
+  @media only screen and (max-width: 500px)  {
+    bottom: 130px;
+    overflow: initial;
 
+    a {
+      margin-bottom:  0;
+    }
+
+    span {
+      top: 100px;
+      left: 0px !important;
+    }
+    
+    h5 {
+      top: 100px;
+      left: 0;
+    }
+  }
 
   span {
     color: $primary-color;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 600;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -151,7 +201,7 @@
 
   h5 {
     color: $heading-color;
-    font-size: 3rem;
+    font-size: 2.7rem;
     text-transform: uppercase;
     position: relative;
     right: 30px;
@@ -164,6 +214,11 @@
 -----------------------*/
 .testimonial {
   background-color: $black-color;
+  overflow: hidden;
+
+  .container {
+    position: relative;
+  }
 
   .container-list-whatsapp {
     background: #131c21;
@@ -262,6 +317,7 @@
 
     @media only screen and (max-width: 772px)  {
       width: 100%;
+      box-shadow: none;
     }
   }
 
@@ -318,7 +374,7 @@
         }
         
         &__name{
-          width: 40%;
+          width: 35%;
           color: #FFF;
           padding-left: 5px;
           flex-shrink: 0;
@@ -577,6 +633,10 @@
     }
 }
 
+.ef-home {
+  background-color: #060606;
+}
+
 .logo__carousel {
 
   &.owl-carousel {
@@ -734,16 +794,18 @@
   background-position: center;
 
   button {
-    background: $primary-color;
+    background: #f00;
     color: white;
     border: 0;
-    border-radius: 10px;
+    border-radius: 2px;
     padding: 10px 20px;
     text-transform: uppercase;
     margin-top: 10px;
+    transition: background-color 1s;
 
     &:hover {
-      background: #8f6200;
+      transition: background-color 1s;
+      background: #970000;
     }
   }
 
@@ -774,6 +836,10 @@
     line-height: 52px;
     text-transform: uppercase;
     margin-bottom: 36px;
+  }
+
+  h6 {
+    color: rgb(146, 146, 146);
   }
 
   .primary-btn {
