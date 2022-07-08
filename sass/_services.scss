@@ -9,6 +9,7 @@
 
   &.ef-films {
     padding-bottom: 30px;
+    padding-top: 80px;
 
     .justify {
       margin-bottom: 20px;
@@ -156,7 +157,7 @@
 
 
 //EF HOME
-.services.ef-home {
+/*.services.ef-home {
   position: relative;
   overflow: initial;
 
@@ -221,7 +222,7 @@
       }
     } 
   }
-}
+}*/
 
 
 //SERVICES EF FILMS
@@ -241,7 +242,7 @@
       font-size: 38rem;
       font-weight: 600;
       left: 1173px;
-      top: -23px;
+      top: -100px;
 
       .dot-background {
         color: #200909;
@@ -250,7 +251,7 @@
 
     @media only screen and (max-width: 2000px) { 
       .vertical {
-        left: 952px;
+        left: 982px;
       }
     }
 
