@@ -82,7 +82,7 @@ p {
 }
 
 img {
-  max-width: 100%;
+  //max-width: 100%;
 }
 
 input:focus,
@@ -367,4 +367,50 @@ ul li i {
   font-weight: 700;
   color: $primary-color;
   //margin-right: 5px;
+}
+
+.whatsapp-footer {
+	position: fixed;
+	z-index: 99999;
+	position: fixed;
+	z-index: 9999999;
+	bottom: 30px;
+	right: 30px;
+	width: 40px;
+  transition: all 1s ease;
+  z-index: 9;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+.bg-primary {
+  background-color: #000000 !important;
+  color: #ffffff;
+}
+
+.bg-secondary {
+  background-color: #111111 !important;
+  color: #ffffff;
+}
+
+.bg-gray-0 {
+  background-color: #000;
+}
+
+.bg-gray-1 {
+  background-color: #030303;
+}
+
+.bg-gray-2 {
+  background-color: #060606;
+}
+
+.bg-gray-3 {
+  background-color: #0a0a0a;
+}
+
+.bg-gray-4 {
+  background-color: #111;
 }

@@ -8,15 +8,15 @@
   overflow: hidden;
 
   &.ef-films {
-    padding-bottom: 30px;
-    padding-top: 80px;
+    padding-bottom: 140px;
+    padding-top: 180px;
 
     .justify {
       margin-bottom: 20px;
     }
   }
 
-  @media only screen and (max-width: 420px) { 
+  @media only screen and (max-width: 420px) {
     h4 {
       font-size: 16px;
     }
@@ -80,8 +80,6 @@
 .counter {
   padding-bottom: 70px;
   padding-top: 70px;
-  //background-color: $background-2;
-  background-color: $black-color;
 
 
   .counter__content {
@@ -193,16 +191,16 @@
     margin-top: 10px;
 
     .owl-prev, .owl-nav .owl-next  {
-      color: white !important; 
+      color: white !important;
     }
-  
+
     &.ef-home {
       position: relative;
       .item:hover {
         .primary-style {
           font-size: 6rem;
           transition: font-size 0.5s;
-    
+
           @media screen and (max-width: 380px){
             font-size: 3rem;
           }
@@ -210,7 +208,7 @@
       }
 
       .primary-style {
-        position: absolute; 
+        position: absolute;
         top: 450px;
         left: 20px;
         font-size: 5rem;
@@ -220,7 +218,7 @@
           font-size: 2rem;
         }
       }
-    } 
+    }
   }
 }*/
 
@@ -238,37 +236,37 @@
     .vertical {
       /*NO VERTICAL*/
       position: absolute;
-      color: #0c0c0c;
+      color: #141414;
       font-size: 38rem;
       font-weight: 600;
       left: 1173px;
-      top: -100px;
+      top: 80px;
 
       .dot-background {
         color: #200909;
       }
     }
 
-    @media only screen and (max-width: 2000px) { 
+    @media only screen and (max-width: 2000px) {
       .vertical {
         left: 982px;
       }
     }
 
 
-    @media only screen and (max-width: 1600px) { 
+    @media only screen and (max-width: 1600px) {
       .vertical {
         left: 752px;
       }
     }
 
-    @media only screen and (max-width: 1200px) { 
+    @media only screen and (max-width: 1200px) {
       .vertical {
         left: 452px;
       }
     }
 
-    @media only screen and (max-width: 767px) { 
+    @media only screen and (max-width: 767px) {
       .vertical {
         left: 252px;
         font-size: 25rem;
@@ -276,12 +274,91 @@
       }
     }
 
-    @media only screen and (max-width: 320px) { 
+    @media only screen and (max-width: 320px) {
       .vertical {
         left: -20px;
-        top: -85px;
+        top: 1040px;
         font-size: 16rem;
       }
     }
 }
 
+
+ .ef-services {
+   padding: 120px 0;
+
+    &__container {
+      justify-content: center;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &__card {
+      width:33%;
+      min-height: 250px;
+      background-color: #111;
+      color: #ccc;
+      display: flex;
+      justify-content:center;
+      align-items: center;
+      position: relative;
+
+      &:nth-child(1) {
+        background-color: #111;
+      }
+
+      &:nth-child(2) {
+        background-color: #222;
+      }
+
+      &:nth-child(3) {
+        background-color: #333;
+      }
+
+      &:nth-child(4) {
+        background-color: #444;
+      }
+
+      &:nth-child(5) {
+        background-color: #111;
+      }
+
+      &:nth-child(6) {
+        background-color: #222;
+      }
+
+      .commin-soon {
+        position: absolute;
+        top: 5px;
+        right: 10px;
+        color: $primary-color;
+      }
+
+      a {
+        color: white;
+        font-weight: bold;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.3s ease;
+
+        &:hover  {
+          transition: all 0.3s ease;
+          color: white;
+          background-color: $secondary-color;
+        }
+
+      }
+
+
+      @media only screen and (max-width: 520px) {
+        width: 50%;
+        font-size: 12px;
+        min-height: 150px;
+            text-align: center;
+      }
+
+    }
+ }

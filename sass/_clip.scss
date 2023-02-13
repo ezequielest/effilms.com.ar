@@ -29,6 +29,15 @@
         margin-top: 60px;
         position: relative;
 
+        
+        @media only screen and (max-width: 992px) { 
+            width: 80%;
+        }
+
+        @media only screen and (max-width: 768px) { 
+            width: 100%;
+        }
+
         .description, .box-behind {
             border: 1px solid #9a620c;
             /* padding: 50px; */
@@ -65,15 +74,25 @@
 
         @media only screen and (max-width: 992px) { 
             .img-nosotros {
-                left: 220px;
-                top: 110px;
+                //left: 220px;
+                //top: 110px;
+                left: 315px;
+                top: 37px;
             }
         }
 
         @media only screen and (max-width: 768px) { 
             .img-nosotros {
-                left: 180px;
-                top: 270px;
+                //left: 180px;
+                //top: 270px;
+                left: 299px;
+                top: 28px;
+            }
+        }
+
+        @media only screen and (max-width: 767px) { 
+            .img-nosotros {
+                display: none;
             }
         }
 

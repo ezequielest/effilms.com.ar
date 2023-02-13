@@ -1,0 +1,173 @@
+/****
+TEAM
+*****/
+
+.team-card {
+
+	&__container {
+		display:flex;
+		justify-content: space-between;
+	}
+
+	&__card {
+	    z-index: 9;
+		background-color: #222;
+		width: 30%;
+		border-radius: 5px;
+		box-shadow: 13px 19px 38px -12px rgba(2,2,2,0.75);
+		-webkit-box-shadow: 13px 19px 38px -12px rgba(2,2,2,0.75);
+		-moz-box-shadow: 13px 19px 38px -12px rgba(2,2,2,0.75);
+
+		img {
+			border-top-left-radius: 5px;
+			border-top-right-radius: 5px;
+		}
+	}
+
+	&__description {
+		padding:20px;
+
+		h2 {
+			font-size: 22px;
+			color: #ccc;
+		}
+
+		h3 {
+			font-size: 16px;
+			color: #ccc;
+		}
+	}
+}
+
+
+/*---------------------
+  Team ORIGINAL TEMPLATE
+-----------------------*/
+.team {
+  padding-top: 120px;
+  padding-bottom: 90px;
+
+  .section-title {
+        position: relative;
+      	z-index: 9;
+  }
+}
+
+.team__btn {
+  text-align: right;
+}
+
+.team__item {
+  height: 480px;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 30px;
+
+  &:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(17, 17, 17, 0.9);
+    content: '';
+    z-index: -1;
+    opacity: 0;
+    @include transition(all, .5s, ease-out, .5s);
+  }
+
+  &:hover {
+
+    &:after {
+      opacity: 1;
+    }
+
+    .team__text {
+
+      .team__title {
+        border-bottom: 1px solid rgba(183, 183, 183, 0.2);
+        padding: 0 0 32px;
+        margin-bottom: 34px;
+        opacity: 0;
+        visibility: hidden;
+        position: relative;
+        bottom: initial;
+        opacity: 1;
+        visibility: visible;
+      }
+
+      p {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      .team__social {
+        opacity: 1;
+        visibility: visible;
+        bottom: 34px;
+      }
+    }
+
+  }
+}
+
+.team__text {
+  height: 100%;
+  position: relative;
+  padding: 35px 30px 40px;
+
+  .team__title {
+    position: absolute;
+    left: 0;
+    bottom: 42px;
+    width: 100%;
+    padding: 0 30px;
+    @include transition(all, .7s, ease-out, .7s);
+
+    h5 {
+      color: $white-color;
+      font-weight: 600;
+      font-family: 'Poppins', sans-serif;
+      margin-bottom: 6px;
+    }
+
+    span {
+      font-size: 14px;
+      color: $primary-color;
+    }
+  }
+
+  p {
+    color: #b7b7b7;
+    opacity: 0;
+    visibility: hidden;
+    @include transition(all, .7s, ease-out, .7s);
+  }
+
+  .team__social {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 0 30px;
+    opacity: 0;
+    visibility: hidden;
+    @include transition(all, .7s, ease-out, .7s);
+
+    a {
+      display: inline-block;
+      font-size: 20px;
+      color: $white-color;
+      margin-right: 34px;
+      @include transition(all, .3s);
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+}

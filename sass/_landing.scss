@@ -16,8 +16,17 @@
     align-items: center;
     position: relative;
     height: 100vh;
-    background: radial-gradient(circle, #0000006b 0%, black 100%);
-    
+    //background: radial-gradient(circle, #0000006b 0%, black 100%);
+    //background: radial-gradient(farthest-side at bottom left, rgba(20, 20, 20, 0.6), #00000045), radial-gradient(farthest-corner at bottom right, rgba(20, 20, 20, 0.6), transparent 100vh);
+
+    .overlay {
+        position: absolute;
+        display: block;
+        width: 100vw;
+        height: 100vh;
+        background: radial-gradient(farthest-side at bottom left, #0000007a, #00000077), radial-gradient(farthest-corner at bottom right, #0000006f, #00000038 100vh);
+        z-index: 8;
+    }
 
     #video_background, #video_background_mobile {
         display: initial;
@@ -29,14 +38,14 @@
         object-fit: cover;
     }
 
-    @media only screen and (max-width: 400px) {
-        #video_background { 
+    @media only screen and (max-width: 480px) {
+        #video_background {
             display: none;
         }
 
         #video_background-mobile {
             display: block !important;
-            width: 130%;
+            width: 120%;
         }
     }
 
@@ -55,10 +64,12 @@
 
         h6 {
             color: white;
-            font-size: 3rem;
+            font-size: 2.8rem;
             font-weight: 300;
-            letter-spacing: 20px;
+            letter-spacing: 8px;
             margin-top: 30px;
+            z-index: 10;
+            position: relative;
 
             span {
                 font-weight: 700;
@@ -69,7 +80,7 @@
             margin-top: 50px;
         }
 
-        @media only screen and (max-width: 767px) { 
+        @media only screen and (max-width: 767px) {
             padding: 30px;
             .words {
                 font-size: 2rem;
@@ -94,17 +105,22 @@
         flex-direction: column;
         position: absolute;
         left: 96%;
+        z-index: 9;
 
         @media screen and (max-width: 500px) {
             display: none;
         }
 
         a {
-            color: white;  
+            color: white;
             margin-bottom: 25px;
 
             span {
                 font-size: 1.5rem;
+            }
+
+            &:hover {
+              color: $primary-color;
             }
         }
     }
@@ -113,6 +129,7 @@
         margin-top: 20px;
         color: white;
         display: flex;
+        z-index: 9;
         a {
             margin-right: 25px;
             color: white;
@@ -124,8 +141,9 @@
         color: white;
         position: absolute;
         left: 45%;
-        top: 95%;
+        top: 90%;
         display: flex;
+        z-index: 9999;
 
         @media screen and (max-width: 500px) {
             left: 28%;
@@ -136,13 +154,22 @@
             font-size: 1.2rem;
             position: relative;
             top: 2px;
+            @media screen and (max-width: 500px) {
+                font-size: 1rem;
+            }
         }
 
-        h6{
+        h6 {
             color: white;
-            margin-left: 15px;
-            letter-spacing: 4px;
+            margin-left: 8px;
+            letter-spacing: 1px;
             font-size: 1.2rem;
+            top: -1px;
+            position: relative;
+            @media screen and (max-width: 500px) {
+                left: 28%;
+                font-size: 1rem;
+            }
         }
     }
 }
