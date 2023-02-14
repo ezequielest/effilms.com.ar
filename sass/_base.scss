@@ -112,6 +112,10 @@ ul li i {
 /*---------------------
   Helper CSS
 -----------------------*/
+.text-primary {
+  color: $primary-color !important;
+}
+
 .section-title {
   margin-bottom: 40px;
 

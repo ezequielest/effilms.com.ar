@@ -27,9 +27,15 @@
 
     .services__item {
       margin-bottom: 30px;
+
+      span.commin-soon {
+        color: $primary-color;
+      }
+
       p {
         margin-bottom: 12px;
       }
+
 
       ul {
 
@@ -71,6 +77,10 @@
 
   p {
     margin-bottom: 0;
+  }
+
+  button {
+    margin-top: 18px;
   }
 }
 
