@@ -1,0 +1,108 @@
+.values {
+
+  .commin-soon {
+    color: $primary-color;
+  }
+
+  .pack-buttons {
+    h6 {
+      color: white;
+      margin-bottom: 6px;
+    }
+
+    button {
+      background: $primary-color;
+      filter: brightness(85%);
+      border: none;
+      height: 60px;
+      width: 60px;
+      
+      &:hover {
+        filter: brightness(95%);
+      }
+
+      &.selected {
+        background-color: rgb(255, 196, 0);
+      }
+
+          
+      @media screen and (max-width: 992px) {
+        margin-bottom: 80px;
+      }
+  
+    }
+  }
+    .vertical {
+        position: absolute;
+        color: #141414;
+        writing-mode: vertical-rl;
+        transform: rotate(180deg);
+        font-size: 22rem;
+        font-weight: 500;
+        //left: -105px;
+        left: -122px;
+        top: 30px;
+        z-index: 0;
+    
+        @media screen and (max-width: 1366px) {
+          left: -105px;
+          font-size: 16rem;
+        }
+    
+        @media screen and (max-width: 992px) {
+          display: none;
+        }
+    
+        @media screen and (max-width: 430px) {
+          display: none;
+        }
+    
+        .dot-background {
+          color: #200909;
+        }
+      }
+
+      .services__item {
+
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-bottom: 120px;
+      }
+
+      .contact {
+        padding-top: 0;
+        span {
+            font-size: 1.5rem;
+            color: white;
+            display: block;
+            text-align: center;
+        }
+
+        .btn-container {
+          display: flex;
+          align-items: center;
+          a {
+            background-color: $primary-color;
+            margin: 0 auto;
+            display: inline-block;
+            margin-top: 40px;
+
+            &:hover {
+                color: #373737;
+            }
+        }
+        }
+
+      }
+
+      ul {
+        margin-top: 12px;
+        li {
+          color: white;
+          list-style: none;
+        }
+      } 
+
+}

@@ -1333,30 +1333,41 @@ ul li i {
   padding-bottom: 135px;
   position: relative;
   background-position: center; }
-  .callto button {
-    background: #f09433;
-    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-    background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-    color: white;
-    border: 0;
-    border-radius: 2px;
-    padding: 10px 20px;
-    text-transform: uppercase;
-    margin-top: 10px;
-    transition: background-color 1s; }
-    .callto button:hover {
-      transition: background-color 1s;
-      background: #f09433;
-      background: -moz-linear-gradient(45deg, #d1812c 0%, #c05731 25%, #be2239 50%, #a51d53 75%, #880f62 100%);
-      background: -webkit-linear-gradient(45deg, #d1812c 0%, #c05731 25%, #be2239 50%, #a51d53 75%, #880f62 100%);
-      background: linear-gradient(45deg, #d1812c 0%, #c05731 25%, #be2239 50%, #a51d53 75%, #880f62 100%); }
   .callto .overlay {
     position: absolute;
     width: 100%;
     height: 100%;
     top: 0;
     background-color: rgba(0, 0, 0, 0.6); }
+
+.callto__text .btn-valores {
+  padding: 60px; }
+  .callto__text .btn-valores a.btn-value {
+    padding: 12px 18px;
+    display: inline-block;
+    background-color: #c27a0d !important;
+    color: white !important;
+    margin-bottom: 60px;
+    margin-top: 8px; }
+
+.callto__text button.insta {
+  background: #f09433;
+  background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  color: white;
+  border: 0;
+  border-radius: 2px;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  margin-top: 10px;
+  transition: background-color 1s; }
+  .callto__text button.insta:hover {
+    transition: background-color 1s;
+    background: #f09433;
+    background: -moz-linear-gradient(45deg, #d1812c 0%, #c05731 25%, #be2239 50%, #a51d53 75%, #880f62 100%);
+    background: -webkit-linear-gradient(45deg, #d1812c 0%, #c05731 25%, #be2239 50%, #a51d53 75%, #880f62 100%);
+    background: linear-gradient(45deg, #d1812c 0%, #c05731 25%, #be2239 50%, #a51d53 75%, #880f62 100%); }
 
 .callto__text span {
   font-size: 16px;
@@ -1365,7 +1376,7 @@ ul li i {
   text-transform: uppercase;
   letter-spacing: 1px;
   display: block;
-  margin-bottom: 35px; }
+  margin-bottom: 6px; }
 
 .callto__text h2 {
   font-size: 42px;
@@ -1375,7 +1386,7 @@ ul li i {
   margin-bottom: 36px; }
 
 .callto__text h6 {
-  color: #929292; }
+  color: #cacaca; }
 
 .callto__text .primary-btn {
   background: #c27a0d;
@@ -2033,11 +2044,11 @@ ul li i {
     }
   }
 }*/
-.services.ef-films {
+.services.ef-films, .values {
   position: relative; }
-  .services.ef-films .services__item h1 {
+  .services.ef-films .services__item h1, .values .services__item h1 {
     color: white; }
-  .services.ef-films .vertical {
+  .services.ef-films .vertical, .values .vertical {
     /*NO VERTICAL*/
     position: absolute;
     color: #141414;
@@ -2045,24 +2056,24 @@ ul li i {
     font-weight: 600;
     left: 1173px;
     top: 80px; }
-    .services.ef-films .vertical .dot-background {
+    .services.ef-films .vertical .dot-background, .values .vertical .dot-background {
       color: #200909; }
   @media only screen and (max-width: 2000px) {
-    .services.ef-films .vertical {
+    .services.ef-films .vertical, .values .vertical {
       left: 982px; } }
   @media only screen and (max-width: 1600px) {
-    .services.ef-films .vertical {
+    .services.ef-films .vertical, .values .vertical {
       left: 752px; } }
   @media only screen and (max-width: 1200px) {
-    .services.ef-films .vertical {
+    .services.ef-films .vertical, .values .vertical {
       left: 452px; } }
   @media only screen and (max-width: 767px) {
-    .services.ef-films .vertical {
+    .services.ef-films .vertical, .values .vertical {
       left: 252px;
       font-size: 25rem;
       top: 600px; } }
   @media only screen and (max-width: 320px) {
-    .services.ef-films .vertical {
+    .services.ef-films .vertical, .values .vertical {
       left: -20px;
       top: 1040px;
       font-size: 16rem; } }
@@ -2118,6 +2129,81 @@ ul li i {
         font-size: 12px;
         min-height: 150px;
         text-align: center; } }
+
+.values .commin-soon {
+  color: #c27a0d; }
+
+.values .pack-buttons h6 {
+  color: white;
+  margin-bottom: 6px; }
+
+.values .pack-buttons button {
+  background: #c27a0d;
+  filter: brightness(85%);
+  border: none;
+  height: 60px;
+  width: 60px; }
+  .values .pack-buttons button:hover {
+    filter: brightness(95%); }
+  .values .pack-buttons button.selected {
+    background-color: #ffc400; }
+  @media screen and (max-width: 992px) {
+    .values .pack-buttons button {
+      margin-bottom: 80px; } }
+
+.values .vertical {
+  position: absolute;
+  color: #141414;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-size: 22rem;
+  font-weight: 500;
+  left: -122px;
+  top: 30px;
+  z-index: 0; }
+  @media screen and (max-width: 1366px) {
+    .values .vertical {
+      left: -105px;
+      font-size: 16rem; } }
+  @media screen and (max-width: 992px) {
+    .values .vertical {
+      display: none; } }
+  @media screen and (max-width: 430px) {
+    .values .vertical {
+      display: none; } }
+  .values .vertical .dot-background {
+    color: #200909; }
+
+.values .services__item {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 120px; }
+
+.values .contact {
+  padding-top: 0; }
+  .values .contact span {
+    font-size: 1.5rem;
+    color: white;
+    display: block;
+    text-align: center; }
+  .values .contact .btn-container {
+    display: flex;
+    align-items: center; }
+    .values .contact .btn-container a {
+      background-color: #c27a0d;
+      margin: 0 auto;
+      display: inline-block;
+      margin-top: 40px; }
+      .values .contact .btn-container a:hover {
+        color: #373737; }
+
+.values ul {
+  margin-top: 12px; }
+  .values ul li {
+    color: white;
+    list-style: none; }
 
 /*---------------------
     Blog
@@ -2872,7 +2958,7 @@ ul li i {
     cursor: pointer;
     position: absolute;
     right: 30px;
-    top: 35px; }
+    top: 20px; }
   .offcanvas-menu-overlay {
     position: fixed;
     left: 0;

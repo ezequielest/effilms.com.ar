@@ -730,7 +730,30 @@
   position: relative;
   background-position: center;
 
-  button {
+  .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+}
+
+.callto__text {
+
+  .btn-valores {
+    padding: 60px;
+    a.btn-value {
+      padding: 12px 18px;
+      display: inline-block;
+      background-color: $primary-color !important;
+      color: white !important;
+      margin-bottom: 60px;
+      margin-top: 8px;
+    }
+  }
+
+  button.insta {
     background: #f09433; 
     background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
     background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
@@ -753,17 +776,6 @@
     }
   }
 
-  .overlay {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    background-color: rgba(0, 0, 0, 0.6);
-  }
-}
-
-.callto__text {
-
   span {
     font-size: 16px;
     color: $primary-color;
@@ -771,7 +783,7 @@
     text-transform: uppercase;
     letter-spacing: 1px;
     display: block;
-    margin-bottom: 35px;
+    margin-bottom: 6px;
   }
 
   h2 {
@@ -783,7 +795,7 @@
   }
 
   h6 {
-    color: rgb(146, 146, 146);
+    color: rgb(202, 202, 202);
   }
 
   .primary-btn {

@@ -113,110 +113,153 @@
     <!-- Breadcrumb Section End -->
 
     <!-- Services Section Begin -->
-    <section class="services services-page spad">
+    <section class="values values-page spad bg-gray-2">
+        <div class="vertical">EF<span class="dot-background">.</span>FILMS</div>
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-lg-6">
                     <div class="section-title">
                         <span>Estos son los valores</span>
-                        <h2>DE NUESTRO SERVICIO</h2>
+                        <h2>PARA INMOBILIARIAS</h2>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="pack-buttons">
+                        <h6>Videos por mes (paquetes)</h6>
+                        <button class="pack" onclick="changePack(1)">1</button>
+                        <button class="pack" onclick="changePack(2)">2</button>
+                        <button class="pack" onclick="changePack(4)">4</button>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <div class="services__item">
-                        <img src="img/services/services-1.png" alt="">
-                        <h4>VIDEO CLÁSICO</h4>
-                        <p>Video completo del inmueble.</p>
-                        <ul>
-                            <li>- FULL HD.</li>
-                            <li>- Vertical u horizontal.</li>
-                            <li>- Colorimetría.</li>
-                            <li>- Video estabilizado.</li>
-                            <li><h1 class="text-primary">$16.000</h1></li>
-                            <li><button class="btn primary-btn see-example">VER EJEMPLO</button></li>
-                        </ul>
+                        <div class="values-header">
+                            <img src="img/services/services-1.png" alt="">
+                            <h4>VIDEO CLÁSICO</h4>
+                            <p>Video completo del inmueble.</p>
+                            <ul>
+                                <li>- Vertical u horizontal.</li>
+                                <li>- Colorimetría.</li>
+                                <li>- Video estabilizado.</li>
+                                <li>- Música Envato</li>
+                                <li>- FULL HD.</li>
+                            </ul>
+                        </div>
+                        <div class="service-footer">
+                            <h1 class="text-primary" id="video"></h1>
+                            <button class="btn primary-btn" onclick="seeExample('video')">VER EJEMPLO</button>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <div class="services__item">
-                        <img src="img/services/services-2.png" alt="">
-                        <h4>VIDEO + DRON</h4>
-                        <p>Video completo del inmueble con tomas aéreas externas de dron.</p>
-                        <ul>
-                            <li>- FULL HD.</li>
-                            <li>- Vertical u horizontal.</li>
-                            <li>- Colorimetría.</li>
-                            <li>- Video estabilizado.</li>
-                            <li>- Servicio de dron.</li>
-                            <li>- Música Envato</li>
-                            <li><h1 class="text-primary">$25.000</h1></li>
-                            <li><button class="btn primary-btn">VER EJEMPLO</button></li>
-                        </ul>
+                        <div class="values-header">
+                            <img src="img/services/services-2.png" alt="">
+                            <h4>VIDEO + DRON</h4>
+                            <p>Video completo del inmueble con tomas aéreas externas de dron.</p>
+                            <ul>
+                                <li>- Vertical u horizontal.</li>
+                                <li>- Colorimetría.</li>
+                                <li>- Video estabilizado.</li>
+                                <li>- Servicio de dron.</li>
+                                <li>- Música Envato</li>
+                                <li>- FULL HD.</li>
+                            </ul>
+                        </div>
+                        <div class="service-footer">
+                            <h1 class="text-primary" id="videoDron"></h1>
+                            <button class="btn primary-btn" onclick="seeExample('videoDron')">VER EJEMPLO</button>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <div class="services__item">
-                        <img src="img/services/services-3.png" alt="">
-                        <h4>VIDEO MARKETING</h4>
-                        <p>Conduci tu video. Video con conducción con inserts del inmueble que acompañan la narración</p>
-                        <ul>
-                            <li>- Servicio de audio.</li>
-                            <li>- Video estabilizado.</li>
-                            <li> - Colorimetría.</li>
-                            <li>- Música Envato</li>
-                            <li>- FULL HD</li>
-                            <li><h1 class="text-primary">$25.000</h1></li>
-                            <li><button class="btn primary-btn">VER EJEMPLO</button></li>
-                        </ul>
+                        <div class="values-header">
+                            <img src="img/services/services-3.png" alt="">
+                            <h4>VIDEO MARKETING</h4>
+                            <p>Conduci tu video. Video con conducción con inserts del inmueble que acompañan la narración</p>
+                            <ul>
+                                <li>- Servicio de audio.</li>
+                                <li>- Video estabilizado.</li>
+                                <li> - Colorimetría.</li>
+                                <li>- Música Envato.</li>
+                                <li>- FULL HD</li>
+                            </ul>
+                        </div>
+                        <div class="values-footer">
+                            <h1 class="text-primary" id="mkt"></h1>
+                            <button class="btn primary-btn" onclick="seeExample('mkt')">VER EJEMPLO</button>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <div class="services__item">
-                        <img src="img/services/services-4.png" alt="">
-                        <h4>VIDEO MKT + DRON</h4>
-                        <p>Conduci tu video. Video con conducción con inserts del inmueble que acompañan la narración</p>
-                        <ul>
-                            <li>- Servicio de audio.</li>
-                            <li>- Servicio de dron.</li>
-                            <li>- Video estabilizado.</li>
-                            <li>- Colorimetría.</li>
-                            <li>- Música Envato.</li>
-                            <li>- FULL HD</li>
-                            <li><h1 class="text-primary">$35.000</h1></li>
-                            <li><button class="btn primary-btn">VER EJEMPLO</button></li>
-                        </ul>
+                        <div class="values-header">
+                            <img src="img/services/services-4.png" alt="">
+                            <h4>VIDEO MKT + DRON</h4>
+                            <p>Conduci tu video. Video con conducción con inserts del inmueble que acompañan la narración</p>
+                            <ul>
+                                <li>- Servicio de audio.</li>
+                                <li>- Servicio de dron.</li>
+                                <li>- Video estabilizado.</li>
+                                <li>- Colorimetría.</li>
+                                <li>- Música Envato.</li>
+                                <li>- FULL HD</li>
+                            </ul>
+                        </div>
+                        <div class="service-footer">
+                            <h1 class="text-primary" id="mktDron"></h1>
+                            <button class="btn primary-btn" onclick="seeExample('mktDron')">VER EJEMPLO</button>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <div class="services__item">
-                        <img src="img/services/services-4.png" alt="">
-                        <span class="commin-soon">PRÓXIMAMENTE</span>
-                        <h4>DRON EXTERIOR</h4>
-                        <p>Video de dron de tomas exterior</p>
-                        <ul>
-                            <li>- Tomas exterior.</li>
-                            <li>- Servicio de dron.</li>
-                            <li>- Colorimetría.</li>
-                            <li>- Música Envato</li>
-                            <li>- FULL HD</li>
-                        </ul>
+                        <div class="values-header">
+                            <img src="img/services/services-5.png" alt="">
+                            <h4>DRON EXTERIOR</h4>
+                            <p>Video de dron de tomas exterior</p>
+                            <ul>
+                                <li>- Tomas exterior.</li>
+                                <li>- Servicio de dron.</li>
+                                <li>- Colorimetría.</li>
+                                <li>- Música Envato</li>
+                                <li>- FULL HD</li>
+                            </ul>
+                        </div>
+                        <div class="service-footer">
+                            <h1 class="text-primary" id="dron"></h1>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <div class="services__item">
-                        <img src="img/services/services-4.png" alt="">
-                        <span class="commin-soon">PRÓXIMAMENTE</span>
-                        <h4>DRON FPV</h4>
-                        <p>Conduci tu video. Video con conducción con inserts del inmueble que acompañan la narración</p>
-                        <ul>
-                            <li>- Dron recorriendo la casa.</li>
-                            <li>- Video estabilizado.</li>
-                            <li>- Colorimetría.</li>
-                            <li>- Música Envato</li>
-                            <li>- FULL HD</li>
-                        </ul>
+                        <div class="values-header">
+                            <img src="img/services/services-6.png" alt="">
+                            <span class="commin-soon">PRÓXIMAMENTE</span>
+                            <h4>DRON FPV</h4>
+                            <p>Conduci tu video. Video con conducción con inserts del inmueble que acompañan la narración</p>
+                            <ul>
+                                <li>- Dron recorriendo la casa.</li>
+                                <li>- Video estabilizado.</li>
+                                <li>- Colorimetría.</li>
+                                <li>- Música Envato</li>
+                                <li>- FULL HD</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="contact">
+                        <span>Si necesitas algo especifico que no esta contemplado en los items anteriores podes</span>
+                        <div class="btn-container">
+                            <a class="btn primary-btn" href="https://api.whatsapp.com/send?phone=542236695658&text=Hola, me gustaría pedirles un presupuesto." target="_blank">
+                                <img class="whatsapp-footer" src="./img/whatsapp.png" alt="">CONTACTATE CON NOSOTROS</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -225,7 +268,7 @@
     <!-- Services Section End -->
 
     <!-- Counter Section End -->
-    <section class="counter spad set-bg" data-setbg="img/counter-bg.jpg">
+    <section class="counter bg-gray-4">
         <div class="container">
             <div class="counter__content">
                 <div class="row">
@@ -276,7 +319,7 @@
     <!-- Counter Section End -->
 
     <!-- Client Section Begin -->
-    <section class="clients spad">
+    <!--<section class="clients spad">
         <div class="container">
             <div class="row">
                 <div class="col-lg-5 col-md-5">
@@ -309,8 +352,26 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section>-->
     <!-- Client Section End -->
+    <!-- Call To Action Section Begin -->
+    <section class="callto spad set-bg" data-setbg="img/djimardel2.JPG">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-10 text-center">
+                    <div class="callto__text">
+                        <span>Queremos hacer</span>
+                        <h2>tus ideas realidad</h2>
+                        <h6>CONOCÉ NUESTROS ÚLTIMOS TRABAJOS EN</h6>
+                        <a href="https://www.instagram.com/effilms.com.ar" target="_blank"><button>INSTAGRAM</button></a>
+                        <!--<a href="#" class="primary-btn">Contactanos</a>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Call To Action Section End -->
 
     <!-- Footer Section Begin -->
     <a href="https://api.whatsapp.com/send?phone=542236695658&text=Hola, me gustaría pedirles un presupuesto." target="_blank">
@@ -418,6 +479,24 @@
 <!-- Footer Section End -->
 <!-- Footer Section End -->
 
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <!--<div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="exampleModalLabel">New message</h4>
+        </div>-->
+        <div class="modal-body">
+            <iframe id="youtube" width="100%" height="500" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <!--<div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Send message</button>
+        </div>-->
+      </div>
+    </div>
+  </div>
+
 <!-- Js Plugins -->
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
@@ -425,6 +504,7 @@
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/slick.min.js"></script>
 <script src="js/main.js"></script>
+
 
 <script>
     //MENU
@@ -465,6 +545,112 @@
     }
 });
 </script>
+
+<script>
+    arrayPacks = [{
+      type: 1,
+      classic: '$15.000',
+      classicDron: '$25.000',
+      mkt: '$25.000',
+      mktDron: '$35.000',
+      dron: '$15.000'
+    },
+    {
+      type: 2,
+      classic: '$13.000',
+      classicDron: '$22.000',
+      mkt: '$22.000',
+      mktDron: '$30.000',
+      dron: '$13.000'
+    },
+    {
+      type: 4,
+      classic: '$12.000',
+      classicDron: '$20.000',
+      mkt: '$20.000',
+      mktDron: '$28.000',
+      dron: '$12.000'
+    }]
+
+    
+    document.getElementsByClassName('pack')[0].classList.add('selected');
+    changePack(1);
+
+    function changePack(pack) {
+
+        document.getElementsByClassName('pack')[0].classList.remove('selected');
+        document.getElementsByClassName('pack')[1].classList.remove('selected');
+        document.getElementsByClassName('pack')[2].classList.remove('selected');
+
+        if (pack === 1) {
+            document.getElementsByClassName('pack')[0].classList.add('selected');
+        } else if (pack === 2) {
+            document.getElementsByClassName('pack')[1].classList.add('selected');
+        } else {
+            document.getElementsByClassName('pack')[2].classList.add('selected');
+        } 
+
+        packSelected = arrayPacks.filter(el => {
+            return el.type === pack;
+        })[0];
+
+        console.log(packSelected)
+
+        document.getElementById('video').innerHTML = packSelected.classic;
+        document.getElementById('videoDron').innerHTML = packSelected.classicDron;
+        document.getElementById('mkt').innerHTML = packSelected.mkt;
+        document.getElementById('mktDron').innerHTML = packSelected.mktDron;
+        document.getElementById('dron').innerHTML = packSelected.dron;
+    }
+</script>
+
+<script>
+    const services = [{
+        type: 'video',
+        name: 'Video',
+        example: 'https://www.youtube.com/embed/LxVAXA5g9i8'
+    },
+    {
+        type: 'videoDron',
+        name: 'Video + Dron',
+        example: 'https://www.youtube.com/embed/ynVhHMrZXLc'
+    },
+    {
+        type: 'mkt',
+        name: 'MKT',
+        example: 'https://www.youtube.com/embed/dq2cCuibB9g'
+    },
+    {
+        type: 'mktDron',
+        name: 'MKT + DRON',
+        example: 'https://www.youtube.com/embed/2I1zfvTKshE'
+    },
+    {
+        type: 'dron',
+        name: 'DRON EXTERIOR',
+        example: ''
+    },
+    {
+        type: 'fpv',
+        name: 'FPV',
+        example: ''
+    }]
+
+    function seeExample(type) {
+        url = services.filter(el => {
+            return el.type === type;
+        })[0].example;
+
+        console.log(url)
+        
+
+        document.getElementById('youtube').src = url;
+        setTimeout(() => {
+            $('#exampleModal').modal('show');
+        }, 500);
+    }
+</script>
+
 </body>
 
 </html>
