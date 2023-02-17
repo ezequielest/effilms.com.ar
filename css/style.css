@@ -422,7 +422,8 @@ ul li i {
     top: 0;
     width: 100%;
     display: block;
-    padding: 10px; }
+    padding: 10px;
+    z-index: 999; }
     .header.fixed .header__logo {
       position: relative;
       top: -25px; }
