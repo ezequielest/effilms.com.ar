@@ -1340,6 +1340,9 @@ ul li i {
     top: 0;
     background-color: rgba(0, 0, 0, 0.6); }
 
+.callto__text .description {
+  color: white !important; }
+
 .callto__text .btn-valores {
   padding: 60px; }
   .callto__text .btn-valores a.btn-value {
