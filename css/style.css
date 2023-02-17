@@ -2130,10 +2130,22 @@ ul li i {
         min-height: 150px;
         text-align: center; } }
 
+.values .unidad {
+  color: white; }
+
+.values .vigencia {
+  color: white;
+  text-align: center;
+  margin: 20px 0;
+  display: inline-block;
+  font-size: 18px; }
+  .values .vigencia span {
+    color: #c27a0d; }
+
 .values .commin-soon {
   color: #c27a0d; }
 
-.values .pack-buttons h6 {
+.values .pack-buttons h5 {
   color: white;
   margin-bottom: 6px; }
 
@@ -2141,8 +2153,8 @@ ul li i {
   background: #c27a0d;
   filter: brightness(85%);
   border: none;
-  height: 60px;
-  width: 60px; }
+  height: 80px;
+  width: 80px; }
   .values .pack-buttons button:hover {
     filter: brightness(95%); }
   .values .pack-buttons button.selected {
