@@ -375,7 +375,8 @@
                         <span>Queremos hacer</span>
                         <h2>tus ideas realidad</h2>
                         <h6>CONOCÉ NUESTROS ÚLTIMOS TRABAJOS EN</h6>
-                        <a href="https://www.instagram.com/effilms.com.ar" target="_blank"><button class="insta">INSTAGRAM</button></a>
+                        <a href="https://www.instagram.com/effilms.com.ar" target="_blank"><button class="redes insta">INSTAGRAM</button></a>
+                        <a class="youtube" href="https://www.youtube.com/channel/UCJcK7K_8LmDJ68tQeh776Wg" target="_blank"><button class="redes youtube">YOUTUBE</button></a>
                         <!--<a href="#" class="primary-btn">Contactanos</a>-->
                     </div>
                 </div>
@@ -659,6 +660,10 @@
         setTimeout(() => {
             $('#exampleModal').modal('show');
         }, 500);
+
+        $('#exampleModal').on('hidden.bs.modal', function (e) {
+            document.getElementById('youtube').src = "";
+        })
     }
 </script>
 

@@ -759,12 +759,7 @@
     }
   }
 
-  button.insta {
-    background: #f09433; 
-    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
-    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
-    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
-
+  button.redes {
     color: white;
     border: 0;
     border-radius: 2px;
@@ -772,15 +767,33 @@
     text-transform: uppercase;
     margin-top: 10px;
     transition: background-color 1s;
+    min-width: 142px;
 
-    &:hover {
-      transition: background-color 1s;
+    &.insta {
       background: #f09433; 
-      background: -moz-linear-gradient(45deg, #d1812c 0%, #c05731 25%, #be2239 50%, #a51d53 75%, #880f62 100%); 
-      background: -webkit-linear-gradient(45deg, #d1812c 0%, #c05731 25%, #be2239 50%, #a51d53 75%, #880f62 100%); 
-      background: linear-gradient(45deg, #d1812c 0%, #c05731 25%, #be2239 50%, #a51d53 75%, #880f62 100%); 
+      background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+      background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+      background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+  
+  
+      &:hover {
+        transition: background-color 1s;
+        background: #f09433; 
+        background: -moz-linear-gradient(45deg, #d1812c 0%, #c05731 25%, #be2239 50%, #a51d53 75%, #880f62 100%); 
+        background: -webkit-linear-gradient(45deg, #d1812c 0%, #c05731 25%, #be2239 50%, #a51d53 75%, #880f62 100%); 
+        background: linear-gradient(45deg, #d1812c 0%, #c05731 25%, #be2239 50%, #a51d53 75%, #880f62 100%); 
+      }
+    }
+  
+    &.youtube {
+      background-color: #cd322d;
+      color: white;
+      &:hover {
+        background-color: #9f0d08;
+      }
     }
   }
+
 
   span {
     font-size: 16px;

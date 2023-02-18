@@ -217,7 +217,7 @@
                         </div>
                         <div class="col-12 col-md-6">
                             <div class="services__item">
-                                <iframe width="100%" height="315" src="https://www.youtube.com/embed/LxVAXA5g9i8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <iframe width="100%" height="315" src="https://www.youtube.com/embed/J_PkpTPZKJE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                 <!---->
                                 <!--<iframe width="100%" height="315" src="https://www.youtube.com/embed/KLUrfAsGPt4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
                             </div>
@@ -291,7 +291,7 @@
                         <div class="project__slider__item bg bg-4" data-setbg="img/services/office.jpg">
                             <p>04</p>
                             <div class="project__slider__item__hover">
-                                <a target="_blank" href="https://www.instagram.com/p/ChSEQcsDhvb/" class="btn primary-btn btn-center">VER VIDEO</a>
+                                <a target="_blank" href="https://www.youtube.com/watch?v=a_7vY2Z2BhQ" class="btn primary-btn btn-center">VER VIDEO</a>
                                 <!--<a target="_blank" class="btn primary-btn btn-center">PROXIMAMENTE</a>-->
                                 <span>INSTITUCIONALES</span>
                                 <h5>INSTITUCIONALES</h5>
@@ -392,11 +392,11 @@
                 </div>
             </div>
             <div class="row ef-services__container" style="margin-right: 0; margin-left:0">
-                <div class="ef-services__card"><a href="https://www.youtube.com/watch?v=BJa71u2H13Y" target="_blank">VIDEO</a></div>
-                <div class="ef-services__card"><a href="https://www.youtube.com/watch?v=GCE-opUPhmE" target="_blank">DRON</a></div>
-                <div class="ef-services__card"><a href="https://www.instagram.com/p/ChsmkYQgzwv/" target="_blank">VIDEO + DRON</a></div>
-                <div class="ef-services__card"><a href="https://www.youtube.com/watch?v=EOGmX1W6qsc&t=82s" target="_blank">CONDUCCIÓN</a></div>
-                <div class="ef-services__card">CONDUCCIÓN + DRON<span class="commin-soon"></span></div>
+                <div class="ef-services__card"><a onclick="seeExample('video')">VIDEO</a></div>
+                <div class="ef-services__card"><a onclick="seeExample('videoDron')">VIDEO + DRON</a></div>
+                <div class="ef-services__card"><a onclick="seeExample('conduccion')">CONDUCCIÓN</a></div>
+                <div class="ef-services__card"><a onclick="seeExample('conduccionDron')">CONDUCCIÓN + DRON</a></div>
+                <div class="ef-services__card">DRON</a></div>
                 <div class="ef-services__card">DRON FPV <span class="commin-soon">PRÓXIMAMENTE</span></div>
             </div>
         </div>
@@ -1112,7 +1112,8 @@
                         </div>
 
                         <h6 class="description">CONOCÉ NUESTROS ÚLTIMOS TRABAJOS EN</h6>
-                        <a class="insta" href="https://www.instagram.com/effilms.com.ar" target="_blank"><button class="insta">INSTAGRAM</button></a>
+                        <a class="insta" href="https://www.instagram.com/effilms.com.ar" target="_blank"><button class="redes insta">INSTAGRAM</button></a>
+                        <a class="youtube" href="https://www.youtube.com/channel/UCJcK7K_8LmDJ68tQeh776Wg" target="_blank"><button class="redes youtube">YOUTUBE</button></a>
                         <!--<a href="#" class="primary-btn">Contactanos</a>-->
                     </div>
                 </div>
@@ -1317,6 +1318,24 @@
 </footer>
 <!-- Footer Section End -->
 
+<div class="modal fade" id="youtubeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <!--<div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="exampleModalLabel">New message</h4>
+        </div>-->
+        <div class="modal-body">
+            <iframe id="youtube" width="100%" height="500" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <!--<div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Send message</button>
+        </div>-->
+      </div>
+    </div>
+  </div>
+
 <!-- Js Plugins -->
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
@@ -1443,6 +1462,55 @@
 <script>
     //document.cookie = 'same-site-cookie=foo; SameSite=Lax';
     document.cookie = 'cross-site-cookie=bar; SameSite=None; Secure';
+</script>
+
+<script>
+    const services = [{
+        type: 'video',
+        name: 'Video',
+        example: 'https://www.youtube.com/embed/LxVAXA5g9i8'
+    },
+    {
+        type: 'videoDron',
+        name: 'Video + Dron',
+        example: 'https://www.youtube.com/embed/oaGRbR6nAA8'
+    },
+    {
+        type: 'conduccion',
+        name: 'MKT',
+        example: 'https://www.youtube.com/embed/dq2cCuibB9g'
+    },
+    {
+        type: 'conduccionDron',
+        name: 'MKT + DRON',
+        example: 'https://www.youtube.com/embed/6hjBbI25YD0'
+    },
+    {
+        type: 'dron',
+        name: 'DRON EXTERIOR',
+        example: ''
+    },
+    {
+        type: 'fpv',
+        name: 'FPV',
+        example: ''
+    }]
+
+    function seeExample(type) {
+        url = services.filter(el => {
+            return el.type === type;
+        })[0].example;
+        
+
+        document.getElementById('youtube').src = url;
+        setTimeout(() => {
+            $('#youtubeModal').modal('show');
+        }, 500);
+
+        $('#youtubeModal').on('hidden.bs.modal', function (e) {
+            document.getElementById('youtube').src = "";
+        })
+    }
 </script>
 </body>
 
