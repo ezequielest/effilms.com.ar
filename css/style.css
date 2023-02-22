@@ -443,7 +443,9 @@ ul li i {
     display: inline-block; }
 
 .header__menu {
-  text-align: center; }
+  text-align: center;
+  position: relative;
+  top: 24px; }
   .header__menu ul li {
     list-style: none;
     display: inline-block;

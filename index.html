@@ -1424,19 +1424,18 @@
     init();
 
     function init () {
-        document.getElementsByClassName('header')[0].classList.add('show');
-        document.getElementsByClassName('header__menu')[0].classList.add('hide');
+        //document.getElementsByClassName('header')[0].classList.add('show');
+        //document.getElementsByClassName('header__menu')[0].classList.add('hide');
         document.getElementsByClassName('whatsapp-footer')[0].classList.add('hide');
     }
 
     window.addEventListener("scroll", (event) => {
     let scroll = this.scrollY;
     if (scroll > 700) {
-
         document.getElementsByClassName('header')[0].classList.add('fixed');
         document.getElementsByClassName('header')[0].classList.add('animate__fadeIn');
 
-
+        document.getElementsByClassName('header__menu')[0].style.top = "0px";
         document.getElementsByClassName('header__menu')[0].classList.remove('hide');
         document.getElementsByClassName('header__menu')[0].classList.add('show');
 
@@ -1445,12 +1444,13 @@
     } else {
         document.getElementsByClassName('header')[0].classList.remove('fixed');
         document.getElementsByClassName('header')[0].classList.remove('animate__fadeIn');
-        document.getElementsByClassName('header')[0].classList.remove('hide');
+        //document.getElementsByClassName('header')[0].classList.remove('hide');
+        document.getElementsByClassName('header__menu')[0].style.top = "24px";
 
         document.getElementsByClassName('header')[0].classList.add('show');
 
-        document.getElementsByClassName('header__menu')[0].classList.add('hide');
-        document.getElementsByClassName('header__menu')[0].classList.remove('show');
+        //document.getElementsByClassName('header__menu')[0].classList.add('hide');
+        //document.getElementsByClassName('header__menu')[0].classList.remove('show');
 
         document.getElementsByClassName('whatsapp-footer')[0].classList.remove('animate__fadeIn');
         document.getElementsByClassName('whatsapp-footer')[0].classList.add('hide');
