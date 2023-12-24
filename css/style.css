@@ -2055,10 +2055,15 @@ ul li i {
             .clients .client-type .logos-client-container .logo-client-container a img.sol-de-abril {
               width: 80px !important;
               filter: invert(0.5); }
+            .clients .client-type .logos-client-container .logo-client-container a img.afianza {
+              filter: invert(0.5);
+              max-width: 100px; }
             .clients .client-type .logos-client-container .logo-client-container a img.bonjo {
               filter: invert(1); }
             .clients .client-type .logos-client-container .logo-client-container a img.cuarzo {
               filter: invert(0.5); }
+            .clients .client-type .logos-client-container .logo-client-container a img.hledesma {
+              filter: invert(0.7); }
             .clients .client-type .logos-client-container .logo-client-container a img.bianchi {
               filter: invert(0.8);
               max-width: 140px; }

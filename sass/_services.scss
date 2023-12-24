@@ -199,11 +199,18 @@
                 width: 80px !important;
                 filter: invert(0.5);
               }
+              &.afianza {
+                filter: invert(0.5);
+                max-width: 100px;
+              }
               &.bonjo {
                 filter: invert(1);
               }
               &.cuarzo {
                 filter: invert(0.5);
+              }
+              &.hledesma {
+                filter: invert(0.7);
               }
               &.bianchi {
                 filter: invert(0.8);
