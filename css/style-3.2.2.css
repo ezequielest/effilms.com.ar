@@ -2025,68 +2025,9 @@ ul li i {
 -----------------------*/
 .clients {
   padding-top: 120px;
-  padding-bottom: 60px;
-  background-color: #050505; }
-  .clients .section-title {
-    margin-bottom: 20px; }
-  .clients .section-title.first {
-    margin-bottom: 80px; }
-  .clients .client-type {
-    margin-bottom: 80px; }
-    .clients .client-type .logos-client-container {
-      display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap; }
-      .clients .client-type .logos-client-container .logo-client-container {
-        display: flex;
-        align-items: center; }
-        .clients .client-type .logos-client-container .logo-client-container a {
-          display: block;
-          padding: 20px 30px; }
-          .clients .client-type .logos-client-container .logo-client-container a img {
-            max-width: 180px; }
-            .clients .client-type .logos-client-container .logo-client-container a img.moire {
-              filter: invert(0.5);
-              max-width: 140px; }
-            .clients .client-type .logos-client-container .logo-client-container a img.malov {
-              filter: invert(0); }
-            .clients .client-type .logos-client-container .logo-client-container a img.itaim {
-              filter: invert(0.5); }
-            .clients .client-type .logos-client-container .logo-client-container a img.sol-de-abril {
-              width: 80px !important;
-              filter: invert(0.5); }
-            .clients .client-type .logos-client-container .logo-client-container a img.bonjo {
-              filter: invert(1); }
-            .clients .client-type .logos-client-container .logo-client-container a img.cuarzo {
-              filter: invert(0.5); }
-            .clients .client-type .logos-client-container .logo-client-container a img.bianchi {
-              filter: invert(0.8);
-              max-width: 140px; }
-            .clients .client-type .logos-client-container .logo-client-container a img.girard {
-              filter: invert(0); }
-            .clients .client-type .logos-client-container .logo-client-container a img.beber {
-              filter: invert(0.5); }
-            .clients .client-type .logos-client-container .logo-client-container a img.lorini {
-              filter: invert(0.5); }
-            .clients .client-type .logos-client-container .logo-client-container a img.espatolero {
-              filter: invert(1); }
-            .clients .client-type .logos-client-container .logo-client-container a img.pernice {
-              filter: invert(0.5);
-              max-width: 140px; }
-            .clients .client-type .logos-client-container .logo-client-container a img.gomez {
-              filter: invert(1); }
-            .clients .client-type .logos-client-container .logo-client-container a img.silvina {
-              filter: invert(0.5);
-              max-width: 130px; }
-            .clients .client-type .logos-client-container .logo-client-container a img.cerone {
-              filter: invert(0.5);
-              max-width: 120px; }
-            .clients .client-type .logos-client-container .logo-client-container a img.cer {
-              filter: invert(1);
-              max-width: 150px; }
-            .clients .client-type .logos-client-container .logo-client-container a img.avanty {
-              filter: invert(0.5);
-              max-width: 100px; }
+  padding-bottom: 60px; }
+  .clients img {
+    margin-bottom: 60px; }
 
 /*.services.ef-home {
   position: relative;

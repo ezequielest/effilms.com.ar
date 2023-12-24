@@ -176,11 +176,11 @@ ul li i {
 
   &.normal-btn {
     color: $heading-color;
-    
+
     &:before {
       border-color: #c4c4c4;
     }
-    
+
     &:after {
       border-color: #c4c4c4;
     }
@@ -310,9 +310,9 @@ ul li i {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #000; 
+  background: #000;
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: #555
@@ -320,7 +320,7 @@ ul li i {
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #222; 
+  background: #222;
 }
 
 @keyframes loader {
@@ -421,4 +421,26 @@ ul li i {
 
 .modal {
   top: 15%;
+}
+
+//CUSTOM EFFILMS GENERICS
+.modal-dialog {
+  max-width: 320px;
+
+  @media (min-width: 376px) {
+    max-width: 420px;
+    height: 300px;
+  }
+
+  @media (min-width: 676px) {
+    max-width: 620px;
+  }
+
+  @media (min-width: 976px) {
+    max-width: 920px;
+  }
+
+  .modal-body {
+    background: #111111;
+  }
 }

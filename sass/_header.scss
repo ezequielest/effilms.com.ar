@@ -45,12 +45,16 @@
     a {
         display: inline-block;
     }
+
+    @media (max-width: 426px) {
+      font-size: 1rem;
+    }
 }
 
 .header__menu {
     text-align: center;
     position: relative;
-    top: 24px;
+    //top: 24px;
 
     ul {
 

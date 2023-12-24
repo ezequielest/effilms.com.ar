@@ -157,9 +157,98 @@
 .clients {
   padding-top: 120px;
   padding-bottom: 60px;
+  background-color: #050505;
 
-  img {
-    margin-bottom: 60px;
+  .section-title {
+   margin-bottom: 20px;
+  }
+
+  .section-title.first {
+   margin-bottom: 80px;
+  }
+
+  .client-type{
+    margin-bottom: 80px;
+    .logos-client-container {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+
+      .logo-client-container {
+        display: flex;
+        align-items: center;
+
+        a {
+            display: block;
+            padding: 20px 30px;
+
+            img {
+              max-width: 180px;
+
+              &.moire {
+                filter: invert(0.5);
+                  max-width: 140px;
+              }
+              &.malov {
+                filter: invert(0);
+              }
+              &.itaim {
+                filter: invert(0.5);
+              }
+              &.sol-de-abril  {
+                width: 80px !important;
+                filter: invert(0.5);
+              }
+              &.bonjo {
+                filter: invert(1);
+              }
+              &.cuarzo {
+                filter: invert(0.5);
+              }
+              &.bianchi {
+                filter: invert(0.8);
+                  max-width: 140px;
+              }
+              &.girard {
+                filter: invert(0);
+              }
+              &.beber {
+                filter: invert(0.5);
+              }
+              &.lorini {
+                filter: invert(0.5);
+              }
+              &.espatolero {
+                filter: invert(1);
+              }
+              &.pernice {
+                filter: invert(0.5);
+                max-width: 140px;
+              }
+              &.gomez {
+                filter: invert(1);
+              }
+              &.silvina {
+                filter: invert(0.5);
+                  max-width: 130px;
+              }
+              &.cerone {
+                filter: invert(0.5);
+                  max-width: 120px;
+              }
+              &.cer {
+                filter: invert(1);
+                  max-width: 150px;
+              }
+              &.avanty {
+                filter: invert(0.5);
+                max-width: 100px;
+              }
+
+            }
+        }
+      }
+    }
   }
 }
 
@@ -236,7 +325,7 @@
 //SERVICES EF FILMS
 .services.ef-films, .values {
   position: relative;
-  
+
   .services__item {
     h1 {
       color: white;
@@ -312,8 +401,8 @@
       justify-content:center;
       align-items: center;
       position: relative;
-      
-      a { 
+
+      a {
         cursor: pointer;
       }
 
