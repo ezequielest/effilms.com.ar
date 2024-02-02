@@ -38,7 +38,7 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="css/slick.css" type="text/css">
-    <link rel="stylesheet" href="css/style-3.3.1.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="shortcut icon" href="/favicon.png" type='image/png' />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
@@ -128,8 +128,8 @@
       <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <span class="header-title">VALORES VIGENTES DESDE EL <span>1 DE NOVIEMBRE</span> HASTA EL <span>1 DE ENERO</span> 2023</span>
-                <h6 class="vigencia-details">Las actualizaciones se realizaran mes a mes de acuerdo al nivel inflacionario del país.</h6>
+                <span class="header-title">VALORES VIGENTES DESDE EL <span>1 DE ENERO</span> HASTA EL <span>1 DE FEBRERO</span> 2024</span>
+                <h6 class="vigencia-details">Las actualizaciones se realizarán mes a mes de acuerdo al nivel inflacionario del país.</h6>
             </div>
         </div>
       </div>
@@ -171,7 +171,7 @@
         <div class="row">
           <div class="col-lg-12 text-center">
             <h6 class="title">los rodajes básicos solo se cancelan por lluvia, no por días nublados</h6>
-            <h6 class="title">adaptación vertical para reels / historias <span>$1.800</span></h6>
+            <h6 class="title">adaptación vertical para reels / historias <span>$4.000</span></h6>
           </div>
         </div>
       </div>
@@ -241,11 +241,11 @@
                             </ul>
                         </div>
                         <div class="service-footer">
-                            <button class="btn primary-btn">EJEMPLO PROXIMAMENTE</button>
+                            <button class="btn primary-btn" onclick="seeExample('videoDronExpress')">VER EJEMPLO</button>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
+                <!--<div class="col-lg-4 col-md-6 col-sm-6">
                     <div class="services__item">
                         <div class="values-header">
                             <img src="img/services/services-4.png" alt="">
@@ -283,7 +283,7 @@
                             <button class="btn primary-btn">EJEMPLO PROXIMAMENTE</button>
                         </div>
                     </div>
-                </div>
+                </div>-->
             </div>
         </div>
     </section>
@@ -314,7 +314,7 @@
         <div class="row">
             <div class="col-lg-12 text-center">
             <h6 class="title">ante mal clima, el cliente decide si reprogramar el rodaje</h6>
-            <h6 class="title">adaptación vertical para reels / historias <span>$2.500</span></h6>
+            <h6 class="title">adaptación vertical para reels / historias <span>$5.000</span></h6>
             </div>
         </div>
         </div>
@@ -509,7 +509,7 @@
                             </ul>
                         </div>
                         <div class="service-footer">
-                            <button class="btn primary-btn">EJEMPLO PROXIMAMENTE</button>
+                            <button class="btn primary-btn" onclick="seeExample('3D')">VER EJEMPLO</button>
                         </div>
                     </div>
                 </div>
@@ -808,57 +808,57 @@
 
       arrayTableBasic = [
       {
-        service: 'ONE SHOOT',
-        price: '22.000',
-        combo: '17.500'
-      },
-      {
         service: 'VIDEO',
-        price: '29.500',
-        combo: '23.900'
-      },
-      {
-        service: 'CONDUCCIÓN',
-        price: '33.200',
-        combo: '25.800'
+        price: '35.000',
+        combo: '28.700'
       },
       {
         service: 'VIDEO + DRON',
-        price: '46.000',
-        combo: '36.800'
-      },
-      {
-        service: 'CONDUCCION + DRON',
-        price: '55.200',
-        combo: '46.000'
+        price: '40.000',
+        combo: '35.000'
       }]
 
       //COSTOS ESTANDAR
       arrayTableStandard = [
       {
         service: 'DRON',
-        price: '36.800',
-        combo: '32.200'
+        price: '55.000',
+        combo: '45.800'
       },
       {
         service: 'VIDEO',
-        price: '48.800',
-        combo: '36.800'
+        price: '61.200',
+        combo: '51.500'
       },
       {
         service: 'CONDUCCIÓN',
-        price: '55.200',
-        combo: '41.400'
+        price: '67.300',
+        combo: '57.800'
       },
       {
         service: 'VIDEO + DRON',
-        price: '64.400',
-        combo: '47.900'
+        price: '77.700',
+        combo: '67.300'
       },
       {
         service: 'CONDUCCIÓN + DRON',
-        price: '73.600',
-        combo: '55.200'
+        price: '81.500',
+        combo: '77.200'
+      },{
+        service: 'INSTITUCIONALES',
+        types: [{
+            service: 'EDIFICIO',
+            price: '81.500',
+            combo: '77.200'
+        },{
+            service: 'BARRIO PRIVADO',
+            price: '81.500',
+            combo: '77.200'
+        },{
+            service: 'EMPRESARIAL',
+            price: '81.500',
+            combo: '77.200'
+        }]
       }];
 
       arrayTablePremium = [{
@@ -897,12 +897,29 @@
 
       let htmlTableStandard = ``
       arrayTableStandard.forEach((item, i) => {
-      htmlTableStandard +=
-      `<tr>
-          <td>${item.service}</td>
-          <td>$${item.price}</td>
-          <td><span class="wrong-text">$${item.price}</span> <span class="price-combo">$${item.combo}</span></td>
-      </tr>`;
+        if (item.service === 'INSTITUCIONALES') {
+            htmlTableStandard +=
+            `<tr>
+                <td colspan="3"><b>${item.service}</b></td>
+            </tr>`;
+
+            item.types.forEach((type, i) => {
+                htmlTableStandard +=
+                `<tr>
+                    <td><div class="item-type">- ${type.service}</div></td>
+                    <td>$${type.price}</td>
+                    <td><span class="wrong-text">$${type.price}</span> <span class="price-combo">$${type.combo}</span></td>
+                </tr>`;
+            });
+            
+        } else {
+            htmlTableStandard +=
+            `<tr>
+                <td>${item.service}</td>
+                <td>$${item.price}</td>
+                <td><span class="wrong-text">$${item.price}</span> <span class="price-combo">$${item.combo}</span></td>
+            </tr>`;
+        }
       });
 
       document.getElementById('serviceTableStandard').innerHTML = htmlTableStandard;
@@ -953,7 +970,17 @@
           type: 'fpv',
           name: 'FPV',
           example: 'https://www.youtube.com/embed/PT5w3ITbgBE'
-      }]
+      },
+      {
+          type: '3D',
+          name: '3D',
+          example: 'https://www.instagram.com/p/C1VR7QbRExa/'
+      },
+      {
+        type: 'videoDronExpress',
+        name: 'VIDEO + DRON',
+        example: 'https://www.instagram.com/effilms.com.ar/'
+      }];
 
       function seeExample(type) {
           url = services.filter(el => {

@@ -2264,6 +2264,11 @@ header .selection-buttons {
     font-size: 12px; }
   .values .table-price td span.price-combo {
     color: #c27a0d; }
+  .values .table-price td .item-type {
+    margin-left: 20px; }
+    @media (max-width: 660px) {
+      .values .table-price td .item-type {
+        margin-left: 0; } }
 
 .values .vigencia {
   padding-bottom: 0; }
