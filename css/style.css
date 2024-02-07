@@ -2074,12 +2074,12 @@ ul li i {
             .clients .client-type .logos-client-container .logo-client-container a img.lorini {
               filter: invert(0.5); }
             .clients .client-type .logos-client-container .logo-client-container a img.espatolero {
-              filter: invert(1); }
+              filter: invert(0.8); }
             .clients .client-type .logos-client-container .logo-client-container a img.pernice {
               filter: invert(0.5);
               max-width: 140px; }
             .clients .client-type .logos-client-container .logo-client-container a img.gomez {
-              filter: invert(1); }
+              filter: invert(0.5); }
             .clients .client-type .logos-client-container .logo-client-container a img.silvina {
               filter: invert(0.5);
               max-width: 130px; }
@@ -2092,9 +2092,12 @@ ul li i {
             .clients .client-type .logos-client-container .logo-client-container a img.avanty {
               filter: invert(0.5);
               max-width: 100px; }
-            .clients .client-type .logos-client-container .logo-client-container a img.avanty {
+            .clients .client-type .logos-client-container .logo-client-container a img.gm {
               filter: invert(0.5);
-              max-width: 100px; }
+              max-width: 200px; }
+            .clients .client-type .logos-client-container .logo-client-container a img.vyne {
+              filter: invert(0.5);
+              max-width: 150px; }
 
 /*.services.ef-home {
   position: relative;

@@ -226,14 +226,14 @@
                 filter: invert(0.5);
               }
               &.espatolero {
-                filter: invert(1);
+                filter: invert(0.8);
               }
               &.pernice {
                 filter: invert(0.5);
                 max-width: 140px;
               }
               &.gomez {
-                filter: invert(1);
+                filter: invert(0.5);
               }
               &.silvina {
                 filter: invert(0.5);
@@ -251,9 +251,13 @@
                 filter: invert(0.5);
                 max-width: 100px;
               }
-              &.avanty {
+              &.gm {
                 filter: invert(0.5);
-                max-width: 100px;
+                max-width: 200px;
+              }
+              &.vyne {
+                filter: invert(0.5);
+                max-width: 150px;
               }
 
             }
