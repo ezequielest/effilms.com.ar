@@ -219,7 +219,7 @@
                         </div>
                         <div class="col-12 col-md-6">
                             <div class="services__item">
-                                <iframe width="100%" height="315" src="https://www.youtube.com/embed/J_PkpTPZKJE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <iframe width="100%" height="315" src="https://www.youtube.com/embed/2ezasH5vDJI?si=_hR3737PAN7h-fXH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                 <!---->
                                 <!--<iframe width="100%" height="315" src="https://www.youtube.com/embed/KLUrfAsGPt4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
                             </div>
@@ -227,15 +227,15 @@
                         <div class="col-12 col-md-6">
                             <div class="services__item">
                                 <p class="justify">
-                                    Producimos <b>contenido audiovisual</b> para comunicar de una manera profesional lo que cada cliente desee.
-                                    Buscamos siempre la originalidad manteniendo la escencia de la marca.
+                                    Producimos <b>contenido audiovisual</b> de alta calidad para que te destaques.
+                                    Queremos llevar la imagen de tu empresa <b>al siguiente nivel</b>. Por esa razón, buscamos siempre la originalidad <b>manteniendo la escencia de la marca</b>.
                                     Cuidamos los detalles en cada proyecto y consideramos que <b>siempre hay una manera diferente y creativa</b> de llevar a cabo las ideas.
                                  </p>
                                  <div class="row">
                                     <div class="col-12 col-lg-6">
                                         <ul class="ef-points">
                                             <li><span class="primary-style">01</span> Arquitectura</li>
-                                            <li><span class="primary-style">02</span> Barrios privados</li>
+                                            <li><span class="primary-style">02</span> Desarrollos</li>
                                         </ul>
                                     </div>
                                     <div class="col-12 col-lg-6">
@@ -263,7 +263,7 @@
                         <div class="project__slider__item bg bg-1">
                             <p>01</p>
                             <div class="project__slider__item__hover">
-                                <a target="_blank" href="https://www.instagram.com/p/CiTNg8qJffA/" class="btn primary-btn btn-center">VER VIDEO</a>
+                                <a target="_blank" onclick="seeExample('arq')" class="btn primary-btn btn-center">VER VIDEO</a>
                                 <span>ARQUITECTURA</span>
                                 <h5>ARQUITECTURA</h5>
                             </div>
@@ -273,9 +273,9 @@
                         <div class="project__slider__item bg bg-3" data-setbg="img/services/product-2.jpg">
                             <p>02</p>
                             <div class="project__slider__item__hover">
-                                <a target="_blank" href="https://www.youtube.com/watch?v=GCE-opUPhmE&list=PLPI7xde4fWo8SEes4fohxIuEtR4O5YZLQ&index=9" class="btn primary-btn btn-center">VER VIDEO</a>
-                                <span>BARRIOS PRIVADOS</span>
-                                <h5>BARRIOS PRIVADOS</h5>
+                                <a target="_blank" onclick="seeExample('devs')"  class="btn primary-btn btn-center">VER VIDEO</a>
+                                <span>DESARROLLOS</span>
+                                <h5>DESARROLLOS</h5>
                             </div>
                         </div>
                     </div>
@@ -283,7 +283,7 @@
                         <div class="project__slider__item bg bg-2" data-setbg="img/services/videoclip-2.jpg">
                             <p>03</p>
                             <div class="project__slider__item__hover">
-                                <a target="_blank" href="https://www.youtube.com/watch?v=nnjRevIhIPI&list=PLPI7xde4fWo8SEes4fohxIuEtR4O5YZLQ&index=2" class="btn primary-btn btn-center">VER VIDEO</a>
+                                <a target="_blank" onclick="seeExample('realestate')" class="btn primary-btn btn-center">VER VIDEO</a>
                                 <span>REAL ESTATE</span>
                                 <h5>REAL ESTATE</h5>
                             </div>
@@ -293,7 +293,7 @@
                         <div class="project__slider__item bg bg-4" data-setbg="img/services/office.jpg">
                             <p>04</p>
                             <div class="project__slider__item__hover">
-                                <a target="_blank" href="https://www.youtube.com/watch?v=a_7vY2Z2BhQ" class="btn primary-btn btn-center">VER VIDEO</a>
+                                <a target="_blank" onclick="seeExample('inst')"  class="btn primary-btn btn-center">VER VIDEO</a>
                                 <!--<a target="_blank" class="btn primary-btn btn-center">PROXIMAMENTE</a>-->
                                 <span>INSTITUCIONALES</span>
                                 <h5>INSTITUCIONALES</h5>
@@ -1653,9 +1653,28 @@
 
 <script>
     const services = [{
+        type: 'arq',
+        name: 'Arquitectura',
+        example: 'https://www.youtube.com/embed/qtWw8xcVfXI?si=NwKOUwVYArA2iISL'
+    },
+    {
+        type: 'realestate',
+        name: 'Real Estate',
+        example: 'https://www.youtube.com/embed/Q8qEFm06XWg?si=7e9DhGKPLN4h8P9H'
+    },
+    {
+        type: 'devs',
+        name: 'Desarrollos',
+        example: 'https://www.youtube.com/embed/8-8TduEK0w4?si=zS5riKLZuXkUHvt5'
+    },
+    {
+        type: 'inst',
+        name: 'Institucionales',
+        example: 'https://www.youtube.com/embed/x7qUqddTovA?si=EWPZuF-kpwUu5x7t'
+    },{
         type: 'video',
         name: 'Video',
-        example: 'https://www.youtube.com/embed/LxVAXA5g9i8'
+        example: 'https://www.youtube.com/embed/Q8qEFm06XWg?si=OZXXmsQMMfDvjKMQ'
     },
     {
         type: 'videoDron',

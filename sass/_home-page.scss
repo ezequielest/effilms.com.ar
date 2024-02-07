@@ -187,12 +187,21 @@
   @include transition(all, 0.5s);
   overflow: hidden;
 
+  a {
+    color: white;
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+
   @media only screen and (max-width: 500px)  {
     bottom: 130px;
     overflow: initial;
 
     a {
       margin-bottom:  0;
+      color: $primary-color;
     }
 
     span {
