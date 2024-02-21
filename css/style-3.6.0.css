@@ -994,12 +994,17 @@ ul li i {
   -o-transition: all, 0.5s;
   transition: all, 0.5s;
   overflow: hidden; }
+  .project__slider__item__hover a {
+    color: white; }
+    .project__slider__item__hover a:hover {
+      color: #c27a0d; }
   @media only screen and (max-width: 500px) {
     .project__slider__item__hover {
       bottom: 130px;
       overflow: initial; }
       .project__slider__item__hover a {
-        margin-bottom: 0; }
+        margin-bottom: 0;
+        color: #c27a0d; }
       .project__slider__item__hover span {
         top: 100px;
         left: 0px !important; }
