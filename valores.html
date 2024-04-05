@@ -123,7 +123,7 @@
       <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <span class="header-title">VALORES VIGENTES DESDE EL <span>1 DE FEBRERO</span> HASTA EL <span>1 DE MARZO</span> 2024</span>
+                <span class="header-title">VALORES VIGENTES DESDE EL <span>1 AL 30</span> DE <span>ABRIL</span> 2024
                 <h6 class="vigencia-details">Las actualizaciones se realizarán mes a mes de acuerdo al nivel inflacionario del país.</h6>
             </div>
         </div>
@@ -874,7 +874,7 @@
         price: 'CONSULTAR',
       }];*/
 
-      arrayTableStandard = [
+   /*   arrayTableStandard = [
       {
         service: 'VIDEO',
         price: '$50.000',
@@ -983,6 +983,126 @@
         types: [{
             service: 'MONTAJE 3D',
             price: '<span class="price-combo">desde</span> $150.000',
+            combo: null
+        }]
+      },{
+        service: 'DRON FPV',
+        types: [{
+            service: 'DRON FPV',
+            price: '<span class="price-combo">CONSULTAR</span>',
+            combo: null
+        }]
+      }];*/
+
+      arrayTableStandard = [
+      {
+        service: 'VIDEO',
+        price: '$67.000',
+        combo: '$51.000'
+      },
+      {
+        service: 'VIDEO + DRON',
+        price: '$87.000',
+        combo: '$70.600'
+      },{
+        service: 'VIDEO + DRON + FOTO',
+        price: '$97.700',
+        combo: '$80.500'
+      }]
+
+      //COSTOS ESTANDAR
+      arrayTableSuperior = [
+      { 
+        service: 'REAL ESTATE',
+        types: [
+        {
+            service: 'DRON',
+            price: '$103.400',
+            combo: '$77.500'
+        },
+        {
+            service: 'VIDEO',
+            price: '$110.000',
+            combo: '$85.000'
+        },
+        {
+            service: 'CONDUCCIÓN',
+            price: '$117.000',
+            combo: '$89.000'
+        },
+        {
+            service: 'VIDEO + DRON',
+            price: '$130.000',
+            combo: '$103.400'
+        },
+        {
+            service: 'CONDUCCIÓN + DRON',
+            price: '$142.000',
+            combo: '$117.000'
+        }
+    ]},{
+        service: 'FOTOGRAFÍA',
+        types: [{
+            service: '25 fotos',
+            price: '$52.000',
+            combo: '$40.000'
+        },{
+            service: '40 fotos',
+            price: '$63.000',
+            combo: '$52.000'
+        },{
+            service: 'HDR 25 fotos',
+            price: '$63.000',
+            combo: '$52.000'
+        },{
+            service: 'HDR 40 fotos',
+            price: '$72.000',
+            combo: '$63.000'
+        }]
+    },
+    {
+        service: 'INSTITUCIONALES',
+        types: [{
+            service: 'EDIFICIO',
+            price: '<span class="price-combo">desde</span> $144.000',
+            combo: null
+        },{
+            service: 'BARRIO PRIVADO',
+            price: '<span class="price-combo">desde</span> $172.000',
+            combo: null
+        },{
+            service: 'CAMPOS',
+            price: '<span class="price-combo">desde</span> $172.000',
+            combo: null
+        },{
+            service: 'EMPRESA',
+            price: '<span class="price-combo">desde</span> $144.000',
+            combo: null
+        }]
+      },{
+        service: 'COBERTURA EVENTOS',
+        types: [{
+            service: 'FOTÓGRAFO',
+            price: '$42.000 <span class="price-combo">hora</span>',
+            combo: null
+        },{
+            service: 'VIDEO',
+            price: '$46.000 <span class="price-combo">hora</span>',
+            combo: null
+        },{
+            service: 'VIDEO + DRON',
+            price: '$65.000 <span class="price-combo">hora</span>',
+            combo: null
+        },{
+            service: 'VIDEO + DRON + FOTOGRAFÍA',
+            price: '$92.000 <span class="price-combo">hora</span>',
+            combo: null
+        }]
+      },{
+        service: '3D',
+        types: [{
+            service: 'MONTAJE 3D',
+            price: '<span class="price-combo">desde</span> $172.000',
             combo: null
         }]
       },{
