@@ -7,6 +7,10 @@
   background-color: $background-2;
   overflow: hidden;
 
+  &.alojamientos {
+    background-color: $bg-alojamiento-primary;
+  }
+
   &.ef-films {
     padding-bottom: 140px;
     padding-top: 180px;

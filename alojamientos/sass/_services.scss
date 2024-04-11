@@ -1,0 +1,487 @@
+/*---------------------
+  Services
+-----------------------*/
+.services {
+  padding-top: 120px;
+  padding-bottom: 90px;
+  background-color: $background-2;
+  overflow: hidden;
+
+  &.alojamientos {
+    background-color: $bg-alojamiento-primary;
+  }
+
+  &.ef-films {
+    padding-bottom: 140px;
+    padding-top: 180px;
+
+    .justify {
+      margin-bottom: 20px;
+    }
+  }
+
+  @media only screen and (max-width: 420px) {
+    h4 {
+      font-size: 16px;
+    }
+  }
+
+  &.services-page {
+    padding-bottom: 80px;
+
+    .services__item {
+      margin-bottom: 30px;
+
+      span.commin-soon {
+        color: $primary-color;
+      }
+
+      p {
+        margin-bottom: 12px;
+      }
+
+
+      ul {
+
+        li {
+          color: $heading-color;
+          font-size: 15px;
+          line-height: 36px;
+          list-style: none;
+        }
+      }
+    }
+  }
+}
+
+.services__item {
+  margin-bottom: 30px;
+
+  i {
+    color: white;
+    font-size: 35px;
+    color: $secondary-color;
+  }
+
+  ul {
+    i {
+      font-size: 15px;
+      color: white;
+    }
+  }
+
+  h4 {
+    color: $heading-color;
+    text-transform: uppercase;
+    margin-top: 35px;
+    margin-bottom: 22px;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+
+  button {
+    margin-top: 18px;
+  }
+}
+
+/*---------------------
+  Counter
+-----------------------*/
+.counter {
+  padding-bottom: 70px;
+  padding-top: 70px;
+
+
+  .counter__content {
+    border: none;
+    padding-top: 0;
+    margin-top: 0;
+  }
+
+  .counter__item {
+    display: flex;
+    justify-content: center;
+
+    .counter__item__text {
+
+      h5 {
+        color: $white-color;
+      }
+    }
+  }
+}
+
+.counter__content {
+  //border-top: 1px solid rgba(183, 183, 183, 0.2);
+  //padding-top: 70px;
+  //margin-top: 40px;
+}
+
+.counter__item {
+  margin-bottom: 30px;
+}
+
+.counter__item__number {
+  float: left;
+  margin-right: 28px;
+
+  h2 {
+    color: $primary-color;
+    font-size: 60px;
+    line-height: 52px;
+  }
+}
+
+.counter__item__text {
+  overflow: hidden;
+
+  h5 {
+    color: $heading-color;
+    line-height: 24px;
+    text-transform: uppercase;
+  }
+}
+
+.ef-points {
+  list-style: none;
+
+  li {
+    color: white;
+    font-weight: 600;
+  }
+}
+
+/*---------------------
+  Clients
+-----------------------*/
+.clients {
+  padding-top: 120px;
+  padding-bottom: 60px;
+  background-color: #050505;
+
+  .section-title {
+   margin-bottom: 20px;
+  }
+
+  .section-title.first {
+   margin-bottom: 80px;
+  }
+
+  .client-type{
+    margin-bottom: 80px;
+    .logos-client-container {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+
+      .logo-client-container {
+        display: flex;
+        align-items: center;
+
+        a {
+            display: block;
+            padding: 20px 30px;
+
+            img {
+              max-width: 180px;
+
+              &.moire {
+                filter: invert(0.5);
+                  max-width: 140px;
+              }
+              &.malov {
+                filter: invert(0);
+              }
+              &.itaim {
+                filter: invert(0.5);
+              }
+              &.sol-de-abril  {
+                width: 80px !important;
+                filter: invert(0.5);
+              }
+              &.afianza {
+                filter: invert(0.5);
+                max-width: 100px;
+              }
+              &.bonjo {
+                filter: invert(1);
+              }
+              &.cuarzo {
+                filter: invert(0.5);
+              }
+              &.hledesma {
+                filter: invert(0.7);
+              }
+              &.bianchi {
+                filter: invert(0.8);
+                  max-width: 140px;
+              }
+              &.girard {
+                filter: invert(0);
+              }
+              &.beber {
+                filter: invert(0.5);
+              }
+              &.lorini {
+                filter: invert(0.5);
+              }
+              &.espatolero {
+                filter: invert(0.8);
+              }
+              &.pernice {
+                filter: invert(0.5);
+                max-width: 140px;
+              }
+              &.gomez {
+                filter: invert(0.5);
+              }
+              &.silvina {
+                filter: invert(0.5);
+                  max-width: 130px;
+              }
+              &.cerone {
+                filter: invert(0.5);
+                  max-width: 120px;
+              }
+              &.cer {
+                filter: invert(1);
+                  max-width: 150px;
+              }
+              &.avanty {
+                filter: invert(0.5);
+                max-width: 100px;
+              }
+              &.gm {
+                filter: invert(0.5);
+                max-width: 200px;
+              }
+              &.vyne {
+                filter: invert(0.5);
+                max-width: 150px;
+              }
+
+            }
+        }
+      }
+    }
+  }
+}
+
+
+//EF HOME
+/*.services.ef-home {
+  position: relative;
+  overflow: initial;
+
+  .vertical {
+    position: absolute;
+    color: #0c0c0c;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-size: 22rem;
+    font-weight: 500;
+    left: -105px;
+    top: 380px;
+
+    @media screen and (max-width: 430px) {
+      display: none;
+    }
+
+    .dot-background {
+      color: #200909;
+    }
+  }
+
+  .services__details {
+
+    .services__item {
+      h1 {
+        color: white !important;
+      }
+    }
+  }
+
+  .project__slider--ef-home {
+    margin-top: 10px;
+
+    .owl-prev, .owl-nav .owl-next  {
+      color: white !important;
+    }
+
+    &.ef-home {
+      position: relative;
+      .item:hover {
+        .primary-style {
+          font-size: 6rem;
+          transition: font-size 0.5s;
+
+          @media screen and (max-width: 380px){
+            font-size: 3rem;
+          }
+        }
+      }
+
+      .primary-style {
+        position: absolute;
+        top: 450px;
+        left: 20px;
+        font-size: 5rem;
+        transition: font-size 0.3s;
+
+        @media screen and (max-width: 380px){
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+}*/
+
+
+//SERVICES EF FILMS
+.services.ef-films, .values {
+  position: relative;
+
+  .services__item {
+    h1 {
+      color: white;
+      align-items: start;
+    }
+  }
+
+  .vertical {
+    /*NO VERTICAL*/
+    position: absolute;
+    color: #141414;
+    font-size: 38rem;
+    font-weight: 600;
+    left: 1173px;
+    top: 80px;
+
+    .dot-background {
+      color: #200909;
+    }
+  }
+
+    @media only screen and (max-width: 2000px) {
+      .vertical {
+        left: 982px;
+      }
+    }
+
+
+    @media only screen and (max-width: 1600px) {
+      .vertical {
+        left: 752px;
+      }
+    }
+
+    @media only screen and (max-width: 1200px) {
+      .vertical {
+        left: 452px;
+      }
+    }
+
+    @media only screen and (max-width: 767px) {
+      .vertical {
+        left: 252px;
+        font-size: 25rem;
+        top: 600px;
+      }
+    }
+
+    @media only screen and (max-width: 320px) {
+      .vertical {
+        left: -20px;
+        top: 1040px;
+        font-size: 16rem;
+      }
+    }
+}
+
+
+ .ef-services {
+   padding: 120px 0;
+
+    &__container {
+      justify-content: center;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &__card {
+      width:33%;
+      min-height: 250px;
+      background-color: #111;
+      color: #ccc;
+      display: flex;
+      justify-content:center;
+      align-items: center;
+      position: relative;
+
+      a {
+        cursor: pointer;
+      }
+
+      &:nth-child(1) {
+        background-color: #111;
+      }
+
+      &:nth-child(2) {
+        background-color: #222;
+      }
+
+      &:nth-child(3) {
+        background-color: #333;
+      }
+
+      &:nth-child(4) {
+        background-color: #444;
+      }
+
+      &:nth-child(5) {
+        background-color: #111;
+      }
+
+      &:nth-child(6) {
+        background-color: #222;
+      }
+
+      .commin-soon {
+        position: absolute;
+        top: 5px;
+        right: 10px;
+        color: $primary-color;
+      }
+
+      a {
+        color: white;
+        font-weight: bold;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.3s ease;
+
+        &:hover  {
+          transition: all 0.3s ease;
+          color: white;
+          background-color: $secondary-color;
+        }
+
+      }
+
+
+      @media only screen and (max-width: 520px) {
+        width: 50%;
+        font-size: 12px;
+        min-height: 150px;
+            text-align: center;
+      }
+
+    }
+ }

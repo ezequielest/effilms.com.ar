@@ -1942,6 +1942,8 @@ ul li i {
   padding-bottom: 90px;
   background-color: #060606;
   overflow: hidden; }
+  .services.alojamientos {
+    background-color: #fafafa; }
   .services.ef-films {
     padding-bottom: 140px;
     padding-top: 180px; }
