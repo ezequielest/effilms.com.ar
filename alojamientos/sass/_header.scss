@@ -36,7 +36,7 @@
     font-size: 1.5rem;
 
     .dot {
-        color: red;
+        color: $primary-color;
         -webkit-animation: rec 1s infinite;;
         animation: rec 1s infinite;
         font-size: 3rem;

@@ -4,12 +4,8 @@
 .services {
   padding-top: 120px;
   padding-bottom: 90px;
-  background-color: $background-2;
+  background-color: $bg-alojamiento-primary;
   overflow: hidden;
-
-  &.alojamientos {
-    background-color: $bg-alojamiento-primary;
-  }
 
   &.ef-films {
     padding-bottom: 140px;
@@ -355,7 +351,7 @@
   .vertical {
     /*NO VERTICAL*/
     position: absolute;
-    color: #141414;
+    color: $primary-color-ultradark;
     font-size: 38rem;
     font-weight: 600;
     left: 1173px;
@@ -470,7 +466,7 @@
         &:hover  {
           transition: all 0.3s ease;
           color: white;
-          background-color: $secondary-color;
+          background-color: $primary-color;
         }
 
       }

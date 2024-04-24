@@ -135,7 +135,7 @@ header .selection-buttons  {
   }
     .vertical {
         position: absolute;
-        color: #141414;
+        color: $primary-color-ultradark;
         writing-mode: vertical-rl;
         transform: rotate(180deg);
         font-size: 22rem;

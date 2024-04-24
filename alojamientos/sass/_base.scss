@@ -246,20 +246,12 @@ ul li i {
   background-color: grey;
 
   &.films {
-    background-color: $ef-films-color;
-  }
-
-  &.home {
-    background-color: $ef-home-color;
+    background-color: $primary-color;
   }
 }
 
 .ef-films-color {
- color: $ef-films-color !important;
-}
-
-.ef-home-color {
-  color: $ef-home-color !important;
+ color: $primary-color !important;
 }
 
 .justify {

@@ -38,7 +38,7 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="css/slick.css" type="text/css">
-    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
     <link rel="shortcut icon" href="/favicon.png" type='image/png' />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
@@ -110,7 +110,7 @@
     <section class="landing" id="landing">
         <div class="overlay"></div>
         <video loop="" muted="" autoplay="" id="video_background" preload="auto" volume="50">
-            <source src="./videos/background-web.m4v" type="video/mp4">
+            <source src="./videos/alojamientos_home_low.mp4" type="video/mp4">
         </video>
 
         <video playsinline loop="" muted="" autoplay="" id="video_background-mobile" style="display:none" preload="auto" volume="50">
@@ -125,7 +125,7 @@
                             <!--<h1 class="words">EF <span class="dot">.</span> FILMS</h1>-->
                             <!--<h2>Luz, camara, epic shoot</h2>-->
                             <!--<h6>Llevamos tus <strong>ideas</strong> al <strong>siguiente nivel</strong></h6>-->
-                            <h5>LLEVÁ TU IMAGEN</h5>
+                            <h5>LLEVÁ TU  <b>ALOJAMIENTO</b></h5>
                             <h3>AL SIGUIENTE NIVEL</h3>
                             <!--<a href="#" class="primary-btn">CONTACTANOS</a>-->
                         </div>
@@ -220,7 +220,7 @@
                         </div>
                         <div class="col-12 col-md-6">
                             <div class="services__item">
-                                <iframe width="100%" height="315" src="https://www.youtube.com/embed/2ezasH5vDJI?si=_hR3737PAN7h-fXH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <iframe width="100%" height="315" src="https://www.youtube.com/embed/ez_eWMHIoNM?si=TzYYJGsBCB8Urr97" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                 <!---->
                                 <!--<iframe width="100%" height="315" src="https://www.youtube.com/embed/KLUrfAsGPt4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
                             </div>
@@ -259,7 +259,7 @@
                         <div class="project__slider__item bg bg-1">
                             <p>01</p>
                             <div class="project__slider__item__hover">
-                                <a target="_blank" onclick="seeExample('arq')" class="btn primary-btn btn-center">VER VIDEO</a>
+                                <a target="_blank" onclick="seeExample('hoteles')" class="btn primary-btn btn-center">VER VIDEO</a>
                                 <span>HOTELES</span>
                                 <h5>HOTELES</h5>
                             </div>
@@ -269,7 +269,8 @@
                         <div class="project__slider__item bg bg-3" data-setbg="img/services/product-2.jpg">
                             <p>02</p>
                             <div class="project__slider__item__hover">
-                                <a target="_blank" onclick="seeExample('devs')"  class="btn primary-btn btn-center">VER VIDEO</a>
+                                <!--onclick="seeExample('cabanas')"-->
+                                <a target="_blank" class="btn primary-btn btn-center">PRÓXIMAMENTE</a>
                                 <span>CABAÑAS</span>
                                 <h5>CABAÑAS</h5>
                             </div>
@@ -279,7 +280,8 @@
                         <div class="project__slider__item bg bg-2" data-setbg="img/services/videoclip-2.jpg">
                             <p>03</p>
                             <div class="project__slider__item__hover">
-                                <a target="_blank" onclick="seeExample('realestate')" class="btn primary-btn btn-center">VER VIDEO</a>
+                                <!--onclick="seeExample('resort')"-->
+                                <a target="_blank" class="btn primary-btn btn-center">PRÓXIMAMENTE</a>
                                 <span>RESORT</span>
                                 <h5>RESORT</h5>
                             </div>
@@ -1117,7 +1119,7 @@
     <!-- Testimonial Section End -->
 
     <!-- Call To Action Section Begin -->
-    <section id="valores" class="callto spad set-bg" data-setbg="img/djimardel2.JPG">
+    <section id="valores" class="callto spad set-bg" data-setbg="img/cancun.jpg">
         <div class="overlay"></div>
         <div class="container">
             <div class="row d-flex justify-content-center">
@@ -1630,13 +1632,18 @@
 
 <script>
     const services = [{
-        type: 'arq',
-        name: 'Arquitectura',
-        example: 'https://www.youtube.com/embed/qtWw8xcVfXI?si=NwKOUwVYArA2iISL'
+        type: 'hoteles',
+        name: 'Hoteles',
+        example: 'https://www.youtube.com/embed/ez_eWMHIoNM?si=TzYYJGsBCB8Urr97'
     },
     {
-        type: 'realestate',
-        name: 'Real Estate',
+        type: 'cabanas',
+        name: 'Cabañas',
+        example: 'https://www.youtube.com/embed/Q8qEFm06XWg?si=7e9DhGKPLN4h8P9H'
+    },    
+    {
+        type: 'resort',
+        name: 'Resort',
         example: 'https://www.youtube.com/embed/Q8qEFm06XWg?si=7e9DhGKPLN4h8P9H'
     },
     {

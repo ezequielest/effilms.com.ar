@@ -19,7 +19,7 @@
     .overlay {
       height: 100%;
       width: 100%;
-      background-color: rgba(0, 0, 0, 0.3);
+      background-color: #0062521e;
     }
   }
 }
@@ -36,7 +36,7 @@
   }
 
   &.bg-1 {
-    background-image: url('/img/services/hotel-1.');
+    background-image: url('/img/services/hotel-1.jpeg');
     background-position: 40%;
   }
 
@@ -247,7 +247,7 @@
 
   .vertical {
     position: absolute;
-    color: #141414;
+    color: $primary-color;
     writing-mode: vertical-rl;
     transform: rotate(180deg);
     font-size: 22rem;
@@ -271,7 +271,7 @@
     }
 
     .dot-background {
-      color: #200909;
+      color: $primary-color;
     }
   }
 
@@ -744,7 +744,7 @@
     width: 100%;
     height: 100%;
     top: 0;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: #002720ab;
   }
 }
 

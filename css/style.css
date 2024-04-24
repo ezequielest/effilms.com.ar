@@ -908,7 +908,7 @@ ul li i {
     transition: all .5s;
     background-size: cover; }
   .project__slider__item.bg-1 {
-    background-image: url("/img/services/ARQ-1.png");
+    background-image: url("./img/services/hotel-1.jpeg");
     background-position: 40%; }
   .project__slider__item.bg-2 {
     background-image: url("/img/services/realestate.png");
