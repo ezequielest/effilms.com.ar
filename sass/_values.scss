@@ -49,6 +49,7 @@ header .selection-buttons  {
     padding: 50px 0px;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
 
     @media (max-width: 660px) {
@@ -66,17 +67,30 @@ header .selection-buttons  {
         padding: 10px 20px;
         color: white;
         margin-right: 10px;
+        margin-bottom: 12px;
     }
   }}
 
   .title {
+      margin-bottom: 12px;
       color: white;
-      margin-bottom: 25px;
 
       span {
         color: $primary-color;
+        font-size: 16px;
       }
     }
+
+  .sub-title {
+    color: white;
+    font-size: 22px;
+    margin-bottom: 35px;
+
+    span {
+      color: $primary-color;
+      font-size: 12px;
+    }
+  }
 
   .unidad {
     color: white;
@@ -222,3 +236,174 @@ header .selection-buttons  {
       }
 
 }
+
+.card-container{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card-value {
+  width: 320px;
+  height: 400px;
+  margin-right: 10px;
+  margin-bottom: 12px;
+  background-color: rgb(20, 20, 20);
+  color: white;
+
+  .btn.primary-btn {
+    padding: 16px 42px;
+  }
+
+  .header-card {
+    max-height: 110px;
+    overflow: hidden;
+    position: relative;
+
+    .image-container {
+      height: 90px;
+      
+      &.gopro{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.796), rgba(0, 0, 0, 0.805)),
+        url("/img/services/gopro.jpeg");
+        background-size: cover;
+      }
+
+      &.profesional {
+        background-image: linear-gradient(rgba(2, 2, 26, 0.072), rgba(28, 28, 28, 0.288)),
+                  url("/img/services/gopro.jpeg");
+      }
+
+      .title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        color: white;
+        font-weight: bold;
+        font-size: 22px;
+        margin-bottom: 14px;
+      }
+     
+    }
+  }
+
+  .content{
+    height: 300px;
+    padding: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .subtitle {
+      color: white;
+      font-size: 16px;
+    }
+
+    .prices {
+      display: flex;
+      justify-content: space-between;
+
+      .border-right {
+        border-right: 1px solid rgb(70, 70, 70) !important;
+        padding-right: 10px;
+      }
+      
+      .normal {
+        color: $primary-color;
+        font-weight: bold;
+        font-size: 22px;
+
+        span {
+          font-size: 14px;
+          color: white;
+        }
+      }
+
+      hr {
+        border: 1px solid rgb(35, 35, 35);
+      }
+
+      .combo {
+        span {
+          color: white;
+          font-size: 12px;
+        }
+        color: $primary-color;
+        font-weight: bold;
+        font-size: 16px;
+      }
+    }
+  }
+  
+}
+.photos .owl-nav {
+  color: white;
+  position: absolute;
+  bottom: 0px;
+  left: 54px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.owl-carousel .owl-stage {
+  margin: 0 auto !important;
+}
+
+.owl-prev, .owl-next {
+  font-size: 50px !important;
+}
+
+.owl-prev {
+  position: relative;
+  right: 30px;
+}
+
+.owl-next{
+  position: relative;
+  left: 30px;
+}
+
+.photo-slider {
+  max-height: 500px;
+}
+
+.disclamers {
+  text-align: center;
+}
+
+.no-default-service {
+  padding-top: 82px;
+}
+
+.link {
+  color: #e1c52f !important;
+  cursor: pointer;
+  padding: 12px 0;
+  font-weight: bold;
+
+  &:hover {
+    color: $secondary-color;
+  }
+}
+
+
+
+.ask-price {
+  padding: 5px;
+  background-color: white;
+  color: $primary-color;
+}
+
+.modal-header {
+  column-fill: balance;
+    background: #161616;
+    border: 0;
+    border-radius: 0;
+
+    .close {
+      color: white !important;
+    }
+}
+

@@ -205,7 +205,10 @@ ul li i {
   font-weight: 700;
   padding: 16px 50px;
   color: #ffffff;
-  position: relative; }
+  position: relative;
+  outline: none; }
+  .primary-btn:focus {
+    box-shadow: none; }
   .primary-btn:hover {
     color: #c27a0d; }
   .primary-btn.normal-btn {
@@ -444,7 +447,8 @@ ul li i {
     z-index: 999; }
     .header.fixed .header__logo {
       position: relative;
-      top: -25px; }
+      top: -25px;
+      color: white; }
 
 .header__logo {
   color: white;
@@ -455,7 +459,8 @@ ul li i {
     animation: rec 1s infinite;
     font-size: 3rem; }
   .header__logo a {
-    display: inline-block; }
+    display: inline-block;
+    color: white; }
   @media (max-width: 426px) {
     .header__logo {
       font-size: 1rem; } }
@@ -908,7 +913,7 @@ ul li i {
     transition: all .5s;
     background-size: cover; }
   .project__slider__item.bg-1 {
-    background-image: url("./img/services/hotel-1.jpeg");
+    background-image: url("/img/services/arq.jpg");
     background-position: 40%; }
   .project__slider__item.bg-2 {
     background-image: url("/img/services/realestate.png");
@@ -917,7 +922,7 @@ ul li i {
     background-image: url("/img/services/barrios.jpg");
     background-position: 20%; }
   .project__slider__item.bg-4 {
-    background-image: url("/img/services/INSTITUCIONAL.png");
+    background-image: url("/img/services/resort.jpeg");
     background-position-x: center; }
   .project__slider__item::after {
     display: block;
@@ -1709,8 +1714,8 @@ ul li i {
   Breadcrumb
 -----------------------*/
 .breadcrumb-option {
-  padding-top: 170px;
-  padding-bottom: 120px; }
+  padding-top: 140px;
+  padding-bottom: 90px; }
 
 .breadcrumb__text h2 {
   font-size: 42px;
@@ -2292,6 +2297,7 @@ header .selection-buttons {
     padding: 50px 0px;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     align-items: center; }
     @media (max-width: 660px) {
       .values .selection .selection-buttons {
@@ -2304,13 +2310,23 @@ header .selection-buttons {
       min-width: 200px;
       padding: 10px 20px;
       color: white;
-      margin-right: 10px; }
+      margin-right: 10px;
+      margin-bottom: 12px; }
 
 .values .title {
-  color: white;
-  margin-bottom: 25px; }
+  margin-bottom: 12px;
+  color: white; }
   .values .title span {
-    color: #c27a0d; }
+    color: #c27a0d;
+    font-size: 16px; }
+
+.values .sub-title {
+  color: white;
+  font-size: 22px;
+  margin-bottom: 35px; }
+  .values .sub-title span {
+    color: #c27a0d;
+    font-size: 12px; }
 
 .values .unidad {
   color: white; }
@@ -2413,6 +2429,125 @@ header .selection-buttons {
   .values ul li {
     color: white;
     list-style: none; }
+
+.card-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+.card-value {
+  width: 320px;
+  height: 400px;
+  margin-right: 10px;
+  margin-bottom: 12px;
+  background-color: #141414;
+  color: white; }
+  .card-value .btn.primary-btn {
+    padding: 16px 42px; }
+  .card-value .header-card {
+    max-height: 110px;
+    overflow: hidden;
+    position: relative; }
+    .card-value .header-card .image-container {
+      height: 90px; }
+      .card-value .header-card .image-container.gopro {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.796), rgba(0, 0, 0, 0.805)), url("/img/services/gopro.jpeg");
+        background-size: cover; }
+      .card-value .header-card .image-container.profesional {
+        background-image: linear-gradient(rgba(2, 2, 26, 0.072), rgba(28, 28, 28, 0.288)), url("/img/services/gopro.jpeg"); }
+      .card-value .header-card .image-container .title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        color: white;
+        font-weight: bold;
+        font-size: 22px;
+        margin-bottom: 14px; }
+  .card-value .content {
+    height: 300px;
+    padding: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+    .card-value .content .subtitle {
+      color: white;
+      font-size: 16px; }
+    .card-value .content .prices {
+      display: flex;
+      justify-content: space-between; }
+      .card-value .content .prices .border-right {
+        border-right: 1px solid #464646 !important;
+        padding-right: 10px; }
+      .card-value .content .prices .normal {
+        color: #c27a0d;
+        font-weight: bold;
+        font-size: 22px; }
+        .card-value .content .prices .normal span {
+          font-size: 14px;
+          color: white; }
+      .card-value .content .prices hr {
+        border: 1px solid #232323; }
+      .card-value .content .prices .combo {
+        color: #c27a0d;
+        font-weight: bold;
+        font-size: 16px; }
+        .card-value .content .prices .combo span {
+          color: white;
+          font-size: 12px; }
+
+.photos .owl-nav {
+  color: white;
+  position: absolute;
+  bottom: 0px;
+  left: 54px;
+  display: flex;
+  justify-content: space-between; }
+
+.owl-carousel .owl-stage {
+  margin: 0 auto !important; }
+
+.owl-prev, .owl-next {
+  font-size: 50px !important; }
+
+.owl-prev {
+  position: relative;
+  right: 30px; }
+
+.owl-next {
+  position: relative;
+  left: 30px; }
+
+.photo-slider {
+  max-height: 500px; }
+
+.disclamers {
+  text-align: center; }
+
+.no-default-service {
+  padding-top: 82px; }
+
+.link {
+  color: #e1c52f !important;
+  cursor: pointer;
+  padding: 12px 0;
+  font-weight: bold; }
+  .link:hover {
+    color: #a99561; }
+
+.ask-price {
+  padding: 5px;
+  background-color: white;
+  color: #c27a0d; }
+
+.modal-header {
+  column-fill: balance;
+  background: #161616;
+  border: 0;
+  border-radius: 0; }
+  .modal-header .close {
+    color: white !important; }
 
 /*---------------------
     Blog

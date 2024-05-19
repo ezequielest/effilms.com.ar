@@ -27,6 +27,7 @@
         .header__logo{
             position: relative;
             top: -25px;
+            color: white;
         }
     }
 }
@@ -44,6 +45,7 @@
 
     a {
         display: inline-block;
+        color: white;
     }
 
     @media (max-width: 426px) {

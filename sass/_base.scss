@@ -169,6 +169,11 @@ ul li i {
   padding: 16px 50px;
   color: $white-color;
   position: relative;
+  outline: none;
+
+  &:focus {
+    box-shadow: none;
+  }
 
   &:hover {
     color: $primary-color;
