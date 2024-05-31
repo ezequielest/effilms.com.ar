@@ -36,22 +36,23 @@
   }
 
   &.bg-1 {
-    background-image: url('/img/services/hotel-1.jpeg');
+    background-image: url('./../img/services/hotel-1.jpg');
     background-position: 40%;
   }
 
   &.bg-2 {
-    background-image: url('/img/services/hotel-3.jpeg');
+    background-image: url('./../img/services/hotel-4.jpg');
     background-position-x: center;
+    background-position: 10%;
   }
 
   &.bg-3 {
-    background-image: url('/img/services/resort-1.jpeg');
+    background-image: url('./../img/services/resort-1.jpg');
     background-position: 20%;
   }
   
   &.bg-4 {
-    background-image: url('/img/services/INSTITUCIONAL.png');
+    background-image: url('./../img/services/INSTITUCIONAL.png');
     background-position-x: center;
   }
 

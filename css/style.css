@@ -559,6 +559,9 @@ ul li i {
 .hide {
   display: none; }
 
+.alojamientos-text {
+  color: #04ae91 !important; }
+
 /*---------------------
   Hero
 -----------------------*/
@@ -914,15 +917,15 @@ ul li i {
     background-size: cover; }
   .project__slider__item.bg-1 {
     background-image: url("/img/services/arq.jpg");
-    background-position: 40%; }
+    background-position: 55%; }
   .project__slider__item.bg-2 {
-    background-image: url("/img/services/realestate.png");
+    background-image: url("/img/services/realestate-2.jpg");
     background-position-x: center; }
   .project__slider__item.bg-3 {
-    background-image: url("/img/services/barrios.jpg");
+    background-image: url("/img/services/desarrollos.jpg");
     background-position: 20%; }
   .project__slider__item.bg-4 {
-    background-image: url("/img/services/resort.jpeg");
+    background-image: url("/img/services/hotel-4.jpg");
     background-position-x: center; }
   .project__slider__item::after {
     display: block;
