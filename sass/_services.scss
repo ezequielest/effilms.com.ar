@@ -216,6 +216,15 @@
               &.hledesma {
                 filter: invert(0.7);
               }
+              &.dg {
+                filter: brightness(0.5);
+              }
+              &.rocio {
+                filter: brightness(0.6);
+              }
+              &.zonaprop {
+                filter: brightness(0.8);
+              }
               &.bianchi {
                 filter: invert(0.8);
                   max-width: 140px;
@@ -263,7 +272,16 @@
                 filter: invert(0.5);
                 max-width: 150px;
               }
-
+              &.certiat {
+                filter: invert(0.5);
+                max-width: 120px;
+              }
+              &.jorgensen {
+                filter: invert(0.5);
+              }
+              &.lams {
+                filter: invert(0.5);
+              }
             }
         }
       }
