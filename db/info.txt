@@ -1,0 +1,8 @@
+¡Tu base de datos "effilms" ha sido creada!
+
+Tu nombre de host "--hostname --.-- hostdomain--" se configurará en unos 5-10 minutos.
+Siempre DEBES usar tu hostname para conectarte a tu base de datos ... "localhost" NO FUNCIONARÁ.
+
+Conéctate a tu nueva base de datos desde la línea de comando con:
+mysql -u effilms -p -h mysql.effilms.com.ar effilms
+También puedes ir a http://mysql.effilms.com.ar/ para administrar tu base de datos MySQL desde la web (una vez que el nombre de host está configurado, por supuesto).

@@ -2,8 +2,50 @@
   Contact
 -----------------------*/
 .contact {
-  padding-top: 120px;
-  padding-bottom: 120px;
+
+  .header-title {
+      color: white;
+      text-align: center;
+      display: block;
+  }
+
+  .contact-page.title {
+    padding-top: 140px;
+
+    @media (max-width: 660px) {
+      padding-top: 100px;
+    }
+  }
+}
+
+.selection-buttons {
+  padding: 60px 0 120px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  .btn-value {
+    margin-bottom: 10px;
+  }
+  
+  @media (max-width: 660px) {
+    flex-direction: column;
+    padding: 20px 0 80px 0;
+
+      .btn-value {
+        margin-bottom: 10px;
+      }
+  }
+
+  .btn-value {
+      text-align: center;
+      background: $primary-color;
+      min-width: 200px;
+      padding: 10px 20px;
+      color: white;
+      margin-right: 10px;
+  }
 }
 
 .contact__text {
@@ -116,5 +158,13 @@
         color: #b7b7b7;
       }
     }
+  }
+}
+
+.mobile-menu {
+
+  .btn-value {
+    color: $primary-color;
+    margin-right: 8px;
   }
 }

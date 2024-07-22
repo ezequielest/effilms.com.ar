@@ -1,9 +1,33 @@
 /*---------------------
   Contact
 -----------------------*/
-.contact {
+.contacto {
   padding-top: 120px;
   padding-bottom: 120px;
+}
+
+.test-buttons {
+  padding: 50px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: 660px) {
+    flex-direction: column;
+
+      .btn-value {
+        margin-bottom: 10px;
+      }
+  }
+
+  .btn-value {
+      text-align: center;
+      background: $primary-color;
+      min-width: 200px;
+      padding: 10px 20px;
+      color: white;
+      margin-right: 10px;
+  }
 }
 
 .contact__text {
