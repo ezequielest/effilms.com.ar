@@ -36,13 +36,38 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="css/slick.css" type="text/css">
-    <link rel="stylesheet" href="css/style-3.8.2.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="shortcut icon" href="/favicon.png" type='image/png' />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
       rel="stylesheet"
     />
+
+    <style>
+        #premium {
+            position: relative;
+            overflow: hidden;
+        }
+        #premium .overlay {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            z-index: 999;
+            background: #212529c2;
+        }
+
+        #premium .video-cine {
+            position: absolute;
+            height: 100%;
+        }
+
+        #premium .container {
+            position: relative !important;
+            z-index: 9999 !important;
+        }
+        
+    </style>
 </head>
 
 <body>
@@ -184,6 +209,24 @@
         </div>
     </section>
 
+    <section id="premium" class="values-page spad table-price bg-gray-2">
+        <div class="overlay"></div>
+        <video loop="true" muted="" autoplay="" class="video-cine" preload="auto" volume="0">
+            <source src="./videos/cine.mp4" type="video/mp4">
+        </video>
+        <div class="container">
+            <div class="row">
+              <div class="col-lg-12 text-center">
+                <h2 class="title">CINE</h2>
+                <h4 class="sub-title">Ralizamos cine</h4>
+              </div>
+            </div>
+            <div class="row">
+                <div id="cine-carousel" class="card-container"></div>
+            </div>
+        </div>
+    </section>
+
     <section id="custom" class="values-page spad table-price bg-gray-2">
         <div class="container">
             <div class="row">
@@ -198,7 +241,7 @@
         </div>
     </section>
 
-    <section class="bg-gray-2 no-default-service">
+    <section class="bg-gray-2 spad no-default-service">
     <div class="container">
         <div class="row">
             <div class="col-12">
@@ -891,6 +934,23 @@
 
       othersServiceArray = [];
 
+      cineArray = [
+      {
+        service: 'CINE',        
+        description: '',
+        timeProd: '',
+        timeDelivery: '',
+        video: null,
+        price: null,
+        promo: null,
+        price4k: null,
+        promo4k: null,
+        add: null,
+        isPromo: false,
+        isNew: false,
+        isVideo: true
+      }];
+
       combosArray = [
       {
         service: 'VIDEO GO PRO',        
@@ -1025,6 +1085,7 @@
 
       createCarousel(standardArray,'standard-carousel');
       createCarousel(premiumArray,'premium-carousel');
+      createCarousel(cineArray,'cine-carousel');
       createCarousel(customArray,'custom-carousel');
   </script>
 

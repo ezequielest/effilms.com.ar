@@ -12,6 +12,10 @@ header .selection-buttons  {
   .table-price {
     padding-bottom: 40px;
 
+    .video-cine {
+      position: absolute;
+    }
+
     th span {
       font-size: 12px;
       color: $primary-color;
