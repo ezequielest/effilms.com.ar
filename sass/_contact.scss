@@ -16,35 +16,35 @@
       padding-top: 100px;
     }
   }
-}
 
-.selection-buttons {
-  padding: 60px 0 120px 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-
-  .btn-value {
-    margin-bottom: 10px;
-  }
+  .selection-buttons {
+    padding: 60px 0 120px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
   
-  @media (max-width: 660px) {
-    flex-direction: column;
-    padding: 20px 0 80px 0;
-
-      .btn-value {
-        margin-bottom: 10px;
-      }
-  }
-
-  .btn-value {
-      text-align: center;
-      background: $primary-color;
-      min-width: 200px;
-      padding: 10px 20px;
-      color: white;
-      margin-right: 10px;
+    .btn-value {
+      margin-bottom: 10px;
+    }
+    
+    @media (max-width: 660px) {
+      flex-direction: column;
+      padding: 20px 0 80px 0;
+  
+        .btn-value {
+          margin-bottom: 10px;
+        }
+    }
+  
+    .btn-value {
+        text-align: center;
+        background: $primary-color;
+        min-width: 200px;
+        padding: 10px 20px;
+        color: white;
+        margin-right: 10px;
+    }
   }
 }
 

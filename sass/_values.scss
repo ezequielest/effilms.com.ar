@@ -411,3 +411,85 @@ header .selection-buttons  {
     }
 }
 
+
+section.monthly {
+  width: 100%;
+  .monthly-card {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: space-between;
+    .monthly-container {
+      display: flex;
+      background-color: #9d8c30;
+      flex-direction: column;
+      justify-content: space-between;;
+      border-radius: 8px;
+      padding: 50px;
+      margin: 10px;
+      min-width: 340px;
+
+      &.middle {
+        margin: 0px;
+        background-color: $primary-color ;
+      }
+    }
+
+    .price {
+      margin-top: 20px;
+      font-weight: bold;
+      color: white;
+    }
+  }
+}
+
+.values-card {
+  a {
+    .card-type {
+      font-size: 32px;
+      font-weight: bold;
+      color: white;
+      text-align: center;
+      padding: 60px;
+      background-color: #b56d00;
+      margin-bottom: 30px;
+      background-position-y: center;
+      background-position-x: center;
+      background-size: 100%;
+      transition: all 0.3s ease-in-out;
+      -webkit-transition: all 0.3s ease-in-out;
+    
+      &.bg-inmobiliaria {
+        background-image:linear-gradient(0deg, rgba(61, 45, 0, 0.809), rgba(71, 52, 0, 0.53)), url('/img/services/home1.jpg');
+      }
+    
+      &.bg-arquitectos {
+        background-image: linear-gradient(0deg, rgba(61, 0, 0, 0.809), rgba(71, 0, 0, 0.53)), url('/img/services/arq-1.png');
+      }
+    
+      &.bg-alojamientos {
+        background-image: linear-gradient(0deg, rgba(29, 116, 100, 0.809), rgba(0, 63, 71, 0.53)), url('/img/services/hotel-2.jpeg');
+      }
+  
+        
+      &:hover {
+        background-size: 120%;
+        transition: all 0.3s ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out;
+      }
+
+      @media (max-width: 660px) {
+        font-size: 22px;
+      }
+    }
+  }
+}
+
+.breadcrumb-option .overlay {
+  background-color: black;
+  opacity: 0.8;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+}

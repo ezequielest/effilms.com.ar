@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="video, videografo, filmmaker, films, publicidades, publicidad, mar del plata, videografo mar del plata, realizador audiovisual, institucionales, videos institucionales, creacion de videos, creador de videos, videos inmobiliarios, video inmueble, inmueble, arquitectura, video arquitectura, drone, cobertura aerea, videos para casas, video inmueble, inmobiliaria, video inmobiliario, video arquitectura, video para arquitecto, arquitecto, real estate">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Primary Meta Tags -->
+    <meta name="title" content=GENERADOR QR">
+    <meta name="description" content="Generador de QR gratios online.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.effilms.com.ar/">
+    <meta property="og:title" content="GENERADOR QR">
+    <meta property="og:description" content="Generador de QR gratios online.">
+    <meta property="og:image" content="https://www.effilms.com.ar/img/testimonial/estfilms.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.effilms.com.ar/">
+    <meta property="twitter:title" content=GENERADOR QR">
+    <meta property="twitter:description" content="Generador de QR gratios online.">
+    <meta property="twitter:image" content="https://www.effilms.com.ar/img/testimonial/estfilms.png">
+    <title>EF FILMS | Producciones audiovisuales</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/slick.css" type="text/css">
+    <link rel="stylesheet" href="css/style-4.2.0.css" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      rel="stylesheet"
+    />
+
+    <style>
+
+        header {
+            margin-top: 40px;
+        }
+            
+        #qr {
+            min-height: 100vh;
+            background-color: #444444;
+        }
+
+        .version {
+            font-size: 10px;
+        }
+
+        #image{
+            margin-top: 10px;
+            padding: 10px;
+            font-weight: 400;
+            user-select: none;
+            text-decoration:line-through;
+            font-style: italic;
+            font-size: x-large;
+            border: red 2px solid;
+            margin-left: 10px;
+            
+        }
+        #user-input{
+            width:auto;
+            margin-right: 10px;
+            padding: 10px;
+            padding-bottom: 0px;
+            height: 40px;
+            border: red 0px solid;
+        }
+        input{
+            border:1px black solid;
+        }
+        .inline{
+            display:inline-block;
+        }
+        #btn{
+            color: aqua;
+            margin: 10px;
+            background-color: brown;
+        }
+        
+        
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Section Begin -->
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="header__logo">
+                       GENERADOR DE QR <span class="version">v1.0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header Section End -->
+
+
+    <section id="qr" class="values-page spad table-price">
+        <div class="content-container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <input type="text" id="qrText" placeholder="LINK DEL QR"/>
+                        <select name="" id="background">
+                            <option value="black" selected>Negro</option>
+                            <option value="white">Blanco</option>
+                        </select>
+                        <button onclick="generateQR()">GENERAR QR</button>
+                    </div>
+                </div>
+                <div id="captchaContainer" class="hide">
+                    <div id="user-input" class="inline">
+                        <input type="text" 
+                               id="submit" 
+                               placeholder="Captcha code" />
+                    </div>
+                
+                    <div class="inline" onclick="generate()">
+                        <i class="fas fa-sync"></i>
+                    </div>
+                
+                    <div id="image" 
+                         class="inline" 
+                         selectable="False">
+                    </div>
+                    <input type="submit" 
+                           id="btn" 
+                           onclick="printmsg()" />
+                
+                    <p id="key"></p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12" id="qrCanva">
+                      <canvas style="padding-top: 20px; padding-bottom: 20px;" id="qrPrint"></canvas>
+                      <a id="download" class="btn btn-primary hide" onclick="downloadQR()" download="qr-ready">DESCARGAR QR</a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+
+    </section>
+
+<!-- Js Plugins -->
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.slicknav.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="https://unpkg.com/cocoen/dist/cocoen.js"></script>
+<script src="js/main.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/qrious@4.0.2/dist/qrious.min.js"></script>
+
+<script>
+    let captcha;
+    let cantQRGenerated = 0;
+    generate();
+    function generateQR() {
+        cantQRGenerated += 1;
+        console.log('cantQRGenerated ', cantQRGenerated)
+        if (cantQRGenerated <= 2) {
+            console.log('generating qr');
+            var qrString = document.getElementById('qrText').value;
+            var qrColor = document.getElementById('background').value;
+
+            // Obtener el elemento canvas
+            var canvas = document.getElementById('qrPrint');
+
+            // Configurar opciones para el QR
+            var qr = new QRious({
+                element: canvas,
+                value: qrString, // URL que deseas codificar
+                size: 400, // Tamaño del código QR
+                background: 'transparent', // Color de fondo del código QR
+                foreground: qrColor // Color del código QR
+            });
+
+            downloadBtn =  document.getElementById('download');
+            downloadBtn.classList.remove('hide');
+            downloadBtn.classList.add('show');
+            document.getElementById('captchaContainer').classList.remove('show');
+            document.getElementById('captchaContainer').classList.add('hide');
+            document.getElementById('qrCanva').classList.remove('hide');
+            document.getElementById('qrCanva').classList.add('show');
+
+        } else {
+            console.log('show captcha');
+            downloadBtn.classList.remove('show');
+            downloadBtn.classList.add('hide');
+            document.getElementById('qrCanva').classList.add('hide');
+            document.getElementById('captchaContainer').classList.remove('hide');
+            document.getElementById('captchaContainer').classList.add('show');
+        }
+    }
+
+    function downloadQR() {
+        var canvas = document.getElementById("qrPrint");
+        var img    = canvas.toDataURL("image/png");
+        document.getElementById('download').href = img;
+    }
+        
+        function generate() {
+        
+            // Clear old input
+            document.getElementById("submit").value = "";
+        
+            // Access the element to store
+            // the generated captcha
+            captcha = document.getElementById("image");
+            let uniquechar = "";
+        
+            const randomchar =
+        "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+        
+            // Generate captcha for length of
+            // 5 with random character
+            for (let i = 1; i < 5; i++) {
+                uniquechar += randomchar.charAt(
+                    Math.random() * randomchar.length)
+            }
+        
+            // Store generated input
+            captcha.innerHTML = uniquechar;
+        }
+        
+        function printmsg() {
+            const usr_input = document
+                .getElementById("submit").value;
+        
+            // Check whether the input is equal
+            // to generated captcha or not
+            if (usr_input == captcha.innerHTML) {
+                let s = document.getElementById("key")
+                    .innerHTML = "CAPTCHA correcto!";
+                cantQRGenerated = 0;
+                generateQR();
+            }
+            else {
+                let s = document.getElementById("key")
+                    .innerHTML = "CAPTCHA incorrecto, volve a intentarlo";
+                generate();
+            }
+        }
+    </script>
+</body>
+
+</html>

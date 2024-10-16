@@ -2567,6 +2567,28 @@ header .selection-buttons {
   .modal-header .close {
     color: white !important; }
 
+section.monthly {
+  width: 100%; }
+  section.monthly .monthly-card {
+    display: flex;
+    justify-content: center;
+    align-content: space-between; }
+    section.monthly .monthly-card .monthly-container {
+      display: flex;
+      background-color: #9d8c30;
+      flex-direction: column;
+      justify-content: space-between;
+      border-radius: 8px;
+      padding: 50px;
+      margin: 10px;
+      min-width: 300px; }
+      section.monthly .monthly-card .monthly-container.middle {
+        margin: 0px;
+        background-color: #c27a0d; }
+    section.monthly .monthly-card .price {
+      margin-top: 20px;
+      font-weight: bold; }
+
 /*---------------------
     Blog
 -----------------------*/
@@ -3120,21 +3142,21 @@ header .selection-buttons {
     .contact .contact-page.title {
       padding-top: 100px; } }
 
-.selection-buttons {
+.contact .selection-buttons {
   padding: 60px 0 120px 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center; }
-  .selection-buttons .btn-value {
+  .contact .selection-buttons .btn-value {
     margin-bottom: 10px; }
   @media (max-width: 660px) {
-    .selection-buttons {
+    .contact .selection-buttons {
       flex-direction: column;
       padding: 20px 0 80px 0; }
-      .selection-buttons .btn-value {
+      .contact .selection-buttons .btn-value {
         margin-bottom: 10px; } }
-  .selection-buttons .btn-value {
+  .contact .selection-buttons .btn-value {
     text-align: center;
     background: #c27a0d;
     min-width: 200px;

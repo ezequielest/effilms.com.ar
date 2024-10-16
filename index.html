@@ -38,13 +38,77 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="css/slick.css" type="text/css">
-    <link rel="stylesheet" href="css/style-3.9.1.css" type="text/css">
+    <link rel="stylesheet" href="css/style-4.3.0.css" type="text/css">
     <link rel="shortcut icon" href="/favicon.png" type='image/png' />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
       rel="stylesheet"
     />
+
+    <style>
+        #cine {
+            position: relative;
+            overflow: hidden;
+            padding: 0;
+            height: 500px;
+        }
+
+        #cine .title {
+            color: white;
+            margin-bottom: 12px;
+        }
+
+        #cine .sub-title {
+            color: white;
+            margin-bottom: 32px;
+        }
+
+        #cine .sub-title span {
+            color: #c27a0d;
+        }
+
+        #cine .overlay {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            z-index: 999;
+            background: #000000d9
+        }
+
+        #cine .video-cine {
+            position: absolute;
+            width: 100%;
+            width: -webkit-fill-available;
+            bottom: -278px;
+            bottom: 0px;
+        }
+
+        @media (min-width: 1400px) {
+            #cine .video-cine {
+                bottom: -278px;
+            }
+        }
+
+
+
+        #cine .container {
+            position: relative !important;
+            z-index: 9999 !important;
+            padding: 40px 0;
+        }
+
+        #cine .content-container {
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+        #cine p{
+            color: white;
+        }
+        
+    </style>
 </head>
 
 <body>
@@ -92,7 +156,7 @@
                             <li><a href="#enfoque">Enfoque</a></li>
                             <li><a href="#servicios">Servicios</a></li>
                             <li><a href="#equipo">Equipo</a></li>
-                            <li><a href="/valores">Valores</a></li>
+                            <li><a href="/valores-landing">Valores</a></li>
                             <li><a href="#testimonials">Testimonios</a></li>
                             <li><a href="#clients">Clientes</a></li>
                             <li><a class="alojamientos-text" href="/alojamientos">Alojamientos</a></li>
@@ -375,6 +439,29 @@
                 <div class="ef-services__card"><a onclick="seeExample('conduccionDron')">CONDUCCIÓN + DRON</a></div>
                 <div class="ef-services__card"><a onclick="seeExample('dron')">DRON</a></div>
                 <div class="ef-services__card"><a onclick="seeExample('fpv')">DRON FPV</a></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cine" class="values-page spad table-price bg-gray-2">
+        <div class="overlay"></div>
+        <video loop="true" muted="" autoplay="" class="video-cine" preload="auto" volume="0">
+            <source src="./videos/cine.mp4" type="video/mp4">
+        </video>
+        <div class="content-container">
+            <div class="container">
+                <div class="row">
+                  <div class="col-lg-12 text-center">
+                    <h2 class="title">CENIT</h2>
+                    <h4 class="sub-title">TE PRESENTAMOS NUESTRA LINEA <span style="font-size: 28px; font-weight: bold;">CINE</span></h4>
+                  </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <p>La alternativa más profesional del mercado</p>
+                        <a class="btn primary-btn" target="_blank" href="https://api.whatsapp.com/send?phone=542236688588&text=Hola, me gustaría conocer más sobre Cenit.">CONSULTAR</a>
+                      </div>
+                </div>
             </div>
         </div>
     </section>
@@ -1137,7 +1224,7 @@
 
                         <div class="btn-valores">
                             <h6 class="description">AQUÍ PODES CONOCE CUALES SON</h6>
-                            <a class="btn-value" href="/valores">NUESTROS VALORES</a>
+                            <a class="btn-value" href="/valores-landing">NUESTROS VALORES</a>
                         </div>
 
                         <h6 class="description">CONOCÉ NUESTROS ÚLTIMOS TRABAJOS EN</h6>
@@ -1744,7 +1831,7 @@
     // Configurar opciones para el QR
     var qr = new QRious({
         element: canvas,
-        value: 'https://www.effilms.com.ar/contacto', // URL que deseas codificar
+        value: 'https://api.whatsapp.com/send?phone=542235443013&text=Hola, me podrían enviar el menú?.', // URL que deseas codificar
         size: 180, // Tamaño del código QR
         background: 'transparent', // Color de fondo del código QR
         foreground: 'white' // Color del código QR
