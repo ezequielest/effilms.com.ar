@@ -255,6 +255,18 @@ header .selection-buttons  {
   margin-bottom: 12px;
   background-color: rgb(20, 20, 20);
   color: white;
+  position: relative;
+
+  .label-highlighted {
+    position: absolute;
+    top: -12px;
+    right: -6px;
+    background-color: red;
+    color: white;
+    padding: 5px;
+    z-index: 999;
+    border-radius: 3px;
+  }
 
   .btn.primary-btn {
     padding: 16px 42px;
@@ -428,6 +440,18 @@ section.monthly {
       padding: 50px;
       margin: 10px;
       min-width: 340px;
+      position: relative;
+
+      .monthy-highlighted {
+        position: absolute;
+        top: -12px;
+        right: -6px;
+        background-color: red;
+        color: white;
+        z-index: 9999;
+        padding: 5px;
+        border-radius: 5px;
+      }
 
       &.middle {
         margin: 0px;

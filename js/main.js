@@ -85,7 +85,7 @@
     $(".project__slider").owlCarousel({
         loop: true,
         margin: 0,
-        items: 4,
+        items: 5,
         dots: false,
         nav: true,
         navText: ["<span class='fa fa-arrow-left'><span/>", "<span class='fa fa-arrow-right'><span/>"],
@@ -103,7 +103,7 @@
                 items: 3
             },
             1200: {
-                items: 4
+                items: 5
             }
         }
     });
