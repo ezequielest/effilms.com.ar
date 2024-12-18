@@ -165,32 +165,57 @@
       <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <span class="header-title">VALORES VIGENTES DESDE EL <span>1 AL 30</span> DE <span>NOVIEMBRE</span> 2024
+                <span class="header-title">VALORES VIGENTES DESDE EL <span>1 AL 31</span> DE <span>DICIEMBRE</span> 2024
                 <h6 class="vigencia-details">Las actualizaciones se realizarán de manera mensual de acuerdo al nivel inflacionario del país.</h6>
             </div>
         </div>
       </div>
     </section>
 
-    <section class="monthly spad table-price bg-gray-2">
-      <div>
-        <h2 class="title" style="display: flex; justify-content: center; margin-bottom: 30px;">PLANES MENSUALES</h2>
-      </div>
+    <section class="values-page selection spad bg-gray-2">
+        <div class="title-container">
+          <span class="header-title">¿Qué servicio necesitás?</span>
+        </div>
+        <div class="selection-buttons">
+          <a class="btn-value" href="#plans">PLANES MENSUALES</a>
+          <a class="btn-value" href="#standard">ESTANDAR</a>
+          <a class="btn-value" href="#premium">PREMIUM</a>
+          <a class="btn-value" href="#custom">PERSONALIZADOS</a>
+          <a class="btn-value" href="#extras">EXTRAS</a>
+        </div>
+      </section>
+
+    <section id="plans" class="monthly spad table-price bg-gray-4" style="padding-bottom: 120px;">
+        <div>
+            <h2 class="title" style="display: flex; justify-content: center; margin-bottom: 30px;">PLANES MENSUALES</h2>
+        </div>
+        <div class="title" style="width: 100%; display: flex; justify-content: center; margin-bottom: 30px; flex-direction: column; align-items: center;">
+            <div>Selecciona la cantidad de producciones mensuales que necesitas</div>
+
+            <div>
+                <div style="font-weight: bold; text-align: center;"><div class="cant-prod" style="font-size: 42px; display: inline; color: orange;">2</div></div>  
+                <div style="display: flex; justify-content: center; margin-top: 10px;">
+                    <button class="btn btn-secondary" style="display: inline; margin-right: 10px; font-size: 22px;" onclick="incressProd()">+</button>
+                    <button class="btn btn-secondary" style="display: inline; font-size: 22px;" onclick="decreaseProd()">-</button>
+                </div>
+            </div>
+        
+        </div>
       <div class="monthly-card">
 
       <div class="monthly-container">
         <div>
-          <h2 class="title">BÁSICO</h2>
+          <h2 class="title">INICIAL</h2>
         </div>
         <div>
           <ul>
-            <li>4 videos</li>
-            <li>Servicio estandar</li>
+            <li><div class="cant-prod" style="display: inline; font-weight: bold;">2</div> PRODUCCIONES AUDIOVISUALES</li>
+            <li>Servicio <b>ESTANDAR</b></li>
             <li>FULL HD</li>
           </ul>
         </div>
         <div>
-          <h3 class="price">U$D 420</h3>
+          <h3 class="price">$<span id="initial"></span>.-</h3>
         </div>
       </div>
       <div class="monthly-container middle">
@@ -200,13 +225,13 @@
         </div>
         <div>
           <ul>
-            <li>4 videos</li>
-            <li>Servicio estandar + premium</li>
+            <li><div class="cant-prod" style="display: inline; font-weight: bold;">2</div> PRODUCCIONES AUDIOVISUALES</li>
+            <li>Servicio <b>PREMIUM</b></li>
             <li>FULL HD</li>
           </ul>
         </div>
         <div>
-          <h3 class="price">U$D 550</h3>
+          <h3 class="price">$<span id="pro"></span>.-</h3>
         </div>
       </div>
       <div class="monthly-container">
@@ -215,29 +240,16 @@
         </div>
         <div>
           <ul>
-            <li>4 videos</li>
-            <li>Servicio estandar + premium</li>
-            <li>1 Dron FPV</li>
-            <li>4K</li>
+            <li><div class="cant-prod" style="display: inline; font-weight: bold;">2</div> PRODUCCIONES AUDIOVISUALES</li>
+            <li>Servicio <b>PREMIUM</b></li>
+            <li>4K CINE</li>
           </ul>
         </div>
         <div>
-          <h3 class="price">U$D 760</h3>
+          <h3 class="price">$<span id="premium"></span>.-</h3>
         </div>
       </div>
     </div>
-    </section>
-
-    <section class="values-page selection spad bg-gray-2">
-      <div class="title-container">
-        <span class="header-title">¿Qué servicio necesitás?</span>
-      </div>
-      <div class="selection-buttons">
-        <a class="btn-value" href="#standard">ESTANDAR</a>
-        <a class="btn-value" href="#premium">PREMIUM</a>
-        <a class="btn-value" href="#custom">PERSONALIZADOS</a>
-        <a class="btn-value" href="#extras">EXTRAS</a>
-      </div>
     </section>
 
     <section id="standard" class="values-page spad table-price bg-gray-2">
@@ -660,8 +672,8 @@ standardArray = [
     video: 'https://www.youtube.com/watch?v=2ezasH5vDJI&t=5s',
     timeProd: '',
     timeDelivery: '',
-    price: '$125.000.-',
-    promo: '$105.000.-',
+    price: '$130.000.-',
+    promo: '$110.000.-',
     price4k: '$189.000.-',
     promo4k: '$165.200.-',
     add: '',
@@ -669,6 +681,37 @@ standardArray = [
     isPromo: false,
     isNew: false,
     isVideo: true
+    },{
+    service: 'DRON',
+    description: 'Video de tomas aéreas realizadas con dron. Incluye efectos visuales.',
+    timeProd: '',
+    timeDelivery: '',
+    video: 'https://www.youtube.com/watch?v=9HoWW46Ax4M',
+    price: '$145.000.-',
+    promo: '$125.000.-',
+    price4k: null,
+    promo4k: null,
+    add: '',
+    isHighlighted: false,
+    isPromo: false,
+    isNew: false,
+    isVideo: false
+    },{
+    service: 'FOTOGRAFÍA',
+    description: 'Pack de fotos profesionales editadas del inmueble con cámara profesional.',
+    slider: 'certiat',
+    video: null,
+    timeProd: '',
+    timeDelivery: '',
+    price: '$65.000.-',
+    promo: '$45.000.-',
+    price4k: null,
+    promo4k: null,
+    add: '',
+    isHighlighted: false,
+    isPromo: false,
+    isNew: false,
+    isVideo: false
     },
     {
     service: 'VIDEO + DRON',
@@ -676,10 +719,10 @@ standardArray = [
     video: 'https://www.instagram.com/reel/C3GX_M-RBrO/',
     timeProd: '',
     timeDelivery: '',
-    price: '$189.000.-',
-    promo: '$165.000.-',
-    price4k: '$255.000.-',
-    promo4k: '$230.000.-',
+    price: '$195.000.-',
+    promo: '$169.000.-',
+    price4k: '$269.000.-',
+    promo4k: '$235.000.-',
     add: '',
     isHighlighted: false,
     isPromo: false,
@@ -687,104 +730,26 @@ standardArray = [
     isVideo: true
     },
     {
-    service: 'FOTOGRAFÍA',
-    description: 'Pack de fotos profesionales editadas del inmueble con cámara profesional + HDR.',
-    slider: 'certiat',
-    video: null,
+    service: 'FULL',
+    description: 'VIDEO + DRON + FOTOGRAFÍA. Cobertura completa.',
+    video: 'https://www.instagram.com/reel/C3GX_M-RBrO/',
     timeProd: '',
     timeDelivery: '',
-    price: '$79.000.-',
-    promo: '$69.000.-',
-    price4k: null,
-    promo4k: null,
-    add: '',
-    isHighlighted: false,
-    isPromo: false,
-    isNew: false,
-    isVideo: false
-    },
-    {
-    service: 'DRON',
-    description: 'Video de tomas aéreas realizadas con dron.',
-    timeProd: '',
-    timeDelivery: '',
-    video: 'https://www.youtube.com/watch?v=9HoWW46Ax4M',
-    price: '$135.000.-',
-    promo: '$120.000.-',
-    price4k: '$155.000.-',
-    promo4k: '$140.000.-',
+    price: '$225.000.-',
+    promo: '$205.000.-',
+    price4k: '$259.000.-',
+    promo4k: '$235.000.-',
     add: '',
     isHighlighted: false,
     isPromo: false,
     isNew: false,
     isVideo: true
-    },{
-    service: 'OBRA',
-    description: 'Cobertura de obra con dron.',
-    video: 'https://www.instagram.com/p/C4bT9xBRFnt/',
-    timeProd: '',
-    timeDelivery: '',
-    price: '$135.000.-',
-    promo: '$120.000.-',
-    price4k: '$155.000.-',
-    promo4k: '$140.000.-',
-    add: '',
-    isHighlighted: false,
-    isPromo: false,
-    isNew: false,
-    isVideo: true
-    },
-    {
-    service: 'OBRA COMPLETO',
-    description: 'Cobertura de obra cámara y dron.',
-    video: null,
-    timeProd: '',
-    timeDelivery: '',
-    price: '$199.000.-',
-    promo: '$175.000.-',
-    price4k: null,
-    promo4k: null,
-    add: '',
-    isHighlighted: false,
-    isPromo: false,
-    isNew: false,
-    isVideo: false
-    },/*{
-    service: 'TOUR VIRTUAL',
-    description: 'Cobertura de obra cámara y dron.',
-    video: null,
-    timeProd: '',
-    timeDelivery: '',
-    price: '$56.000.- <span>c/100m2</span>',
-    promo: '$46.000.- <span>c/100m2</span>',
-    price4k: null,
-    promo4k: null,
-    add: '+8.000.- server',
-    isPromo: false,
-    isNew: false,
-    isVideo: false
-    }*/];
+    }];
 
 premiumArray = [
       {
         service: 'MODELADO',
-        description: 'Video donde tu márca personal es la protagonista. Video con cámara.',
-        timeProd: '',
-        timeDelivery: '',
-        video: null,
-        price: '$160.000.-',
-        promo: '$130.000.-',
-        price4k: '$215.000.-',
-        promo4k: '$195.000.-',
-        add: '',
-        isHighlighted: false,
-        isPromo: false,
-        isNew: false,
-        isVideo: true
-      },
-      {
-        service: 'MODELADO + DRON',
-        description: 'Video donde tu márca personal es la protagonista. Video con cámara y dron.',
+        description: 'Video donde tu márca personal es la protagonista. Video con CÁMARA + DRON.',
         timeProd: '',
         timeDelivery: '',
         video: 'https://www.instagram.com/p/C30tK5gRU41',
@@ -800,52 +765,20 @@ premiumArray = [
       },
       {
         service: 'CONDUCCIÓN',
-        description: 'Video donde vos mismo presentas el inmueble. Video con cámara.',
-        video: 'https://www.youtube.com/watch?v=I_9k0dWxB_Q&t=7s',
-        timeProd: '',
-        timeDelivery: '',
-        price: '$200.000.-',
-        promo: '$180.000.-',
-        price4k: '$235.000.-',
-        promo4k: '$215.000.-',
-        add: '',
-        isHighlighted: false,
-        isPromo: false,
-        isNew: false,
-        isVideo: true
-      },
-      {
-        service: 'CONDUCCIÓN + DRON',
-        description: 'Video donde vos mismo presentas el inmueble. Video con cámara y dron.',
+        description: 'Video donde vos mismo presentas el inmueble. Video con CÁMARA + DRON',
         video: 'https://www.instagram.com/p/C38diMsxW2I/',
         timeProd: '',
         timeDelivery: '',
-        price: '$230.000.-',
-        promo: '$205.000.-',
-        price4k: '$275.000.-',
-        promo4k: '$245.000.-',
+        price: '$239.000.-',
+        promo: '$215.000.-',
+        price4k: '$285.000.-',
+        promo4k: '$255.000.-',
         add: '',
         isHighlighted: false,
         isPromo: false,
         isNew: false,
         isVideo: true
       },
-    {
-        service: 'DRON + ANIMACIÓN',
-        description: 'Video de tomas aéreas realizadas con dron + efectos de gráficos en video',
-        timeProd: '',
-        timeDelivery: '',
-        video: 'https://www.instagram.com/p/C6MQWeUrY6u/',
-        price: '$165.000.-',
-        promo: '$150.000.-',
-        price4k: '$195.000.-',
-        promo4k: '$170.000.-',
-        add: '',
-        isHighlighted: false,
-        isPromo: false,
-        isNew: false,
-        isVideo: true
-    },
       {
         service: 'DRON FPV',
         description: 'Video de interiores realizado con dron.',
@@ -861,7 +794,7 @@ premiumArray = [
         isPromo: false,
         isNew: false,
         isVideo: false
-      },{
+      },/*{
         service: 'OBRA FPV',
         description: 'Cobertura de obra con dron fpv.',
         video: null,
@@ -876,7 +809,7 @@ premiumArray = [
         isPromo: true,
         isNew: false,
         isVideo: false
-      }/*,{
+      },{
         service: 'FOTOS INSTITUCIONALES',
         description: 'Fotografías profesionales para tu equipo de trabajo.',
         video: null,
@@ -892,633 +825,6 @@ premiumArray = [
         isVideo: false
       }*/];
 
-/*SEPTIEMBRE 2024
-standardArray = [
-    {  
-    service: 'VIDEO',        
-    description: 'Video completo del inmueble realizado con equipo profesional.',
-    video: 'https://www.youtube.com/watch?v=2ezasH5vDJI&t=5s',
-    timeProd: '',
-    timeDelivery: '',
-    price: '$120.000.-',
-    promo: '$100.000.-',
-    price4k: '$180.000.-',
-    promo4k: '$158.200.-',
-    add: '',
-    isPromo: false,
-    isNew: false,
-    isVideo: true
-    },
-    {
-    service: 'VIDEO + DRON',        
-    description: 'Video completo del inmueble realizado con equipo profesional.',
-    video: 'https://www.instagram.com/reel/C3GX_M-RBrO/',
-    timeProd: '',
-    timeDelivery: '',
-    price: '$178.000.-',
-    promo: '$158.000.-',
-    price4k: '$242.000.-',
-    promo4k: '$220.000.-',
-    add: '',
-    isPromo: false,
-    isNew: false,
-    isVideo: true
-    },
-    {
-    service: 'FOTOGRAFÍA',
-    description: 'Pack de fotos editadas del inmueble con cámara profesional + HDR.',
-    slider: 'certiat',
-    video: null,
-    timeProd: '',
-    timeDelivery: '',
-    price: '$72.000.-',
-    promo: '$62.000.-',
-    price4k: null,
-    promo4k: null,
-    add: '',
-    isPromo: false,
-    isNew: false,
-    isVideo: false
-    },
-    {
-    service: 'DRON',
-    description: 'Video de tomas aéreas realizadas con dron.',
-    timeProd: '',
-    timeDelivery: '',
-    video: 'https://www.youtube.com/watch?v=9HoWW46Ax4M',
-    price: '$124.800.-',
-    promo: '$110.000.-',
-    price4k: '$148.000.-',
-    promo4k: '$132.000.-',
-    add: '',
-    isPromo: false,
-    isNew: false,
-    isVideo: true
-    },{
-    service: 'OBRA',
-    description: 'Cobertura de obra con dron.',
-    video: 'https://www.instagram.com/p/C4bT9xBRFnt/',
-    timeProd: '',
-    timeDelivery: '',
-    price: '$124.800.-',
-    promo: '$110.000.-',
-    price4k: '$148.000.-',
-    promo4k: '$132.000.-',
-    add: '',
-    isPromo: false,
-    isNew: false,
-    isVideo: true
-    },
-    {
-    service: 'OBRA COMPLETO',
-    description: 'Cobertura de obra cámara y dron.',
-    video: null,
-    timeProd: '',
-    timeDelivery: '',
-    price: '$178.800.-',
-    promo: '$164.800.-',
-    price4k: null,
-    promo4k: null,
-    add: '',
-    isPromo: false,
-    isNew: false,
-    isVideo: false
-    },{
-    service: 'TOUR VIRTUAL',
-    description: 'Cobertura de obra cámara y dron.',
-    video: null,
-    timeProd: '',
-    timeDelivery: '',
-    price: '$55.000.- <span>c/100m2</span>',
-    promo: '$45.000.- <span>c/100m2</span>',
-    price4k: null,
-    promo4k: null,
-    add: '+8.000.- server',
-    isPromo: false,
-    isNew: false,
-    isVideo: false
-    }];
-
-premiumArray = [
-      {
-        service: 'MODELADO',
-        description: 'Video donde tu márca personal es la protagonista. Video con cámara.',
-        timeProd: '',
-        timeDelivery: '',
-        video: null,
-        price: '$172.000.-',
-        promo: '$150.000.-',
-        price4k: '$200.000.-',
-        promo4k: '$182.000.-',
-        add: '',
-        isPromo: false,
-        isNew: false,
-        isVideo: true
-      },
-      {
-        service: 'MODELADO + DRON',
-        description: 'Video donde tu márca personal es la protagonista. Video con cámara y dron.',
-        timeProd: '',
-        timeDelivery: '',
-        video: 'https://www.instagram.com/p/C30tK5gRU41',
-        price: '$197.600.-',
-        promo: '$174.000.-',
-        price4k: '$228.000.-',
-        promo4k: '$208.000.-',
-        add: '',
-        isPromo: false,
-        isNew: false,
-        isVideo: true
-      },
-      {
-        service: 'CONDUCCIÓN',
-        description: 'Video donde vos mismo presentas el inmueble. Video con cámara.',
-        video: 'https://www.youtube.com/watch?v=I_9k0dWxB_Q&t=7s',
-        timeProd: '',
-        timeDelivery: '',
-        price: '$170.000.-',
-        promo: '$150.000.-',
-        price4k: '$214.000.-',
-        promo4k: '$170.000.-',
-        add: '',
-        isPromo: false,
-        isNew: false,
-        isVideo: true
-      },
-      {
-        service: 'CONDUCCIÓN + DRON',
-        description: 'Video donde vos mismo presentas el inmueble. Video con cámara y dron.',
-        video: 'https://www.instagram.com/p/C38diMsxW2I/',
-        timeProd: '',
-        timeDelivery: '',
-        price: '$218.000.-',
-        promo: '$197.000.-',
-        price4k: '$260.000.-',
-        promo4k: '$230.000.-',
-        add: '',
-        isPromo: false,
-        isNew: false,
-        isVideo: true
-      },
-    {
-        service: 'DRON + FX',
-        description: 'Video de tomas aéreas realizadas con dron + efectos de gráficos en video',
-        timeProd: '',
-        timeDelivery: '',
-        video: 'https://www.instagram.com/p/C6MQWeUrY6u/',
-        price: '$166.000.-',
-        promo: '$148.000.-',
-        price4k: '$192.000.-',
-        promo4k: '$160.000.-',
-        add: '',
-        isPromo: false,
-        isNew: false,
-        isVideo: true
-    },
-      {
-        service: 'DRON FPV',
-        description: 'Video de interiores realizado con dron.',
-        video: 'https://www.youtube.com/embed/PT5w3ITbgBE',
-        timeProd: '',
-        timeDelivery: '',
-        price: 'U$D 350.-',
-        promo: 'U$D 300.-',
-        price4k: null,
-        promo4k: null,
-        add: '',
-        isPromo: false,
-        isNew: false,
-        isVideo: false
-      },{
-        service: 'OBRA FPV',
-        description: 'Cobertura de obra con dron fpv.',
-        video: null,
-        timeProd: '',
-        timeDelivery: '',
-        price: '$240.000.-',
-        promo: '$218.000.-',
-        price4k: null,
-        promo4k: null,
-        add: '',
-        isPromo: true,
-        isNew: false,
-        isVideo: false
-      },{
-        service: 'FOTOS INSTITUCIONALES',
-        description: 'Fotografías profesionales para tu equipo de trabajo.',
-        video: null,
-        timeProd: '',
-        timeDelivery: '',
-        price: '$80.000.-',
-        promo: '$70.000.-',
-        price4k: null,
-        promo4k: null,
-        add: '',
-        isPromo: true,
-        isNew: false,
-        isVideo: false
-      }];
-*/
-
-    /*{
-        service: 'GO PRO',
-        description: 'Video completo del inmueble realizado con GO PRO o Smartphone. FULL HD',
-        price: '$65.000.-',
-        promo: '$50.000.-',
-      },
-        {
-        service: 'GO PRO FOTOGRAFIA',
-        description: 'Pack de fotos editadas del inmueble con GO PRO o Smartphone.',
-        timeDelivery: '',
-        price: '$40.000.-',
-        promo: '$30.000.-',
-      */
-
-  /*
-  Agosto  2024
-  
-  standardArray = [
-    {  
-    service: 'VIDEO',        
-    description: 'Video completo del inmueble realizado con equipo profesional.',
-    video: 'https://www.youtube.com/watch?v=2ezasH5vDJI&t=5s',
-    timeProd: '',
-    timeDelivery: '',
-    price: '$115.500.-',
-    promo: '$95.500.-',
-    price4k: '$172.200.-',
-    promo4k: '$152.200.-',
-    add: '',
-    isPromo: false,
-    isNew: false,
-    isVideo: true
-    },
-    {
-    service: 'VIDEO + DRON',        
-    description: 'Video completo del inmueble realizado con equipo profesional.',
-    video: 'https://www.instagram.com/reel/C3GX_M-RBrO/',
-    timeProd: '',
-    timeDelivery: '',
-    price: '$172.200.-',
-    promo: '$152.200.-',
-    price4k: '$232.000.-',
-    promo4k: '$212.000.-',
-    add: '',
-    isPromo: false,
-    isNew: false,
-    isVideo: true
-    },
-    {
-    service: 'FOTOGRAFÍA',
-    description: 'Pack de fotos editadas del inmueble con cámara profesional + HDR.',
-    slider: 'certiat',
-    video: null,
-    timeProd: '',
-    timeDelivery: '',
-    price: '$72.000.-',
-    promo: '$62.000.-',
-    price4k: null,
-    promo4k: null,
-    add: '',
-    isPromo: false,
-    isNew: false,
-    isVideo: false
-    },
-    {
-    service: 'DRON',
-    description: 'Video de tomas aéreas realizadas con dron.',
-    timeProd: '',
-    timeDelivery: '',
-    video: 'https://www.youtube.com/watch?v=9HoWW46Ax4M',
-    price: '$120.000.-',
-    promo: '$105.000.-',
-    price4k: '$142.000.-',
-    promo4k: '$127.000.-',
-    add: '',
-    isPromo: false,
-    isNew: false,
-    isVideo: true
-    },{
-    service: 'OBRA',
-    description: 'Cobertura de obra con dron.',
-    video: 'https://www.instagram.com/p/C4bT9xBRFnt/',
-    timeProd: '',
-    timeDelivery: '',
-    price: '$120.000.-',
-    promo: '$105.000.-',
-    price4k: '$141.700.-',
-    promo4k: '$110.200.-',
-    add: '',
-    isPromo: false,
-    isNew: false,
-    isVideo: true
-    },
-    {
-    service: 'OBRA COMPLETO',
-    description: 'Cobertura de obra cámara y dron.',
-    video: null,
-    timeProd: '',
-    timeDelivery: '',
-    price: '$172.200.-',
-    promo: '$157.000.-',
-    price4k: null,
-    promo4k: null,
-    add: '',
-    isPromo: false,
-    isNew: false,
-    isVideo: false
-    },{
-    service: 'TOUR VIRTUAL',
-    description: 'Cobertura de obra cámara y dron.',
-    video: null,
-    timeProd: '',
-    timeDelivery: '',
-    price: '$52.000.- <span>c/100m2</span>',
-    promo: '$42.000.- <span>c/100m2</span>',
-    price4k: null,
-    promo4k: null,
-    add: '+6.000.- server',
-    isPromo: false,
-    isNew: false,
-    isVideo: false
-    }];*/
-
-    
-
-    /*standardArray = [
-
-      {
-        service: 'VIDEO',        
-        description: 'Video completo del inmueble realizado con equipo profesional.',
-        video: 'https://www.youtube.com/watch?v=2ezasH5vDJI&t=5s',
-        timeProd: '',
-        timeDelivery: '',
-        price: '$110.000.-',
-        promo: '$84.000.-',
-        price4k: '$164.000.-',
-        promo4k: '$130.000.-',
-        add: '',
-        isPromo: false,
-        isNew: false,
-        isVideo: true
-      },
-      {
-        service: 'VIDEO + DRON',        
-        description: 'Video completo del inmueble realizado con equipo profesional.',
-        video: 'https://www.instagram.com/p/C69p2xYxCG4/',
-        timeProd: '',
-        timeDelivery: '',
-        price: '$164.000.-',
-        promo: '$130.000.-',
-        price4k: '$220.000.-',
-        promo4k: '$185.000.-',
-        add: '',
-        isPromo: false,
-        isNew: false,
-        isVideo: true
-      },
-      {
-        service: 'FOTOGRAFÍA',
-        description: 'Pack de fotos editadas del inmueble con cámara profesional + HDR.',
-        slider: 'certiat',
-        video: null,
-        timeProd: '',
-        timeDelivery: '',
-        price: '$68.000.-',
-        promo: '$56.000.-',
-        price4k: null,
-        promo4k: null,
-        add: '',
-        isPromo: false,
-        isNew: false,
-        isVideo: false
-      },
-      {
-        service: 'DRON',
-        description: 'Video de tomas aéreas realizadas con dron.',
-        timeProd: '',
-        timeDelivery: '',
-        video: 'https://www.youtube.com/watch?v=9HoWW46Ax4M',
-        price: '$115.000.-',
-        promo: '$86.000.-',
-        price4k: '$135.000.-',
-        promo4k: '$105.000.-',
-        add: '',
-        isPromo: false,
-        isNew: false,
-        isVideo: true
-      },{
-        service: 'OBRA',
-        description: 'Cobertura de obra con dron.',
-        video: 'https://www.instagram.com/p/C4bT9xBRFnt/',
-        timeProd: '',
-        timeDelivery: '',
-        price: '$115.000.-',
-        promo: '$86.000.-',
-        price4k: '$135.000.-',
-        promo4k: '$105.000.-',
-        add: '',
-        isPromo: false,
-        isNew: false,
-        isVideo: true
-      },
-      {
-        service: 'OBRA COMPLETO',
-        description: 'Cobertura de obra cámara y dron.',
-        video: null,
-        timeProd: '',
-        timeDelivery: '',
-        price: '$164.000.-',
-        promo: '$130.000.-',
-        price4k: null,
-        promo4k: null,
-        add: '',
-        isPromo: false,
-        isNew: false,
-        isVideo: false
-      }, {
-        service: 'TOUR VIRTUAL',
-        description: 'Cobertura de obra cámara y dron.',
-        video: null,
-        timeProd: '',
-        timeDelivery: '',
-        price: '$48.000.- <span>c/100m2</span>',
-        promo: '$38.000.- <span>c/100m2</span>',
-        price4k: null,
-        promo4k: null,
-        add: '+6.000.- server',
-        isPromo: false,
-        isNew: false,
-        isVideo: false
-      }];*/
-
-      /*fotoArray = [
-      {
-        service: 'GO PRO',        
-        description: 'Pack de fotos editadas del inmueble con GO PRO o Smartphone.',
-        video: null,
-        timeProd: '',
-        timeDelivery: '',
-        price: '$40.000.-',
-        promo: '$30.000.-',
-        price4k: '$150.000.-',
-        promo4k: '$120.000.-',
-        add: '',
-        isPromo: false,
-        isNew: false
-      },
-      {
-        service: 'PROFESIONAL + HDR',
-        description: 'Pack de fotos editadas del inmueble con cámara profesional.',
-        video: null,
-        timeProd: '',
-        timeDelivery: '',
-        price: '$60.000.-',
-        promo: '$45.000.-',
-        price4k: '$150.000.-',
-        promo4k: '$120.000.-',
-        add: '',
-        isPromo: false,
-        isNew: false
-      },
-      {
-        service: 'EVENTO',
-        description: 'Pack de fotos editadas en evento con cámara profesional.',
-        video: null,
-        timeProd: '',
-        timeDelivery: '',
-        price: '$40.000.- <span>por hora</span>',
-        promo: null,
-        price4k: '$150.000.-',
-        promo4k: '$120.000.-',
-        add: '',
-        isPromo: false,
-        isNew: false
-      }];*/
-
-/* AGOSTO 2024
-      premiumArray = [
-      {
-        service: 'MODELADO',
-        description: 'Video donde tu márca personal es la protagonista. Video con cámara.',
-        timeProd: '',
-        timeDelivery: '',
-        video: null,
-        price: '$165.000.-',
-        promo: '$145.000.-',
-        price4k: '$195.000.-',
-        promo4k: '$175.000.-',
-        add: '',
-        isPromo: false,
-        isNew: false,
-        isVideo: true
-      },
-      {
-        service: 'MODELADO + DRON',
-        description: 'Video donde tu márca personal es la protagonista. Video con cámara y dron.',
-        timeProd: '',
-        timeDelivery: '',
-        video: 'https://www.instagram.com/p/C30tK5gRU41',
-        price: '$190.000.-',
-        promo: '$168.000.-',
-        price4k: '$220.000.-',
-        promo4k: '$200.000.-',
-        add: '',
-        isPromo: false,
-        isNew: false,
-        isVideo: true
-      },
-      {
-        service: 'CONDUCCIÓN',
-        description: 'Video donde vos mismo presentas el inmueble. Video con cámara.',
-        video: 'https://www.youtube.com/watch?v=I_9k0dWxB_Q&t=7s',
-        timeProd: '',
-        timeDelivery: '',
-        price: '$165.000.-',
-        promo: '$145.000.-',
-        price4k: '$205.800.-',
-        promo4k: '$163.800.-',
-        add: '',
-        isPromo: false,
-        isNew: false,
-        isVideo: true
-      },
-      {
-        service: 'CONDUCCIÓN + DRON',
-        description: 'Video donde vos mismo presentas el inmueble. Video con cámara y dron.',
-        video: 'https://www.instagram.com/p/C38diMsxW2I/',
-        timeProd: '',
-        timeDelivery: '',
-        price: '$210.000.-',
-        promo: '$190.000.-',
-        price4k: '$250.000.-',
-        promo4k: '$230.000.-',
-        add: '',
-        isPromo: false,
-        isNew: false,
-        isVideo: true
-      },
-    {
-        service: 'DRON + FX',
-        description: 'Video de tomas aéreas realizadas con dron + efectos de gráficos en video',
-        timeProd: '',
-        timeDelivery: '',
-        video: 'https://www.instagram.com/p/C6MQWeUrY6u/',
-        price: '$160.000.-',
-        promo: '$140.000.-',
-        price4k: '$185.000.-',
-        promo4k: '$165.000.-',
-        add: '',
-        isPromo: false,
-        isNew: false,
-        isVideo: true
-    },
-      {
-        service: 'DRON FPV',
-        description: 'Video de interiores realizado con dron.',
-        video: 'https://www.youtube.com/embed/PT5w3ITbgBE',
-        timeProd: '',
-        timeDelivery: '',
-        price: 'U$D 350.-',
-        promo: 'U$D 300.-',
-        price4k: null,
-        promo4k: null,
-        add: '',
-        isPromo: false,
-        isNew: false,
-        isVideo: false
-      },{
-        service: 'OBRA FPV',
-        description: 'Cobertura de obra con dron fpv.',
-        video: null,
-        timeProd: '',
-        timeDelivery: '',
-        price: '$230.000.-',
-        promo: '$210.000.-',
-        price4k: null,
-        promo4k: null,
-        add: '',
-        isPromo: true,
-        isNew: false,
-        isVideo: false
-      }/*,{
-        service: 'FOTOS INSTITUCIONALES',
-        description: 'Fotografías profesionales para tu equipo de trabajo.',
-        video: null,
-        timeProd: '',
-        timeDelivery: '',
-        price: '$80.000.-',
-        promo: '$70.000.-',
-        price4k: null,
-        promo4k: null,
-        add: '',
-        isPromo: true,
-        isNew: false,
-        isVideo: false
-      }*/
-      
-
-
       customArray = [
       {
         service: 'INSTITUCIONALES',        
@@ -1526,7 +832,7 @@ premiumArray = [
         timeProd: '',
         timeDelivery: '',
         video: 'https://www.youtube.com/watch?v=WNKtXL7lc-o',
-        price: '<span>desde</span> $350.000.-',
+        price: '<span>desde</span> $360.000.-',
         promo: null,
         price4k: null,
         promo4k: null,
@@ -1541,7 +847,7 @@ premiumArray = [
         timeProd: '',
         timeDelivery: '',
         video: 'https://www.youtube.com/watch?v=DxaDVne_Wks',
-        price: '<span>desde</span> $260.000.-',
+        price: '<span>desde</span> $270.000.-',
         promo: null,
         price4k: null,
         promo4k: null,
@@ -1556,7 +862,7 @@ premiumArray = [
         timeProd: '',
         timeDelivery: '',
         video: 'https://www.instagram.com/p/C4ysFMixPrq/',
-        price: '<span>desde</span> $260.000.-',
+        price: '<span>desde</span> $270.000.-',
         promo: null,
         price4k: null,
         promo4k: null,
@@ -1571,7 +877,7 @@ premiumArray = [
         timeProd: '',
         timeDelivery: '',
         video: 'https://www.youtube.com/watch?v=GCE-opUPhmE',
-        price: '<span>desde</span> $260.000.-',
+        price: '<span>desde</span> $270.000.-',
         promo: null,
         price4k: null,
         promo4k: null,
@@ -1843,6 +1149,73 @@ premiumArray = [
         $('#photoSliderModal').on('hidden.bs.modal', function (e) {
             document.getElementById('photoSliderModal').src = "";
         })
+    }
+
+    var prodsConfig = {
+        cantProdSelected: 2,
+        minProds: 2,
+        maxProds: 4
+    }
+
+    var plans = [{
+        id: 'initial',
+        type: 'initial',
+        description: 'INICIAL',
+        basePrice: 110000,
+        finalPrice: 220000,
+    },
+    {
+        id: 'pro',
+        type: 'pro',
+        description: 'PROFESIONAL',
+        basePrice: 145000,
+        finalPrice: 290000,
+    },{
+        id: 'premium',
+        type: 'premium',
+        description: 'PREMIUM',
+        basePrice: 190000,
+        finalPrice: 370000,
+    }];
+
+    updateFinalPrice();
+
+
+    function incressProd() {
+        if (prodsConfig.cantProdSelected <prodsConfig.maxProds) {
+            ++prodsConfig.cantProdSelected;
+
+            console.log('price ', plans)
+
+            updateFinalPrice();
+            updateCantProds();
+        }
+    }
+
+    function decreaseProd() {
+        if (prodsConfig.cantProdSelected > prodsConfig.minProds) {
+            --prodsConfig.cantProdSelected;
+            console.log('price ', plans)
+            updateFinalPrice();
+            updateCantProds();
+        }
+    }
+
+    function updateFinalPrice() {
+        plans.forEach(plan => {
+                plan.finalPrice = plan.basePrice * prodsConfig.cantProdSelected;
+                document.getElementById(plan.id).innerHTML=plan.finalPrice.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+        });
+
+        
+    }
+
+    function updateCantProds() {
+        let elements = document.getElementsByClassName('cant-prod')
+
+        for(var i=0; i<elements.length; i++) {
+            elements[i].innerHTML = prodsConfig.cantProdSelected;
+        }
     }
   </script>
   
