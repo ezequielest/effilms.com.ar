@@ -226,7 +226,7 @@
             <li><div class="cant-prod" style="display: inline; font-weight: bold;">2</div> PRODUCCIONES AUDIOVISUALES</li>
             <li>Servicio <b>PREMIUM</b></li>
             <li>Incluye dron</li>
-            <li>No incluye fotografía</li>
+            <li>Incluye fotografía</li>
             <li>FULL HD</li>
           </ul>
         </div>
@@ -1188,28 +1188,33 @@ premiumArray = [
         maxProds: 4
     }
 
+    /*BASEPRICE ES EL VALOR NETO POR PRODUCCION (CON DESCUENTO), CON ESTE SE CALCULA EL AHORRO*/
     var plans = [{
         id: 'initial',
         type: 'initial',
         description: 'INICIAL',
-        basePrice: 140000,
+        basePrice: 140000, /*CADA VIDEO CUESTA 140.000*/
         finalPrice: 0,
-        savings: 0
+        savings: 0,
+        hasPhoto: false
     },
     {
         id: 'profesional',
         type: 'profesional',
         description: 'PROFESIONAL',
-        basePrice: 166000,
+        basePrice: 172000, /*20% OFF*/
+        basePhoto: 20000,
         finalPrice: 0,
-        savings: 0
+        savings: 0,
+        hasPhoto: true
     },{
         id: 'premium',
         type: 'premium',
         description: 'PREMIUM',
         basePrice: 220000,
         finalPrice: 0,
-        savings: 0
+        savings: 0,
+        hasPhoto: false
     }];
 
     updateFinalPrice();
@@ -1237,18 +1242,43 @@ premiumArray = [
 
     function updateFinalPrice() {
         plans.forEach(plan => {
-                plan.finalPrice = plan.basePrice * prodsConfig.cantProdSelected;
 
-                if (plan.id === 'initial') {
+                if (plan.hasPhoto) {
+
+                    plan.finalPrice = (plan.basePrice * prodsConfig.cantProdSelected) + (plan.basePhoto * prodsConfig.cantProdSelected);
+
+                    if (plan.id === 'initial') {
+                        photoPrice = standardArray[2].promo * prodsConfig.cantProdSelected;
+                        videoPrice = standardArray[3].promo *  prodsConfig.cantProdSelected;
+                        plan.savings =  photoPrice + videoPrice - plan.finalPrice;
+                    }
+
+                    if (plan.id === 'profesional') {
+                        photoPrice = standardArray[2].promo * prodsConfig.cantProdSelected;
+                        videoPrice = premiumArray[1].promo * prodsConfig.cantProdSelected;
+                        plan.savings =  photoPrice + videoPrice - plan.finalPrice;
+                    }
+
+                    if (plan.id === 'premium') {
+                        photoPrice = standardArray[2].promo * prodsConfig.cantProdSelected;
+                        videoPrice = premiumArray[1].promo4k * prodsConfig.cantProdSelected;
+                        plan.savings =  photoPrice + videoPrice - plan.finalPrice;
+                    }
+                } else {
+
+                    plan.finalPrice = plan.basePrice * prodsConfig.cantProdSelected;
+
+                    if (plan.id === 'initial') {
                     plan.savings = (standardArray[3].promo *  prodsConfig.cantProdSelected) - plan.finalPrice;
-                }
+                    }
 
-                if (plan.id === 'profesional') {
-                    plan.savings =  (premiumArray[1].promo * prodsConfig.cantProdSelected) - plan.finalPrice;
-                }
+                    if (plan.id === 'profesional') {
+                        plan.savings =  (premiumArray[1].promo * prodsConfig.cantProdSelected) - plan.finalPrice;
+                    }
 
-                if (plan.id === 'premium') {
-                    plan.savings = (premiumArray[1].promo4k * prodsConfig.cantProdSelected) - plan.finalPrice;
+                    if (plan.id === 'premium') {
+                        plan.savings = (premiumArray[1].promo4k * prodsConfig.cantProdSelected) - plan.finalPrice;
+                    }
                 }
 
                 document.getElementById(plan.id).innerHTML=plan.finalPrice.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
