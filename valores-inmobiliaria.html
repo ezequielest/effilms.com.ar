@@ -29,6 +29,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
   <!-- Css Styles -->
   <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
   <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
@@ -120,7 +122,10 @@
             <div class="row">
                 <div class="col-lg-3">
                     <div class="header__logo">
-                        <a href="http://effilms.com.ar">EF <span class="dot">.</span> FILMS</a>
+                        <a href="http://effilms.com.ar">
+                            <span style="font-family: 'Bebas Neue', serif;">EF</span>
+                            <span class="dot" style="position: relative; left: -5px;">.</span> 
+                            <span style="font-family: 'Bebas Neue', serif; position: relative; left: -9px;" >FILMS</span></a>
                     </div>
                 </div>
                 <div class="col-lg-5">
@@ -159,7 +164,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-12">
-                    <span class="header-title">VALORES VIGENTES DESDE EL <span style="font-weight: bold;">1 AL 31</span> DE <span style="font-weight: bold;">DICIEMBRE</span> 2024
+                    <span class="header-title">VALORES VIGENTES DESDE EL <span style="font-weight: bold;">1 AL 31</span> DE <span style="font-weight: bold;">ENERO</span> 2025
                     <h6 class="vigencia-details">Las actualizaciones se realizarán de manera mensual de acuerdo al nivel inflacionario del país.</h6>
                 </div>
             </div>
@@ -206,8 +211,6 @@
           <ul>
             <li><div class="cant-prod" style="display: inline; font-weight: bold;">2</div> PRODUCCIONES AUDIOVISUALES</li>
             <li>Servicio <b>ESTANDAR</b></li>
-            <li>Incluye dron</li>
-            <li>No incluye fotografía</li>
             <li>FULL HD</li>
           </ul>
         </div>
@@ -225,8 +228,6 @@
           <ul>
             <li><div class="cant-prod" style="display: inline; font-weight: bold;">2</div> PRODUCCIONES AUDIOVISUALES</li>
             <li>Servicio <b>PREMIUM</b></li>
-            <li>Incluye dron</li>
-            <li>Incluye fotografía</li>
             <li>FULL HD</li>
           </ul>
         </div>
@@ -243,8 +244,6 @@
           <ul>
             <li><div class="cant-prod" style="display: inline; font-weight: bold;">2</div> PRODUCCIONES AUDIOVISUALES</li>
             <li>Servicio <b>PREMIUM</b></li>
-            <li>Incluye dron</li>
-            <li>No incluye fotografía</li>
             <li>4K CINE</li>
           </ul>
         </div>
@@ -372,7 +371,7 @@
                 <div class="contact">
                     <span>Si necesitás algo especifico que no está contemplado en los ítems anteriores podés</span>
                     <div class="btn-container">
-                        <a class="btn primary-btn" href="https://api.whatsapp.com/send?phone=542236688588&text=Hola, me gustaría pedirles un presupuesto." target="_blank">
+                        <a class="btn primary-btn" style="background-color: transparent; color: rgb(219, 143, 0);" href="https://api.whatsapp.com/send?phone=542236688588&text=Hola, me gustaría pedirles un presupuesto." target="_blank">
                             <img class="whatsapp-footer" src="./img/whatsapp.png" alt="">CONTACTARTE CON NOSOTROS</a>
                     </div>
                 </div>
@@ -381,26 +380,27 @@
         </div>
     </section>
 
-    <!--<section class="bg-gray-2 no-default-service">
+    <section class="callto bg-gray-2 spad set-bg" data-setbg="img/videoprop.jpg">
+        <div class="overlay" style="background-color: rgba(0, 0, 0, 0.8);"></div>
         <div class="container">
             <div class="row">
                 <div class="col-12">
                     <div class="contact">
-                        <span>TAMBIEN QUEREMOS PRESENTARTE VIDEOPROP</span>
+                        <span style="font-weight: bold; font-size: 24px;">¿NECESITAS UNA PROPUESTA MÁS ACCESIBLE Y DE CALIDAD?</span>
                         <ul>
-                            <li>ECONOMICO</li>
+                            <li style="text-align: center;"><span style="font-weight: bold; font-size: 42px; color: rgb(48, 219, 219);">VIDEOPROP</span> PUEDE SER LA SOLUCIÓN PARA VOS</li>
                             <li></li>
                         </ul>
-                        <div class="btn-container">
-                            <a class="btn primary-btn" href="insta" target="_blank">
-                                <img class="whatsapp-footer" src="./img/whatsapp.png" alt="">IG
-                            </a>
+                        <div class="btn-container" style="justify-content: center; margin-top: 32px;">
+                            <a style="background-color: transparent;" href="https://www.instagram.com/video.prop/" target="_blank"><button class="btn primary-btn">
+                                INSTAGRAM
+                            </button></a>
                         </div>
                     </div>
                 </div>
             </div>
             </div>
-    </section>-->
+    </section>
 
     <!-- Counter Section End -->
     <section class="counter bg-gray-4">
@@ -736,8 +736,8 @@ standardArray = [
     timeDelivery: '',
     price: 195000,
     promo: 169000,
-    price4k: 269000,
-    promo4k: 235000,
+    price4k: 240000,
+    promo4k: 205000,
     add: '',
     isHighlighted: false,
     isPromo: false,
@@ -770,7 +770,7 @@ premiumArray = [
         video: 'https://www.instagram.com/p/C30tK5gRU41',
         price: 205000,
         promo: 185000,
-        price4k: 245000,
+        price4k: 250000,
         promo4k: 220000,
         add: '',
         isHighlighted: true,
@@ -786,8 +786,8 @@ premiumArray = [
         timeDelivery: '',
         price: 239000,
         promo: 215000,
-        price4k: 285000,
-        promo4k: 255000,
+        price4k: 280000,
+        promo4k: 250000,
         add: '',
         isHighlighted: false,
         isPromo: false,
@@ -1095,7 +1095,7 @@ premiumArray = [
                             htmlVideo += 
                             `<div class="combo">
                                 <span>3 x mes</span> 
-                                <div>${el.promo} <span>c/u</span></div>
+                                <div>${el.promo.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")} <span>c/u</span></div>
                             </div>`
                         }
                         if (el.add) {
@@ -1112,7 +1112,7 @@ premiumArray = [
                             htmlVideo += 
                             `<div class="combo">
                                 <span>3 x mes</span> 
-                                <div>${el.promo4k} <span>c/u</span></div>
+                                <div>${el.promo4k.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")} <span>c/u</span></div>
                             </div>
                         </div>`
                         }
@@ -1206,7 +1206,7 @@ premiumArray = [
         basePhoto: 20000,
         finalPrice: 0,
         savings: 0,
-        hasPhoto: true
+        hasPhoto: false
     },{
         id: 'premium',
         type: 'premium',
