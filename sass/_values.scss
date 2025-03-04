@@ -258,14 +258,19 @@ header .selection-buttons  {
   position: relative;
 
   .label-highlighted {
+    font-size: 12px;
     position: absolute;
-    top: -12px;
-    right: -6px;
+    top: -5px;
+    right: -5px;
     background-color: red;
     color: white;
     padding: 5px;
     z-index: 999;
     border-radius: 3px;
+
+    &.green {
+      background-color: green;
+    }
   }
 
   .btn.primary-btn {
