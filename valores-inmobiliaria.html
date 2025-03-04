@@ -186,8 +186,12 @@
       </section>
 
     <section id="plans" class="monthly spad table-price bg-gray-4" style="padding-bottom: 120px;">
-        <div>
-            <h2 class="title" style="display: flex; justify-content: center; margin-bottom: 30px;">PLANES MENSUALES</h2>
+        <div style="display: flex; justify-content: center; margin-bottom: 30px;">
+            <h2 class="title" style="position: relative;">PLANES MENSUALES 
+                <span style="display: relative; display: block; text-align: center;">
+                    <span style="font-size: 26px; font-weight: bold;">3</span> CUPOS DISPONIBLES
+                </span>
+            </h2>
         </div>
         <div class="title" style="width: 100%; display: flex; justify-content: center; margin-bottom: 30px; flex-direction: column; align-items: center;">
             <div>Selecciona la cantidad de producciones mensuales que necesitas</div>
@@ -690,8 +694,8 @@ standardArray = [
     timeProd: '',
     timeDelivery: '',
     since: false,
-    price: 135000,
-    promo: 115000,
+    price: 125000, 
+    promo: 105000,
     price4k: 185000,
     promo4k: 165000,
     add: '',
@@ -710,8 +714,8 @@ standardArray = [
     timeDelivery: '',
     video: 'https://www.youtube.com/watch?v=9HoWW46Ax4M',
     since: false,
-    price: 145000,
-    promo: 125000,
+    price: 135000,
+    promo: 115000,
     price4k: null,
     promo4k: null,
     add: '',
@@ -752,8 +756,8 @@ standardArray = [
     timeProd: '',
     timeDelivery: '',
     since: false,
-    price: 215000,
-    promo: 185000,
+    price: 200000,
+    promo: 175000,
     price4k: 265000,
     promo4k: 235000,
     add: '',
@@ -862,13 +866,11 @@ premiumArray = [
         promo: 255000,
         price4k: 330000,
         promo4k: 305000,
-        price4k: null,
-        promo4k: null,
         add: '',
         isHighlighted: false,
         isPromo: false,
         isNew: false,
-        isVideo: false,
+        isVideo: true,
         isOnlyPremiumHome: true,
         hours: 2,
         minutes: 0,
@@ -884,13 +886,11 @@ premiumArray = [
         promo: 285000,
         price4k: 355000,
         promo4k: 335000,
-        price4k: null,
-        promo4k: null,
         add: '',
         isHighlighted: false,
         isPromo: false,
         isNew: false,
-        isVideo: false,
+        isVideo: true,
         isOnlyPremiumHome: true,
         hours: 2,
         minutes: 30,
@@ -1302,7 +1302,7 @@ premiumArray = [
         id: 'profesional',
         type: 'profesional',
         description: 'PROFESIONAL',
-        basePrice: 165000, /*20% OFF*/
+        basePrice: 195000, /*20% OFF*/
         basePhoto: 25000,
         finalPrice: 0,
         savings: 0,
@@ -1311,7 +1311,7 @@ premiumArray = [
         id: 'premium',
         type: 'premium',
         description: 'TRENDING',
-        basePrice: 205000,
+        basePrice: 240000,
         finalPrice: 0,
         savings: 0,
         hasPhoto: false
@@ -1348,20 +1348,26 @@ premiumArray = [
                     plan.finalPrice = (plan.basePrice * prodsConfig.cantProdSelected) + (plan.basePhoto * prodsConfig.cantProdSelected);
 
                     if (plan.id === 'initial') {
-                        photoPrice = standardArray[2].promo * prodsConfig.cantProdSelected;
-                        videoPrice = standardArray[3].promo *  prodsConfig.cantProdSelected;
+                        photoPrice = standardArray[2].price * prodsConfig.cantProdSelected;
+                        videoPrice = standardArray[3].price *  prodsConfig.cantProdSelected;
+                        //photoPrice = standardArray[2].promo * prodsConfig.cantProdSelected;
+                        //videoPrice = standardArray[3].promo *  prodsConfig.cantProdSelected;
                         plan.savings =  photoPrice + videoPrice - plan.finalPrice;
                     }
 
                     if (plan.id === 'profesional') {
-                        photoPrice = standardArray[2].promo * prodsConfig.cantProdSelected;
-                        videoPrice = premiumArray[1].promo * prodsConfig.cantProdSelected;
+                        photoPrice = standardArray[2].price * prodsConfig.cantProdSelected;
+                        videoPrice = premiumArray[1].price * prodsConfig.cantProdSelected;
+                        //photoPrice = standardArray[2].promo * prodsConfig.cantProdSelected;
+                        //videoPrice = premiumArray[1].promo * prodsConfig.cantProdSelected;
                         plan.savings =  photoPrice + videoPrice - plan.finalPrice;
                     }
 
                     if (plan.id === 'premium') {
-                        photoPrice = standardArray[2].promo * prodsConfig.cantProdSelected;
-                        videoPrice = premiumArray[3].promo * prodsConfig.cantProdSelected; //trending
+                        photoPrice = standardArray[2].price * prodsConfig.cantProdSelected;
+                        videoPrice = premiumArray[3].price * prodsConfig.cantProdSelected; //trending
+                        //photoPrice = standardArray[2].promo * prodsConfig.cantProdSelected;
+                        //videoPrice = premiumArray[3].promo * prodsConfig.cantProdSelected; //trending
                         plan.savings =  photoPrice + videoPrice - plan.finalPrice;
                     }
                 } else {
@@ -1369,15 +1375,16 @@ premiumArray = [
                     plan.finalPrice = plan.basePrice * prodsConfig.cantProdSelected;
 
                     if (plan.id === 'initial') {
-                    plan.savings = (standardArray[3].promo *  prodsConfig.cantProdSelected) - plan.finalPrice;
+                        plan.savings = (standardArray[3].price *  prodsConfig.cantProdSelected) - plan.finalPrice;
+                        //plan.savings = (standardArray[3].promo *  prodsConfig.cantProdSelected) - plan.finalPrice;
                     }
 
                     if (plan.id === 'profesional') {
-                        plan.savings =  (premiumArray[1].promo * prodsConfig.cantProdSelected) - plan.finalPrice;
+                        plan.savings =  (premiumArray[1].price * prodsConfig.cantProdSelected) - plan.finalPrice;
                     }
 
                     if (plan.id === 'premium') {
-                        plan.savings = (premiumArray[3].promo * prodsConfig.cantProdSelected) - plan.finalPrice; //trending
+                        plan.savings = (premiumArray[3].price * prodsConfig.cantProdSelected) - plan.finalPrice; //trending
                     }
                 }
 
