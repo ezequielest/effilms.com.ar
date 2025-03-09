@@ -303,7 +303,7 @@
 
     <section id="cine" class="values-page spad table-price bg-gray-2">
         <div class="overlay"></div>
-        <video loop="true" muted="" autoplay="" class="video-cine" preload="auto" volume="0">
+        <video loop="true" class="video-cine" preload="auto" volume="0">
             <source src="./videos/cine.mp4" type="video/mp4">
         </video>
         <div class="content-container">
@@ -1350,24 +1350,18 @@ premiumArray = [
                     if (plan.id === 'initial') {
                         photoPrice = standardArray[2].price * prodsConfig.cantProdSelected;
                         videoPrice = standardArray[3].price *  prodsConfig.cantProdSelected;
-                        //photoPrice = standardArray[2].promo * prodsConfig.cantProdSelected;
-                        //videoPrice = standardArray[3].promo *  prodsConfig.cantProdSelected;
                         plan.savings =  photoPrice + videoPrice - plan.finalPrice;
                     }
 
                     if (plan.id === 'profesional') {
                         photoPrice = standardArray[2].price * prodsConfig.cantProdSelected;
                         videoPrice = premiumArray[1].price * prodsConfig.cantProdSelected;
-                        //photoPrice = standardArray[2].promo * prodsConfig.cantProdSelected;
-                        //videoPrice = premiumArray[1].promo * prodsConfig.cantProdSelected;
                         plan.savings =  photoPrice + videoPrice - plan.finalPrice;
                     }
 
                     if (plan.id === 'premium') {
                         photoPrice = standardArray[2].price * prodsConfig.cantProdSelected;
                         videoPrice = premiumArray[3].price * prodsConfig.cantProdSelected; //trending
-                        //photoPrice = standardArray[2].promo * prodsConfig.cantProdSelected;
-                        //videoPrice = premiumArray[3].promo * prodsConfig.cantProdSelected; //trending
                         plan.savings =  photoPrice + videoPrice - plan.finalPrice;
                     }
                 } else {
@@ -1376,7 +1370,6 @@ premiumArray = [
 
                     if (plan.id === 'initial') {
                         plan.savings = (standardArray[3].price *  prodsConfig.cantProdSelected) - plan.finalPrice;
-                        //plan.savings = (standardArray[3].promo *  prodsConfig.cantProdSelected) - plan.finalPrice;
                     }
 
                     if (plan.id === 'profesional') {
