@@ -29,7 +29,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
   <!-- Css Styles -->
   <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
@@ -38,7 +38,7 @@
   <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
   <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
   <link rel="stylesheet" href="css/slick.css" type="text/css">
-  <link rel="stylesheet" href="css/style-4.6.1.css" type="text/css">
+  <link rel="stylesheet" href="css/style-4.6.9.css" type="text/css">
   <link rel="shortcut icon" href="/favicon.png" type='image/png' />
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet"/>
@@ -164,7 +164,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-12">
-                    <span class="header-title">VALORES VIGENTES DESDE EL <span style="font-weight: bold;">1 AL 31</span> DE <span style="font-weight: bold;">MARZO</span> 2025
+                    <span class="header-title">VALORES VIGENTES DESDE EL <span style="font-weight: bold;">1 AL 30</span> DE <span style="font-weight: bold;">JUNIO</span> 2025
                     <h6 class="vigencia-details">Las actualizaciones se realizarán de manera mensual de acuerdo al nivel inflacionario del país.</h6>
                 </div>
             </div>
@@ -184,12 +184,15 @@
           <a class="btn-value" href="#extras">EXTRAS</a>
         </div>
       </section>
-
-    <section id="plans" class="monthly spad table-price bg-gray-4" style="padding-bottom: 120px;">
+      
+      <section id="plans" class="monthly spad table-price bg-gray-4" style="padding-bottom: 120px; color: white;">
         <div style="display: flex; justify-content: center; margin-bottom: 30px;">
-            <h2 class="title" style="position: relative;">PLANES MENSUALES 
+            <h2 class="title" style="position: relative;">PLANES MENSUALES  - <span class="monthy-highlighted" style="font-size: 40px; color: red;">AGOTADOS</span>
                 <span style="display: relative; display: block; text-align: center;">
-                    <span style="font-size: 26px; font-weight: bold;">3</span> CUPOS DISPONIBLES
+                    <span style="font-size: 26px; font-weight: bold;">0</span> CUPOS DISPONIBLES
+                </span>
+                <span style="display: relative; display: block; text-align: center;">
+                    <span style="font-size: 26px; font-weight: bold;">CONSULTAR
                 </span>
             </h2>
         </div>
@@ -209,13 +212,24 @@
 
       <div class="monthly-container">
         <div>
-          <h2 class="title">INICIAL</h2>
+          <h2 class="title" style="color: white;">INICIAL</h2>
         </div>
         <div>
-          <ul>
+          <ul style="list-style: none;">
             <li><div class="cant-prod" style="display: inline; font-weight: bold;">2</div> PRODUCCIONES AUDIOVISUALES</li>
-            <li>Servicio <b>ESTANDAR</b></li>
-            <li>FULL HD</li>
+            <li>Servicio <b>INICIAL</b></li>
+            <li>Calidad profesional</li>
+            <li>Video CÁMARA + DRON</li>
+            <li style="margin-top: 5px;">
+                <label>
+                    <input class="initial-photo" type="checkbox" id="initial_photo" value="false" onclick="updateAddPhotoPrice('initial')" /> Agregar fotografía HDR
+                </label>
+                <li>
+                    <label>
+                        <input class="initial-photo" type="checkbox" id="initial_adaptation" value="false" onclick="updateAddAdaptationPrice('initial')"  /> Video adaptación
+                    </label>
+                </li>
+            </li>
           </ul>
         </div>
         <div>
@@ -226,31 +240,56 @@
       <div class="monthly-container middle">
         <div class="monthy-highlighted">MÁS SOLICITADO</div>
         <div>
-          <h2 class="title">PROFESIONAL</h2>
+          <h2 class="title" style="color: white;">ESTANDAR</h2>
         </div>
         <div>
-          <ul>
+          <ul style="list-style: none;">
             <li><div class="cant-prod" style="display: inline; font-weight: bold;">2</div> PRODUCCIONES AUDIOVISUALES</li>
-            <li>Servicio <b>PREMIUM</b></li>
-            <li>FULL HD</li>
-            <li>MODELADO O CONDUCCIÓN</li>
+            <li>Servicio <b>ESTANDAR</b></li>
+            <li>Calidad profesional</li>
+            <li>Video CÁMARA + DRON</li>
+            <li>Broker conoduciendo video</li>
+            <li>
+                <li style="margin-top: 5px;">
+                    <input class="standard-photo" type="checkbox" id="standard_photo" value="false" onclick="updateAddPhotoPrice('standard')" /> Agregar fotografía HDR
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input class="standard-adaptation" type="checkbox" id="standard_adaptation" value="false" onclick="updateAddAdaptationPrice('standard')"  /> Video adaptación
+                </label>
+            </li>
           </ul>
         </div>
         <div>
-          <h3 class="price">$<span id="profesional"></span>.-</h3>
-          <h5>AHORRAS $<span id="profesionalDiscont">0</span>.-</h5>
+            <div>
+                <h3 class="price">$<span id="standard"></span>.-</h3>
+                <h5>AHORRAS $<span id="standardDiscont">0</span>.-</h5>
+            </div>
         </div>
       </div>
       <div class="monthly-container">
         <div>
-          <h2 class="title">PREMIUM</h2>
+          <h2 class="title" style="color: white;">PREMIUM</h2>
         </div>
         <div>
-          <ul>
+          <ul style="list-style: none;">
             <li><div class="cant-prod" style="display: inline; font-weight: bold;">2</div> PRODUCCIONES AUDIOVISUALES</li>
             <li>Servicio <b>PREMIUM</b></li>
             <li>Videos de alto impacto</li>
-            <li>Servicios trending</li>
+            <li>Adaptación de formato</li>
+            <li>Efetos de texto</li>
+            <li>Adaptación de formato</li>
+            <li style="margin-top: 5px;">
+                <label>
+                    <input class="premium-photo" type="checkbox" id="premium_photo" value="false" onclick="updateAddPhotoPrice('premium')" /> Agregar fotografía HDR
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input class="premium_adaptation" type="checkbox" id="premium_adaptation" value="false" disabled onclick="updateAddAdaptationPrice('premium')" /> Video adaptación
+                </label>
+            </li>
           </ul>
         </div>
         <div>
@@ -262,7 +301,7 @@
     <div style="text-align: center; color: white; display: flex; flex-direction: column; margin-top: 40px;">
         <div>ABONO FIJO MENSUAL</div>
         <div>LAS MENSUALIDADES SE ABONAN DEL 1 AL 10 DE CADA MES</div>
-        <div>LAS PRODUCCIONES NO REALIZADAS EN MES CORRIENTE NO SON REEMBOLSABLES</div>
+        <div>LAS PRODUCCIONES NO FILMADAS PUEDEN SER REALIZADAS EL MES POSTERIOR, LUEGO DE ESE PLAZO YA NO SON REEMBOLSABLES</div>
 
     </div>
 
@@ -271,6 +310,21 @@
     </div>
 
 
+    </section>
+
+    <section id="standard" class="values-page spad table-price bg-gray-2">
+        <div class="container">
+            <div class="row">
+              <div class="col-lg-12 text-center">
+                <h2 class="title">SERVICIOS INICIALES</h2>
+                <h4 class="sub-title">Servicios para impulsar tus primeros pasos</h4>
+                <h3 class="sub-title" style="color: orange;">MONOAMBIENTES - 20% OFF</h3>
+              </div>
+            </div>
+            <div class="row">
+                <div id="basic-carousel" class="card-container"></div>
+            </div>
+        </div>
     </section>
 
     <section id="standard" class="values-page spad table-price bg-gray-2">
@@ -345,9 +399,9 @@
                   <div class="disclamers">
                       <h2 class="title" style="margin-bottom: 60px;">SERVICIOS EXTRA</h2>
                       <h6 class="title">Servicio de <b>búsqueda de llave</b> <span>$10.000.-.-</span></h6>
-                      <h6 class="title"><b>Adaptación vertical</b> para reels / historias <span>$12.000.-.-</span></h6>
-                      <h6 class="title">En caso de requerir solamente el <b>material original</b> (material crudo) el costo será del <span>60%</span> del valor del servicio seleccionado (solo se entregan los crudos).</h6>
-                      <h6 class="title">En caso de querer adiciónar el <b>material original</b> al servicio, el costo será del <span>30%</span> del valor del servicio seleccionado (se entrega el material listo para la publicación + los crudos del mismo).</h6>
+                      <h6 class="title"><b>Adaptación vertical</b> para reels / historias <span>$15.000.-.-</span></h6>
+                      <h6 class="title">En caso de requerir solamente el <b>material original</b> (material crudo) el costo será del <span>50%</span> del valor del servicio seleccionado (solo se entregan los crudos).</h6>
+                      <h6 class="title">En caso de querer adiciónar el <b>material original</b> al servicio, el costo será del <span>25%</span> del valor del servicio seleccionado (se entrega el material listo para la publicación + los crudos del mismo).</h6>
                   </div>
               </div>
           </div>
@@ -416,7 +470,7 @@
                     <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="counter__item">
                             <div class="counter__item__number">
-                                <h2 class="count">326</h2>
+                                <h2 class="count">426</h2>
                             </div>
                             <div class="counter__item__text">
                                 <h5>Proyectos<br /> entregados</h5>
@@ -436,7 +490,7 @@
                     <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="counter__item">
                             <div class="counter__item__number">
-                                <h2 class="count">1630</h2>
+                                <h2 class="count">2530</h2>
                             </div>
                             <div class="counter__item__text">
                                 <h5>Horas<br /> editando</h5>
@@ -684,554 +738,7 @@
   });
   </script>
 
-  <script>
-
-standardArray = [
-    {
-    service: 'VIDEO',
-    description: 'Video completo del inmueble realizado con equipo profesional.',
-    video: 'https://www.youtube.com/watch?v=2ezasH5vDJI&t=5s',
-    timeProd: '',
-    timeDelivery: '',
-    since: false,
-    price: 125000, 
-    promo: 105000,
-    price4k: 185000,
-    promo4k: 165000,
-    add: '',
-    isHighlighted: false,
-    isPromo: false,
-    isNew: false,
-    isVideo: true,
-    isOnlyPremiumHome: false,
-    hours: 1,
-    minutes: 0,
-    delivery: 5
-    },{
-    service: 'DRON',
-    description: 'Video de tomas aéreas realizadas con dron. Incluye efectos visuales.',
-    timeProd: '',
-    timeDelivery: '',
-    video: 'https://www.youtube.com/watch?v=9HoWW46Ax4M',
-    since: false,
-    price: 135000,
-    promo: 115000,
-    price4k: null,
-    promo4k: null,
-    add: '',
-    isHighlighted: false,
-    isPromo: false,
-    isNew: false,
-    isVideo: false,
-    isOnlyPremiumHome: false,
-    hours: 1,
-    minutes: 0,
-    delivery: 5
-    },{
-    service: 'FOTOGRAFÍA HDR (25)',
-    description: 'Pack de 25 fotos profesionales editadas del inmueble con cámara profesional.',
-    slider: 'certiat',
-    video: null,
-    timeProd: '',
-    timeDelivery: '',
-    since: false,
-    price: 65000,
-    promo: 50000,
-    price4k: null,
-    promo4k: null,
-    add: '',
-    isHighlighted: false,
-    isPromo: false,
-    isNew: false,
-    isVideo: false,
-    isOnlyPremiumHome: false,
-    hours: 1,
-    minutes: 0,
-    delivery: 5
-    },
-    {
-    service: 'VIDEO + DRON',
-    description: 'Video completo del inmueble realizado con equipo profesional.',
-    video: 'https://www.instagram.com/reel/C3GX_M-RBrO/',
-    timeProd: '',
-    timeDelivery: '',
-    since: false,
-    price: 200000,
-    promo: 175000,
-    price4k: 265000,
-    promo4k: 235000,
-    add: '',
-    isHighlighted: true,
-    isPromo: false,
-    isNew: false,
-    isVideo: true,
-    isOnlyPremiumHome: false,
-    hours: 1,
-    minutes: 30,
-    delivery: 5
-    },
-    {
-    service: 'FULL',
-    description: 'VIDEO + DRON + FOTOGRAFÍA HDR. Cobertura completa.',
-    video: 'https://www.instagram.com/reel/C3GX_M-RBrO/',
-    timeProd: '',
-    timeDelivery: '',
-    since: false,
-    price: 235000,
-    promo: 215000,
-    price4k: 285000,
-    promo4k: 265000,
-    add: '',
-    isHighlighted: false,
-    isPromo: false,
-    isNew: false,
-    isVideo: true,
-    isOnlyPremiumHome: false,
-    hours: 1,
-    minutes: 30,
-    delivery: 5
-    }];
-
-premiumArray = [
-      {
-        service: 'MODELADO',
-        description: 'Video donde tu márca personal es la protagonista. Video con CÁMARA + DRON.',
-        timeProd: '',
-        timeDelivery: '',
-        video: 'https://www.instagram.com/p/C30tK5gRU41',
-        since: false,
-        price: 215000,
-        promo: 195000,
-        price4k: 265000,
-        promo4k: 245000,
-        add: '',
-        isHighlighted: false,
-        isPromo: false,
-        isNew: false,
-        isVideo: true,
-        isOnlyPremiumHome: false,
-        hours: 1,
-        minutes: 30,
-        delivery: 5
-      },
-      {
-        service: 'CONDUCCIÓN',
-        description: 'Video donde vos mismo presentas el inmueble. Video con CÁMARA + DRON.',
-        video: 'https://www.instagram.com/p/C38diMsxW2I/',
-        timeProd: '',
-        timeDelivery: '',
-        since: false,
-        price: 250000,
-        promo: 225000,
-        price4k: 300000,
-        promo4k: 275000,
-        add: '',
-        isHighlighted: false,
-        isPromo: false,
-        isNew: false,
-        isVideo: true,
-        isOnlyPremiumHome: false,
-        hours: 1,
-        minutes: 30,
-        delivery: 5
-      },{
-        service: 'FOTOGRAFÍA HDR (50)',
-        description: 'Pack de 50 fotografía profesional. Útilizamos la técnica de Bracketing y HDR.',
-        slider: 'certiat',
-        video: null,
-        timeProd: '',
-        timeDelivery: '',
-        since: false,
-        price: 90000,
-        promo: 70000,
-        price4k: null,
-        promo4k: null,
-        add: '',
-        isHighlighted: false,
-        isPromo: false,
-        isNew: false,
-        isVideo: false,
-        isOnlyPremiumHome: false,
-        hours: 1,
-        minutes: 0,
-        delivery: 5
-        },{
-        service: 'TRENDING',
-        description: 'Video de alto impacto donde el guión es clave. Video con CÁMARA + DRON',
-        video: 'https://www.instagram.com/p/DE3K9qlRoOC/',
-        timeProd: '',
-        timeDelivery: '',
-        since: false,
-        price: 280000,
-        promo: 255000,
-        price4k: 330000,
-        promo4k: 305000,
-        add: '',
-        isHighlighted: false,
-        isPromo: false,
-        isNew: false,
-        isVideo: true,
-        isOnlyPremiumHome: true,
-        hours: 2,
-        minutes: 0,
-        delivery: 5
-        },{
-        service: 'ÉPICO',
-        description: 'Video de alto impacto donde el guión es clave pero además  sumamos tomas detalle. Video con CÁMARA + DRON',
-        video: 'https://www.instagram.com/p/DBzmJJexVhc/',
-        timeProd: '',
-        timeDelivery: '',
-        since: false,
-        price: 305000,
-        promo: 285000,
-        price4k: 355000,
-        promo4k: 335000,
-        add: '',
-        isHighlighted: false,
-        isPromo: false,
-        isNew: false,
-        isVideo: true,
-        isOnlyPremiumHome: true,
-        hours: 2,
-        minutes: 30,
-        delivery: 5
-        },
-      /*{
-        service: 'DRON FPV',
-        description: 'Video de interiores realizado con dron.',
-        video: 'https://www.youtube.com/embed/PT5w3ITbgBE',
-        timeProd: '',
-        timeDelivery: '',
-        price: 350,
-        promo: 300,
-        price4k: null,
-        promo4k: null,
-        add: '',
-        isHighlighted: false,
-        isPromo: false,
-        isNew: false,
-        isVideo: false
-      }*/,/*{
-        service: 'OBRA FPV',
-        description: 'Cobertura de obra con dron fpv.',
-        video: null,
-        timeProd: '',
-        timeDelivery: '',
-        price: 255.000,
-        promo: 225.000,
-        price4k: null,
-        promo4k: null,
-        add: '',
-        isHighlighted: false,
-        isPromo: true,
-        isNew: false,
-        isVideo: false
-      },{
-        service: 'FOTOS INSTITUCIONALES',
-        description: 'Fotografías profesionales para tu equipo de trabajo.',
-        video: null,
-        timeProd: '',
-        timeDelivery: '',
-        price: '$80.000.-',
-        promo: '$70.000.-',
-        price4k: null,
-        promo4k: null,
-        add: '',
-        isPromo: true,
-        isNew: false,
-        isVideo: false
-      }*/];
-
-      customArray = [
-      {
-        service: 'INSTITUCIONALES',        
-        description: 'Video institucional para tu empresa.',
-        timeProd: '',
-        timeDelivery: '',
-        video: 'https://www.youtube.com/watch?v=WNKtXL7lc-o',
-        since: true,
-        price: 370000,
-        promo: null,
-        price4k: null,
-        promo4k: null,
-        add: null,
-        isPromo: false,
-        isNew: false,
-        isVideo: false
-      },
-      {
-        service: 'CAMPOS',        
-        description: 'Producción audiovidual para campos.',
-        timeProd: '',
-        timeDelivery: '',
-        video: 'https://www.youtube.com/watch?v=DxaDVne_Wks',
-        since: true,
-        price: 280000,
-        promo: null,
-        price4k: null,
-        promo4k: null,
-        add: null,
-        isPromo: false,
-        isNew: false,
-        isVideo: false
-      },
-      {
-        service: 'EDIFICIOS',        
-        description: 'Producción audiovidual para edificios.',
-        timeProd: '',
-        timeDelivery: '',
-        video: 'https://www.instagram.com/p/C4ysFMixPrq/',
-        since: true,
-        price: 280000,
-        promo: null,
-        price4k: null,
-        promo4k: null,
-        add: null,
-        isPromo: false,
-        isNew: false,
-        isVideo: false
-      },
-      {
-        service: 'BARRIOS PRIVADOS',        
-        description: 'Producción audiovidual para barrios privados.',
-        timeProd: '',
-        timeDelivery: '',
-        video: 'https://www.youtube.com/watch?v=GCE-opUPhmE',
-        since: true,
-        price: 280000,
-        promo: null,
-        price4k: null,
-        promo4k: null,
-        add: null,
-        isPromo: false,
-        isNew: false,
-        isVideo: false
-      },      {
-        service: 'EVENTOS',
-        description: 'Cobertura de evento y video resumen con cámara profesional.',
-        video: null,
-        timeProd: '',
-        timeDelivery: '',
-        since: true,
-        price: 95000,
-        promo: null,
-        price4k: null,
-        promo4k: null,
-        add: '',
-        isPromo: false,
-        isNew: false,
-        isVideo: false
-      }];
-
-      /*insta360Array = [
-      {
-        service: 'TOUR VIRTUAL',        
-        description: 'Tour virtual del inmuble',
-        timeProd: '',
-        timeDelivery: '',
-        video: null,
-        price: '$40.000.- <span>c/100m2</span>',
-        promo: '$30.000.- <span>c/100m2</span>',
-        price4k: '$150.000.-',
-        promo4k: '$120.000.-',
-        add: '+4.000.- server',
-        isPromo: false,
-        isNew: false
-      },
-      {
-        service: 'FOTOS 360',
-        description: 'Pack de fotografías 360 editadas',
-        timeProd: '',
-        timeDelivery: '',
-        video: null,
-        price: '$40.000.- <span>c/100m2</span>',
-        promo: '$30.000.- <span>c/100m2</span>',
-        price4k: '$150.000.-',
-        promo4k: '$120.000.-',
-        add: null,
-        isPromo: false,
-        isNew: false
-      },
-      {
-        service: 'MONTAJE 3D',
-        description: 'Tomas reales de dron con integración 3D',
-        timeProd: '',
-        timeDelivery: '',
-        video: 'https://www.instagram.com/p/C1VR7QbRExa/',
-        price: '<span>desde</span> U$D 400.-',
-        promo: null,
-        price4k: '$150.000.-',
-        promo4k: '$120.000.-',
-        add: null
-      }];*/
-
-      othersServiceArray = [];
-
-      cineArray = [
-      {
-        service: 'CINE',        
-        description: '',
-        timeProd: '',
-        timeDelivery: '',
-        video: null,
-        price: null,
-        promo: null,
-        price4k: null,
-        promo4k: null,
-        add: null,
-        isPromo: false,
-        isNew: false,
-        isVideo: true
-      }];
-
-      /*VIDEO PROP*/
-      combosArray = [
-      {
-        service: 'VIDEO GO PRO',        
-        description: 'CÁMARA GO PRO + DRON',
-        timeProd: '',
-        timeDelivery: '',
-        video: null,
-        price: '$90.000.-',
-        promo: '$70.000.-',
-        price4k: '$150.000.-',
-        promo4k: '$120.000.-',
-        add: null,
-        isPromo: false,
-        isNew: false,
-        isVideo: true
-      },
-      {
-        service: 'VIDEO PROFES.',        
-        description: 'CÁMARA PROFESIONAL + DRON',
-        timeProd: '',
-        timeDelivery: '',
-        video: 'https://www.instagram.com/p/C3A_6HwRi76/',
-        price: '$150.000.-',
-        promo: '$120.000.-',
-        price4k: '$150.000.-',
-        promo4k: '$120.000.-',
-        add: null,
-        isPromo: false,
-        isNew: false
-      },
-      {
-        service: 'FULL GO PRO',        
-        description: 'FOTO + VIDEO + DRON CON GO PRO',
-        timeProd: '',
-        timeDelivery: '',
-        video: null,
-        price: '$110.000.-',
-        promo: '$90.000.-',
-        price4k: '$150.000.-',
-        promo4k: '$120.000.-',
-        add: null,
-        isPromo: false,
-        isNew: false
-      },
-      {
-        service: 'FULL PROFESIONAL',        
-        description: 'FOTO + VIDEO + DRON CON CÁMARA PROFESIONAL',
-        timeProd: '',
-        timeDelivery: '',
-        video: null,
-        price: '$200.000.-',
-        promo: '$160.000.-',
-        price4k: '$150.000.-',
-        promo4k: '$120.000.-',
-        add: null,
-        isPromo: false,
-        isNew: false
-      }];
-
-      function createCarousel(array, html) {
-        let htmlVideo = '';
-        array.forEach(el => {
-            htmlVideo +=                     
-        `<div class="card-value ${el.isHighlighted ? 'highlighted' : ''}">`
-                if (el.isHighlighted) {
-                  htmlVideo += `<div class="label-highlighted">RECOMENDADO</div>`
-                }
-
-                if (el.isOnlyPremiumHome) {
-                  htmlVideo += `<div class="label-highlighted green">PARA INMUEBLES <b>PREMIUM</b></div>`
-                }
-                htmlVideo += `<div class="header-card">
-                    <div class="image-container gopro">
-                        <div class="title">${el.service}</div>
-                    </div>
-                </div>
-                <div class="content">
-                    <div class="subtitle">${el.description}</div>`;
-                    if (el.video) {
-                        htmlVideo += `<a  target="_blank" href="${el.video}" class="link">> ver ejemplo</a>`;
-                    }
-                    if (el.slider) {
-                        htmlVideo += `<a  onclick="showSlider('${el.slider}')" class="link">> ver ejemplo</a>`;
-                    }
-                    htmlVideo += `<div class="prices">`
-
-                        if (el.price && el.price4k) {
-                            htmlVideo += `<div class="border-right">`
-                        } else {
-                            htmlVideo += `<div>`
-                        }
-
-                        if (el.isVideo) {
-                            htmlVideo += `HD`
-                        }
-                        if (el.price) {
-                            htmlVideo += '<div class="normal">';
-                            if (el.since) {
-                                htmlVideo += '<span>DESDE</span> ';
-                            }    
-                            htmlVideo += `$${el.price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")}.-
-                            </div>`;
-                        } else {
-                            htmlVideo += `<a class="ask-price" target="_blank" href="https://api.whatsapp.com/send?phone=542236688588&text=Hola, me gustaría pedirles un presupuesto." target="_blank">CONSULTAR</a>`;                       
-                        }
-
-                        if (el.promo) {
-                            htmlVideo += 
-                            `<div class="combo">
-                                <span>3 x mes</span> 
-                                <div>${el.promo.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")} <span>c/u</span></div>
-                            </div>`
-                        }
-                        if (el.add) {
-                            htmlVideo += `<div><span>${el.add}</span></div>`;
-                        } 
-                    htmlVideo+=`</div>`
-                        if (el.price4k) {
-                                htmlVideo += `<div>4K 
-                                                <div class="normal"><span></span>$${el.price4k.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")}.-</div>
-                                            `;
-                        }
-
-                        if (el.promo4k) {
-                            htmlVideo += 
-                            `<div class="combo">
-                                <span>3 x mes</span> 
-                                <div>${el.promo4k.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")} <span>c/u</span></div>
-                            </div>
-                        </div>`
-                        }
-                    htmlVideo+=`<div>
-                    
-                    </div>
-                    </div>
-                </div>
-            </div>`;
-        });
-
-        document.getElementById(html).innerHTML = htmlVideo;
-      }
-
-      createCarousel(standardArray,'standard-carousel');
-      createCarousel(premiumArray,'premium-carousel');
-      //createCarousel(cineArray,'cine-carousel');
-      createCarousel(customArray,'custom-carousel');
-  </script>
+<script src="/js/valores-3.js"></script>
 
   <script>
     sliders = [{
@@ -1245,7 +752,23 @@ premiumArray = [
             '6.jpg',
             '7.jpg'
         ]
-    }]
+    },
+    {
+        key: 'pernice',
+        photos: [
+            '1.jpg',
+            '2.jpg',
+            '3.png',
+            '4.jpg',
+            '5.jpg',
+            '7.jpg',
+            '8.jpg',
+            '11.jpg',
+            '12.jpg',
+            '14.jpg',
+            '15.jpg'
+        ]
+    }];
 
     function showSlider(key) {
 
@@ -1282,122 +805,16 @@ premiumArray = [
         })
     }
 
-    var prodsConfig = {
-        cantProdSelected: 2,
-        minProds: 2,
-        maxProds: 4
-    }
-
-    /*BASEPRICE ES EL VALOR NETO POR PRODUCCION (CON DESCUENTO), CON ESTE SE CALCULA EL AHORRO*/
-    var plans = [{
-        id: 'initial',
-        type: 'initial',
-        description: 'INICIAL',
-        basePrice: 150000, /*CADA VIDEO CUESTA 140.000*/
-        finalPrice: 0,
-        savings: 0,
-        hasPhoto: false
-    },
-    {
-        id: 'profesional',
-        type: 'profesional',
-        description: 'PROFESIONAL',
-        basePrice: 195000, /*20% OFF*/
-        basePhoto: 25000,
-        finalPrice: 0,
-        savings: 0,
-        hasPhoto: false
-    },{
-        id: 'premium',
-        type: 'premium',
-        description: 'TRENDING',
-        basePrice: 240000,
-        finalPrice: 0,
-        savings: 0,
-        hasPhoto: false
-    }];
-
-    updateFinalPrice();
-
-
-    function incressProd() {
-        if (prodsConfig.cantProdSelected <prodsConfig.maxProds) {
-            ++prodsConfig.cantProdSelected;
-
-            console.log('price ', plans)
-
-            updateFinalPrice();
-            updateCantProds();
-        }
-    }
-
-    function decreaseProd() {
-        if (prodsConfig.cantProdSelected > prodsConfig.minProds) {
-            --prodsConfig.cantProdSelected;
-            console.log('price ', plans)
-            updateFinalPrice();
-            updateCantProds();
-        }
-    }
-
-    function updateFinalPrice() {
-        plans.forEach(plan => {
-
-                if (plan.hasPhoto) {
-
-                    plan.finalPrice = (plan.basePrice * prodsConfig.cantProdSelected) + (plan.basePhoto * prodsConfig.cantProdSelected);
-
-                    if (plan.id === 'initial') {
-                        photoPrice = standardArray[2].price * prodsConfig.cantProdSelected;
-                        videoPrice = standardArray[3].price *  prodsConfig.cantProdSelected;
-                        plan.savings =  photoPrice + videoPrice - plan.finalPrice;
-                    }
-
-                    if (plan.id === 'profesional') {
-                        photoPrice = standardArray[2].price * prodsConfig.cantProdSelected;
-                        videoPrice = premiumArray[1].price * prodsConfig.cantProdSelected;
-                        plan.savings =  photoPrice + videoPrice - plan.finalPrice;
-                    }
-
-                    if (plan.id === 'premium') {
-                        photoPrice = standardArray[2].price * prodsConfig.cantProdSelected;
-                        videoPrice = premiumArray[3].price * prodsConfig.cantProdSelected; //trending
-                        plan.savings =  photoPrice + videoPrice - plan.finalPrice;
-                    }
-                } else {
-
-                    plan.finalPrice = plan.basePrice * prodsConfig.cantProdSelected;
-
-                    if (plan.id === 'initial') {
-                        plan.savings = (standardArray[3].price *  prodsConfig.cantProdSelected) - plan.finalPrice;
-                    }
-
-                    if (plan.id === 'profesional') {
-                        plan.savings =  (premiumArray[1].price * prodsConfig.cantProdSelected) - plan.finalPrice;
-                    }
-
-                    if (plan.id === 'premium') {
-                        plan.savings = (premiumArray[3].price * prodsConfig.cantProdSelected) - plan.finalPrice; //trending
-                    }
-                }
-
-                document.getElementById(plan.id).innerHTML=plan.finalPrice.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
-                document.getElementById(plan.id + 'Discont').innerHTML=plan.savings.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");;
-        });
-
-        
-    }
-
-    function updateCantProds() {
-        let elements = document.getElementsByClassName('cant-prod')
-
-        for(var i=0; i<elements.length; i++) {
-            elements[i].innerHTML = prodsConfig.cantProdSelected;
-        }
-    }
   </script>
   
   <script src="https://cdn.jsdelivr.net/npm/qrious@4.0.2/dist/qrious.min.js"></script>
+
+  <script>
+      createCarousel(basicArray,'basic-carousel');
+      createCarousel(standardArray,'standard-carousel');
+      createCarousel(premiumArray,'premium-carousel');
+      createCarousel(customArray,'custom-carousel');
+  </script>
 
 <script>
   // Obtener el elemento canvas
