@@ -120,7 +120,7 @@
     <header class="header">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-3">
+                <div class="col-lg-2">
                     <div class="header__logo">
                         <a href="http://effilms.com.ar">
                             <span style="font-family: 'Bebas Neue', serif;">EF</span>
@@ -131,15 +131,19 @@
                 <div class="col-lg-5">
                     <nav class="header__menu mobile-menu">
                         <ul>
-                            <li><a href="/#landing">Volver al HOME</a></li>
+                            <li><a href="/#landing">HOME</a></li>
+                            <li><a href="/#standard">ESTANDAR</a></li>
+                            <li><a href="/#premium">PREMIUM</a></li>
+                            <li><a href="/#custom">PERSONALIZADOS</a></li>
                         </ul>
                     </nav>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-5">
                   <div class="header__menu mobile-menu selection-buttons">
-                    <a class="btn-value" href="#standard">ESTANDAR</a>
-                    <a class="btn-value" href="#premium">PREMIUM</a>
-                    <a class="btn-value" href="#custom">PERSONALIZADOS</a>
+                    <div style="display: inline;">
+                        <input id="inputCode" type="text" value="" placeholder="Código de promoción" style="display: inline;">
+                        <button  style="display: inline;" onclick="loadCode()">CARGAR</button>
+                    </div>
                   </div>
                 </div>
             </div>
@@ -828,6 +832,20 @@
       background: 'transparent', // Color de fondo del código QR
       foreground: 'white' // Color del código QR
   });
+  </script>
+
+  <script>
+    const codes = {
+        'REMAXARENA': 10,
+    }
+
+    function loadCode() {
+        console.log('loadCode');
+        const codeValue = document.getElementById('inputCode').value;
+        console.log('value ' + codeValue);
+        console.log(codes[codeValue]);
+    }
+
   </script>
 </body>
 
