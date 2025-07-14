@@ -38,7 +38,7 @@
   <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
   <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
   <link rel="stylesheet" href="css/slick.css" type="text/css">
-  <link rel="stylesheet" href="css/style-4.6.9.css" type="text/css">
+  <link rel="stylesheet" href="css/style-4.6.10.css" type="text/css">
   <link rel="shortcut icon" href="/favicon.png" type='image/png' />
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet"/>
@@ -168,7 +168,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-12">
-                    <span class="header-title">VALORES VIGENTES DESDE EL <span style="font-weight: bold;">1 AL 30</span> DE <span style="font-weight: bold;">JUNIO</span> 2025
+                    <span class="header-title">VALORES VIGENTES DESDE EL <span style="font-weight: bold;">1 AL 31</span> DE <span style="font-weight: bold;">JULIO</span> 2025
                     <h6 class="vigencia-details">Las actualizaciones se realizarán de manera mensual de acuerdo al nivel inflacionario del país.</h6>
                 </div>
             </div>
@@ -182,10 +182,10 @@
         </div>
         <div class="selection-buttons">
           <a class="btn-value" href="#plans">PLANES MENSUALES</a>
-          <a class="btn-value" href="#standard">ESTANDAR</a>
+          <!--<a class="btn-value" href="#standard">ESTANDAR</a>-->
           <a class="btn-value" href="#premium">PREMIUM</a>
           <a class="btn-value" href="#custom">PERSONALIZADOS</a>
-          <a class="btn-value" href="#extras">EXTRAS</a>
+          <!--<a class="btn-value" href="#extras">EXTRAS</a>-->
         </div>
       </section>
       
@@ -215,22 +215,23 @@
       <div class="monthly-card">
 
       <div class="monthly-container">
+        <div class="monthy-highlighted">AGOTADO</div>
         <div>
-          <h2 class="title" style="color: white;">INICIAL</h2>
+          <h2 class="title" style="color: white;">BASE</h2>
         </div>
         <div>
           <ul style="list-style: none;">
             <li><div class="cant-prod" style="display: inline; font-weight: bold;">2</div> PRODUCCIONES AUDIOVISUALES</li>
             <li>Servicio <b>INICIAL</b></li>
-            <li>Calidad profesional</li>
-            <li>Video CÁMARA + DRON</li>
+            <li>Calidad estandar - SMARTPHONE</li>
+            <li>SERVICIO DE FILMACIÓN</li>
             <li style="margin-top: 5px;">
                 <label>
-                    <input class="initial-photo" type="checkbox" id="initial_photo" value="false" onclick="updateAddPhotoPrice('initial')" /> Agregar fotografía HDR
+                    <input class="initial-photo" type="checkbox" id="initial_photo" value="false" disabled onclick="updateAddPhotoPrice('initial')" /> Agregar fotografía HDR
                 </label>
                 <li>
                     <label>
-                        <input class="initial-photo" type="checkbox" id="initial_adaptation" value="false" onclick="updateAddAdaptationPrice('initial')"  /> Video adaptación
+                        <input class="initial-photo" type="checkbox" id="initial_adaptation" value="false" disabled onclick="updateAddAdaptationPrice('initial')"  /> Video adaptación
                     </label>
                 </li>
             </li>
@@ -241,26 +242,29 @@
           <h5>AHORRAS $<span id="initialDiscont">0</span>.-</h5>
         </div>
       </div>
-      <div class="monthly-container middle">
-        <div class="monthy-highlighted">MÁS SOLICITADO</div>
+     <!----><div class="monthly-container middle">
+        <!--<div class="monthy-highlighted">MÁS SOLICITADO</div>-->
+        <div class="monthy-highlighted">AGOTADO</div>
         <div>
-          <h2 class="title" style="color: white;">ESTANDAR</h2>
+          <h2 class="title" style="color: white;">FULL</h2>
         </div>
         <div>
           <ul style="list-style: none;">
             <li><div class="cant-prod" style="display: inline; font-weight: bold;">2</div> PRODUCCIONES AUDIOVISUALES</li>
             <li>Servicio <b>ESTANDAR</b></li>
-            <li>Calidad profesional</li>
-            <li>Video CÁMARA + DRON</li>
-            <li>Broker conoduciendo video</li>
+            <li>Calidad estandar - SMARTPHONE</li>
+            <li>SERVICIO DE FILMACIÓN</li>
+            <li>SERVICIO DE DRON</li>
+            <li>SERVICIO DE FOTOGRAFÍA</li>
+            <li>BROKER CONDUCIONDO EL VIDEO</li>
             <li>
                 <li style="margin-top: 5px;">
-                    <input class="standard-photo" type="checkbox" id="standard_photo" value="false" onclick="updateAddPhotoPrice('standard')" /> Agregar fotografía HDR
+                    <input class="standard-photo" type="checkbox" id="standard_photo" value="false" disabled onclick="updateAddPhotoPrice('standard')" /> Agregar fotografía HDR
                 </label>
             </li>
             <li>
                 <label>
-                    <input class="standard-adaptation" type="checkbox" id="standard_adaptation" value="false" onclick="updateAddAdaptationPrice('standard')"  /> Video adaptación
+                    <input class="standard-adaptation" type="checkbox" id="standard_adaptation" value="false" disabled onclick="updateAddAdaptationPrice('standard')"  /> Video adaptación
                 </label>
             </li>
           </ul>
@@ -273,6 +277,7 @@
         </div>
       </div>
       <div class="monthly-container">
+        <div class="monthy-highlighted">AGOTADO</div>
         <div>
           <h2 class="title" style="color: white;">PREMIUM</h2>
         </div>
@@ -280,13 +285,13 @@
           <ul style="list-style: none;">
             <li><div class="cant-prod" style="display: inline; font-weight: bold;">2</div> PRODUCCIONES AUDIOVISUALES</li>
             <li>Servicio <b>PREMIUM</b></li>
+            <li>Calidad profesional</li>
             <li>Videos de alto impacto</li>
-            <li>Adaptación de formato</li>
+            <li>Equipo profesional</li>
             <li>Efetos de texto</li>
-            <li>Adaptación de formato</li>
             <li style="margin-top: 5px;">
                 <label>
-                    <input class="premium-photo" type="checkbox" id="premium_photo" value="false" onclick="updateAddPhotoPrice('premium')" /> Agregar fotografía HDR
+                    <input class="premium-photo" type="checkbox" id="premium_photo" value="false" disabled onclick="updateAddPhotoPrice('premium')" /> Agregar fotografía HDR
                 </label>
             </li>
             <li>
@@ -331,7 +336,7 @@
         </div>
     </section>
 
-    <section id="standard" class="values-page spad table-price bg-gray-2">
+    <!--<section id="standard" class="values-page spad table-price bg-gray-2">
         <div class="container">
             <div class="row">
               <div class="col-lg-12 text-center">
@@ -343,7 +348,7 @@
                 <div id="standard-carousel" class="card-container"></div>
             </div>
         </div>
-    </section>
+    </section>-->
 
     <section id="premium" class="values-page spad table-price bg-gray-2">
         <div class="container">
@@ -359,7 +364,21 @@
         </div>
     </section>
 
-    <section id="cine" class="values-page spad table-price bg-gray-2">
+    <section id="custom" class="values-page spad table-price bg-gray-2">
+        <div class="container">
+            <div class="row">
+              <div class="col-lg-12 text-center">
+                <h2 class="title">SERVICIOS PERSONALIZADOS</h2>
+                <h4 class="sub-title">Armamos el presupuesto de acuerdo a tus necesidades</h4>
+              </div>
+            </div>
+            <div class="row">
+                <div id="custom-carousel" class="card-container"></div>
+            </div>
+        </div>
+    </section>
+
+    <!--<section id="cine" class="values-page spad table-price bg-gray-2">
         <div class="overlay"></div>
         <video loop="true" class="video-cine" preload="auto" volume="0">
             <source src="./videos/cine.mp4" type="video/mp4">
@@ -380,21 +399,7 @@
                 </div>
             </div>
         </div>
-    </section>
-
-    <section id="custom" class="values-page spad table-price bg-gray-2">
-        <div class="container">
-            <div class="row">
-              <div class="col-lg-12 text-center">
-                <h2 class="title">SERVICIOS PERSONALIZADOS</h2>
-                <h4 class="sub-title">Armamos el presupuesto de acuerdo a tus necesidades</h4>
-              </div>
-            </div>
-            <div class="row">
-                <div id="custom-carousel" class="card-container"></div>
-            </div>
-        </div>
-    </section>
+    </section>-->
 
     <section id="extras" class="values-page spad table-price bg-gray-2">
       <div class="container">
@@ -444,7 +449,7 @@
         </div>
     </section>
 
-    <section class="callto bg-gray-2 spad set-bg" data-setbg="img/videoprop.jpg">
+    <!--<section class="callto bg-gray-2 spad set-bg" data-setbg="img/videoprop.jpg">
         <div class="overlay" style="background-color: rgba(0, 0, 0, 0.8);"></div>
         <div class="container">
             <div class="row">
@@ -464,7 +469,7 @@
                 </div>
             </div>
             </div>
-    </section>
+    </section>-->
 
     <!-- Counter Section End -->
     <section class="counter bg-gray-4">
@@ -742,7 +747,7 @@
   });
   </script>
 
-<script src="/js/valores-3.js"></script>
+<script src="/js/valores-julio-1.js"></script>
 
   <script>
     sliders = [{
@@ -815,7 +820,7 @@
 
   <script>
       createCarousel(basicArray,'basic-carousel');
-      createCarousel(standardArray,'standard-carousel');
+      //createCarousel(standardArray,'standard-carousel');
       createCarousel(premiumArray,'premium-carousel');
       createCarousel(customArray,'custom-carousel');
   </script>
